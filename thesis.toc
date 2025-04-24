@@ -1,0 +1,44 @@
+\contentsline {chapter}{Abstract}{i}{Doc-Start}% 
+\contentsline {chapter}{Acknowledgements}{iii}{chapter*.1}% 
+\contentsline {chapter}{Publications}{v}{chapter*.2}% 
+\contentsline {chapter}{Contents}{viii}{chapter*.6}% 
+\contentsline {chapter}{List of Figures}{x}{chapter*.7}% 
+\contentsline {chapter}{List of Tables}{xi}{chapter*.8}% 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}Literature Review}{2}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Introduction}{3}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Theoretical Background and Challenges}{5}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}FMCW Radar Foundations}{5}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Cardiac Signal Extraction from FMCW Radar}{6}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Transfer Learning}{8}{subsection.2.2.3}% 
+\contentsline {section}{\numberline {2.3}Methodology}{8}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Overview of CFT-RFcardi Framework}{8}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Rough Localization}{9}{subsection.2.3.2}% 
+\contentsline {subsubsection}{Range FFT}{10}{section*.9}% 
+\contentsline {subsubsection}{Angle FFT}{10}{section*.10}% 
+\contentsline {subsection}{\numberline {2.3.3}Cardio-focusing and -tracking (CFT) Algorithm}{11}{subsection.2.3.3}% 
+\contentsline {subsubsection}{Template Design for Assessing SNR}{12}{section*.11}% 
+\contentsline {subsubsection}{Derivative-free Optimization (DFO)}{13}{section*.12}% 
+\contentsline {subsection}{\numberline {2.3.4}Transfer Learning for ECG Recovery}{16}{subsection.2.3.4}% 
+\contentsline {subsubsection}{Deep Learning Model Design}{16}{section*.13}% 
+\contentsline {subsubsection}{Pre-text Task Training and Fine-tuning}{17}{section*.14}% 
+\contentsline {section}{\numberline {2.4}Details of Experiment and Dataset}{18}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Experimental Details}{18}{subsection.2.4.1}% 
+\contentsline {subsubsection}{Dataset Collection and Preparation}{18}{section*.15}% 
+\contentsline {subsection}{\numberline {2.4.2}Implementation Details}{19}{subsection.2.4.2}% 
+\contentsline {subsubsection}{Parameters for CFT Algorithm}{19}{section*.16}% 
+\contentsline {subsubsection}{Deep Learning Model Training}{19}{section*.17}% 
+\contentsline {subsection}{\numberline {2.4.3}Methods for Comparison}{19}{subsection.2.4.3}% 
+\contentsline {section}{\numberline {2.5}Experimental Results and Evaluations}{21}{section.2.5}% 
+\contentsline {subsection}{\numberline {2.5.1}Performance of CFT Algorithm}{21}{subsection.2.5.1}% 
+\contentsline {subsubsection}{Effectiveness of CFT Algorithm}{21}{section*.18}% 
+\contentsline {subsubsection}{Impact of Monitoring Range}{21}{section*.19}% 
+\contentsline {subsubsection}{Impact of Signal Quality on ECG Recovery}{22}{section*.20}% 
+\contentsline {subsection}{\numberline {2.5.2}Performance of ECG Recovery using Transfer Learning}{25}{subsection.2.5.2}% 
+\contentsline {subsubsection}{Evaluations and Ablation Studies of SSL}{25}{section*.21}% 
+\contentsline {subsubsection}{Evaluations of Fine-tuning Results}{26}{section*.22}% 
+\contentsline {subsubsection}{Summary of Transfer-learning-based ECG Recovery}{27}{section*.23}% 
+\contentsline {section}{\numberline {2.6}Conclusions}{29}{section.2.6}% 
+\contentsline {chapter}{\numberline {3}High-SNR Radar Signal}{30}{chapter.3}% 
+\contentsline {chapter}{\numberline {4}Chapter}{31}{chapter.4}% 
+\contentsline {chapter}{References}{32}{chapter.4}% 
