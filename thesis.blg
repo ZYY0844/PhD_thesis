@@ -9,46 +9,59 @@ A level-1 auxiliary file: ./chapters/chapter1.aux
 A level-1 auxiliary file: ./chapters/chapter2.aux
 A level-1 auxiliary file: ./chapters/chapter3.aux
 A level-1 auxiliary file: ./chapters/chapter4.aux
-The style file: plain.bst
+A level-1 auxiliary file: ./chapters/chapter5.aux
+A level-1 auxiliary file: ./chapters/chapter6.aux
+A level-1 auxiliary file: ./chapters/chapter7.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: reference.bib
-You've used 32 entries,
-            2118 wiz_defined-function locations,
-            677 strings with 11604 characters,
-and the built_in function-call counts, 12918 in all, are:
-= -- 1161
-> -- 964
-< -- 5
-+ -- 383
-- -- 348
-* -- 1084
-:= -- 2268
-add.period$ -- 96
-call.type$ -- 32
-change.case$ -- 268
-chr.to.int$ -- 0
-cite$ -- 32
-duplicate$ -- 385
-empty$ -- 752
-format.name$ -- 348
-if$ -- 2523
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 55 entries,
+            4087 wiz_defined-function locations,
+            1111 strings with 19845 characters,
+and the built_in function-call counts, 44541 in all, are:
+= -- 3474
+> -- 1441
+< -- 340
++ -- 763
+- -- 291
+* -- 2224
+:= -- 6477
+add.period$ -- 111
+call.type$ -- 55
+change.case$ -- 57
+chr.to.int$ -- 756
+cite$ -- 55
+duplicate$ -- 3241
+empty$ -- 3362
+format.name$ -- 336
+if$ -- 10342
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 31
-newline$ -- 163
-num.names$ -- 64
-pop$ -- 269
+int.to.str$ -- 55
+missing$ -- 616
+newline$ -- 188
+num.names$ -- 55
+pop$ -- 1430
 preamble$ -- 1
-purify$ -- 236
-quote$ -- 0
-skip$ -- 277
+purify$ -- 0
+quote$ -- 2
+skip$ -- 3292
 stack$ -- 0
-substring$ -- 521
-swap$ -- 74
-text.length$ -- 5
+substring$ -- 1864
+swap$ -- 2775
+text.length$ -- 88
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 128
+top$ -- 5
+type$ -- 55
 warning$ -- 0
-while$ -- 97
-width$ -- 34
-write$ -- 337
+while$ -- 183
+width$ -- 57
+write$ -- 550

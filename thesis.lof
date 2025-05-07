@@ -1,45 +1,50 @@
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of different steps in radar-based cardiac monitoring.}}{3}{figure.1.1}% 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Overview of the thesis with unsolved challenges.}}{8}{figure.1.2}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Challenges for radar-based ECG recovery: (a) and (b) Radar signals with high and low SNR for adjacent points with a distance of $0.03$m; (c) and (d) Inference results of a well-trained deep learning model in original and new scenarios.}}{7}{figure.2.1}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{7}{subfigure.1.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{7}{subfigure.1.2}% 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{7}{subfigure.1.3}% 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{7}{subfigure.1.4}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Overview of the CFT-RFcardi framework: (a) Rough localization of human body; (b) Use CFT to find CF point and extract high-SNR radar signals; (c) Transfer learning with pre-text task training and fine-tuning stages.}}{9}{figure.2.2}% 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Procedures for obtaining RA map: (a) Range FFT for chirps along fast time; (b) Angle FFT along virtual channels.}}{11}{figure.2.3}% 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Template for assessing SNR: (a) High-SNR radar signal; (b) Extracted signal envelope with the synthetic template; (c) (a) Low-SNR radar signal, (d) Extracted signal envelope with the synthetic template.}}{12}{figure.2.4}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{12}{subfigure.4.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{12}{subfigure.4.2}% 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{12}{subfigure.4.3}% 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{12}{subfigure.4.4}% 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of the CFT algorithm with bold line wrapping the search region $S_k$: (a) Equality between $\gamma $ and $\Gamma $ (same as in CS algorithm); (b) Large $\Gamma _k$ with refined $\gamma _k$, providing more potential points to be evaluated; (c) Jump out of the local minimum by adjusting $\Gamma _k$ and $\gamma _k$.}}{14}{figure.2.5}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{14}{subfigure.5.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{14}{subfigure.5.2}% 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{14}{subfigure.5.3}% 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Indoor scenarios for data collection.}}{18}{figure.2.6}% 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Visualization of the extracted radar signal for all methods: (a) - (c) If CF point is around rough body location; (d) - (f) If CF point is far from rough body location.}}{20}{figure.2.7}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{20}{subfigure.7.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{20}{subfigure.7.2}% 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{20}{subfigure.7.3}% 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{20}{subfigure.7.4}% 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{20}{subfigure.7.5}% 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{20}{subfigure.7.6}% 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Illustration of performance in terms of peak error and MDR: (a) - (b) Scattered points with fitting curves along range axis; (c) - (d) CDF plots for all trails.}}{23}{figure.2.8}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{23}{subfigure.8.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{23}{subfigure.8.2}% 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{23}{subfigure.8.3}% 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{23}{subfigure.8.4}% 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Impact of radar input quality on the final ECG recovery: (a) - (b) High-quality radar input and ECG recovery; (c) - (d) Low-quality radar input and ECG recovery.}}{25}{figure.2.9}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{25}{subfigure.9.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{25}{subfigure.9.2}% 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{25}{subfigure.9.3}% 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{25}{subfigure.9.4}% 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Results of SSR: (a) Failed SSR due to lack of data and sparse penalty; (b) Ideal SSR result with good MSE and sparsity.}}{26}{figure.2.10}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{26}{subfigure.10.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{26}{subfigure.10.2}% 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Results of transfer learning using limited labeled data: (a) Poor ECG recovery without proper morphological feature and peak location; (b) Good ECG recovery owing to the pre-trained model.}}{28}{figure.2.11}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{28}{subfigure.11.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{28}{subfigure.11.2}% 
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Overall performance of the radar-based ECG recovery.}}{29}{figure.2.12}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Challenges for radar-based ECG recovery: (a) and (b) Radar signals with high and low SNR for adjacent points with a distance of $0.03$m; (c) and (d) Inference results of a well-trained deep learning model in original and new scenarios.}}{17}{figure.3.1}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{17}{subfigure.1.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{17}{subfigure.1.2}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{17}{subfigure.1.3}% 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{17}{subfigure.1.4}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of the CFT-RFcardi framework: (a) Rough localization of human body; (b) Use CFT to find CF point and extract high-SNR radar signals; (c) Transfer learning with pre-text task training and fine-tuning stages.}}{19}{figure.3.2}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Procedures for obtaining RA map: (a) Range FFT for chirps along fast time; (b) Angle FFT along virtual channels.}}{20}{figure.3.3}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Template for assessing SNR: (a) High-SNR radar signal; (b) Extracted signal envelope with the synthetic template; (c) (a) Low-SNR radar signal, (d) Extracted signal envelope with the synthetic template.}}{22}{figure.3.4}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{22}{subfigure.4.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{22}{subfigure.4.2}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{22}{subfigure.4.3}% 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{22}{subfigure.4.4}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Illustration of the CFT algorithm with bold line wrapping the search region $S_k$: (a) Equality between $\gamma $ and $\Gamma $ (same as in CS algorithm); (b) Large $\Gamma _k$ with refined $\gamma _k$, providing more potential points to be evaluated; (c) Jump out of the local minimum by adjusting $\Gamma _k$ and $\gamma _k$.}}{23}{figure.3.5}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{23}{subfigure.5.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{23}{subfigure.5.2}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{23}{subfigure.5.3}% 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Indoor scenarios for data collection.}}{27}{figure.3.6}% 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Visualization of the extracted radar signal for all methods: (a) - (c) If CF point is around rough body location; (d) - (f) If CF point is far from rough body location.}}{29}{figure.3.7}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{29}{subfigure.7.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{29}{subfigure.7.2}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{29}{subfigure.7.3}% 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{29}{subfigure.7.4}% 
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{29}{subfigure.7.5}% 
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{29}{subfigure.7.6}% 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Illustration of performance in terms of peak error and MDR: (a) - (b) Scattered points with fitting curves along range axis; (c) - (d) CDF plots for all trails.}}{32}{figure.3.8}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{32}{subfigure.8.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{32}{subfigure.8.2}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{32}{subfigure.8.3}% 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{32}{subfigure.8.4}% 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Impact of radar input quality on the final ECG recovery: (a) - (b) High-quality radar input and ECG recovery; (c) - (d) Low-quality radar input and ECG recovery.}}{34}{figure.3.9}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{34}{subfigure.9.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{34}{subfigure.9.2}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{34}{subfigure.9.3}% 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{34}{subfigure.9.4}% 
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Results of SSR: (a) Failed SSR due to lack of data and sparse penalty; (b) Ideal SSR result with good MSE and sparsity.}}{35}{figure.3.10}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{35}{subfigure.10.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{35}{subfigure.10.2}% 
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Results of transfer learning using limited labeled data: (a) Poor ECG recovery without proper morphological feature and peak location; (b) Good ECG recovery owing to the pre-trained model.}}{37}{figure.3.11}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{37}{subfigure.11.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{37}{subfigure.11.2}% 
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Overall performance of the radar-based ECG recovery.}}{38}{figure.3.12}% 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
