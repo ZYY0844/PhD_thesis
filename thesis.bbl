@@ -258,6 +258,173 @@ Y.~Zhang, S.~Xiong, R.~Yang, E.~G. Lim, and Y.~Yue, ``Recover from horcrux: A
   signal components,'' in \emph{2025 47th Annual International Conference of
   the IEEE Engineering in Medicine and Biology Society (EMBC)}, Jul. 2025.
 
+\bibitem{li2013review}
+C.~Li, V.~M. Lubecke, O.~Boric-Lubecke, and J.~Lin, ``{A review on recent
+  advances in Doppler radar sensors for noncontact healthcare monitoring},''
+  \emph{IEEE Transactions on Microwave Theory and Techniques}, vol.~61, no.~5,
+  pp. 2046--2060, May 2013.
+
+\bibitem{singh2020multi}
+A.~Singh, S.~U. Rehman, S.~Yongchareon, and P.~H.~J. Chong, ``{Multi-resident
+  non-contact vital sign monitoring using radar: A review},'' \emph{IEEE
+  Sensors Journal}, vol.~21, no.~4, pp. 4061--4084, Feb. 2021.
+
+\bibitem{hirt2003ultra}
+W.~Hirt, ``Ultra-wideband radio technology: Overview and future research,''
+  \emph{Computer Communications}, vol.~26, no.~1, pp. 46--52, Jan. 2003.
+
+\bibitem{shen2018respiration}
+H.~Shen, C.~Xu, Y.~Yang, L.~Sun, Z.~Cai, L.~Bai, E.~Clancy, and X.~Huang,
+  ``{Respiration and heartbeat rates measurement based on autocorrelation using
+  IR-UWB radar},'' \emph{IEEE Transactions on Circuits and Systems II: Express
+  Briefs}, vol.~65, no.~10, pp. 1470--1474, Oct. 2018.
+
+\bibitem{wang2020experimental}
+D.~Wang, S.~Yoo, and S.~H. Cho, ``{Experimental comparison of IR-UWB radar and
+  FMCW radar for vital signs},'' \emph{Sensors}, vol.~20, no.~22, p. 6695, Nov.
+  2020.
+
+\bibitem{huang2021antennas}
+Y.~Huang, \emph{Antennas: From theory to practice}.\hskip 1em plus 0.5em minus
+  0.4em\relax New York, NY, USA: John Wiley \& Sons, 2021.
+
+\bibitem{ramasubramanian2018moving}
+K.~Ramasubramanian and K.~Ramaiah, ``{Moving from legacy 24 GHz to
+  state-of-the-art 77-GHz radar},'' \emph{ATZelektronik Worldwide}, vol.~13,
+  no.~3, pp. 46--49, Jun. 2018.
+
+\bibitem{obeid2008low}
+D.~Obeid, G.~Issa, S.~Sadek, G.~Zaharia, and G.~El~Zein, ``{Low power microwave
+  systems for heartbeat rate detection at 2.4, 5.8, 10 and 16 GHz},'' in
+  \emph{2008 First International Symposium on Applied Sciences on Biomedical
+  and Communication Technologies}, Oct. 2008, pp. 1--5.
+
+\bibitem{zhou2022towards}
+Y.~Zhou, L.~Liu, H.~Zhao, M.~L{\'o}pez-Ben{\'\i}tez, L.~Yu, and Y.~Yue,
+  ``Towards deep radar perception for autonomous driving: Datasets, methods,
+  and challenges,'' \emph{Sensors}, vol.~22, no.~11, p. 4208, May 2022.
+
+\bibitem{droitcour2004range}
+A.~D. Droitcour, O.~Boric-Lubecke, V.~M. Lubecke, J.~Lin, and G.~T. Kovacs,
+  ``{Range correlation and I/Q performance benefits in single-chip silicon
+  Doppler radars for noncontact cardiopulmonary monitoring},'' \emph{IEEE
+  Transactions on Microwave Theory and Techniques}, vol.~52, no.~3, pp.
+  838--848, Mar. 2004.
+
+\bibitem{lin2022broadband}
+Y.-H. Lin, J.-H. Cheng, L.-C. Chang, W.-J. Lin, J.-H. Tsai, and T.-W. Huang,
+  ``{A broadband MFCW agile radar concept for vital-sign detection under
+  various thoracic movements},'' \emph{IEEE Transactions on Microwave Theory
+  and Techniques}, vol.~70, no.~8, pp. 4056--4070, 2022.
+
+\bibitem{zhang2020health}
+J.~Zhang, Y.~Wu, Y.~Chen, and T.~Chen, ``Health-radio: Towards contactless
+  myocardial infarction detection using radio signals,'' \emph{IEEE
+  Transactions on Mobile Computing}, vol.~21, no.~2, pp. 585--597, Feb. 2022.
+
+\bibitem{mercuri2021enabling}
+M.~Mercuri, Y.~Lu, S.~Polito, F.~Wieringa, Y.-H. Liu, A.-J. van~der Veen,
+  C.~Van~Hoof, and T.~Torfs, ``Enabling robust radar-based localization and
+  vital signs monitoring in multipath propagation environments,'' \emph{IEEE
+  Transactions on Biomedical Engineering}, vol.~68, no.~11, pp. 3228--3240,
+  Nov. 2021.
+
+\bibitem{mogi2017heartbeat}
+E.~Mogi and T.~Ohtsuki, ``{Heartbeat detection with Doppler radar based on
+  spectrogram},'' in \emph{2017 IEEE International Conference on Communications
+  (ICC)}, May 2017, pp. 1--6.
+
+\bibitem{hu2014real}
+W.~Hu, H.~Zhang, Z.~Zhao, Y.~Wang, and X.~Wang, ``{Real-time remote vital sign
+  detection using a portable Doppler sensor system},'' in \emph{2014 IEEE
+  Sensors Applications Symposium (SAS)}, Feb. 2014, pp. 89--93.
+
+\bibitem{park2017polyphase}
+J.~Park, J.-W. Ham, S.~Park, D.-H. Kim, S.-J. Park, H.~Kang, and S.-O. Park,
+  ``{Polyphase-basis discrete cosine transform for real-time measurement of
+  heart rate with CW Doppler radar},'' \emph{IEEE Transactions on Microwave
+  Theory and Techniques}, vol.~66, no.~3, pp. 1644--1659, Mar. 2018.
+
+\bibitem{shi2021contactless}
+K.~Shi, T.~Steigleder, S.~Schellenberger, F.~Michler, A.~Malessa, F.~Lurz,
+  N.~Rohleder, C.~Ostgathe, R.~Weigel, and A.~Koelpin, ``{Contactless analysis
+  of heart rate variability during cold pressor test using radar interferometry
+  and bidirectional LSTM networks},'' \emph{Scientific Reports}, vol.~11,
+  no.~1, pp. 1--13, Feb. 2021.
+
+\bibitem{ye2018stochastic}
+C.~Ye, K.~Toyoda, and T.~Ohtsuki, ``{A stochastic gradient approach for robust
+  heartbeat detection with Doppler radar using time-window-variation
+  technique},'' \emph{IEEE Transactions on Biomedical Engineering}, vol.~66,
+  no.~6, pp. 1730--1741, Jun. 2018.
+
+\bibitem{yamamoto2018spectrogram}
+K.~Yamamoto, K.~Toyoda, and T.~Ohtsuki, ``{Spectrogram-based non-contact RRI
+  estimation by accurate peak detection algorithm},'' \emph{IEEE Access},
+  vol.~6, pp. 60\,369--60\,379, Oct. 2018.
+
+\bibitem{rong2019remote}
+Y.~Rong and D.~W. Bliss, ``Remote sensing for vital information based on
+  spectral-domain harmonic signatures,'' \emph{IEEE Transactions on Aerospace
+  and Electronic Systems}, vol.~55, no.~6, pp. 3454--3465, May 2019.
+
+\bibitem{le2019multivariate}
+M.~Le and B.~Van~Nguyen, ``{Multivariate correlation of higher harmonics for
+  heart rate remote measurement using UWB impulse radar},'' \emph{IEEE Sensors
+  Journal}, vol.~20, no.~4, pp. 1859--1866, Oct. 2019.
+
+\bibitem{da2019theoretical}
+S.~D. Da~Cruz, H.-P. Beise, U.~Schr{\"o}der, and U.~Karahasanovic, ``A
+  theoretical investigation of the detection of vital signs in presence of car
+  vibrations and radar-based passenger classification,'' \emph{IEEE
+  Transactions on Vehicular Technology}, vol.~68, no.~4, pp. 3374--3385, Apr.
+  2019.
+
+\bibitem{will2017advanced}
+C.~Will, K.~Shi, R.~Weigel, and A.~Koelpin, ``Advanced template matching
+  algorithm for instantaneous heartbeat detection using continuous wave radar
+  systems,'' in \emph{2017 First IEEE MTT-S International Microwave Bio
+  Conference (IMBIOC)}, May 2017, pp. 1--4.
+
+\bibitem{sakamoto2015feature}
+T.~Sakamoto, R.~Imasaka, H.~Taki, T.~Sato, M.~Yoshioka, K.~Inoue, T.~Fukuda,
+  and H.~Sakai, ``Feature-based correlation and topological similarity for
+  interbeat interval estimation using ultrawideband radar,'' \emph{IEEE
+  Transactions on Biomedical Engineering}, vol.~63, no.~4, pp. 747--757, Apr.
+  2015.
+
+\bibitem{gong2021rf}
+J.~Gong, X.~Zhang, K.~Lin, J.~Ren, Y.~Zhang, and W.~Qiu, ``{RF Vital Sign
+  Sensing Under Free Body Movement},'' \emph{Proceedings of the ACM on
+  Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)}, vol.~5,
+  no.~3, pp. 1--22, Sep. 2021.
+
+\bibitem{cardoso1998blind}
+J.-F. Cardoso, ``Blind signal separation: statistical principles,''
+  \emph{Proceedings of the IEEE}, vol.~86, no.~10, pp. 2009--2025, Oct. 1998.
+
+\bibitem{weishaupt2018vital}
+F.~Weishaupt, I.~Walterscheid, O.~Biallawons, and J.~Klare, ``{Vital sign
+  localization and measurement using an LFMCW MIMO radar},'' in \emph{2018 19th
+  International Radar Symposium (IRS)}, Jun. 2018, pp. 1--8.
+
+\bibitem{shyu2018detection}
+K.~Shyu, L.~Chiu, P.~Lee, T.~Tung, and S.~Yang, ``{Detection of breathing and
+  heart rates in UWB radar sensor data using FVPIEF-based two-layer EEMD},''
+  \emph{IEEE Sensors Journal}, vol.~19, no.~2, pp. 774--784, Jan. 2019.
+
+\bibitem{ji2022rbhhm}
+S.~Ji, Z.~Zhang, Z.~Xia, H.~Wen, J.~Zhu, and K.~Zhao, ``{RBHHM: A novel remote
+  cardiac cycle detection model based on heartbeat harmonics},''
+  \emph{Biomedical Signal Processing and Control}, vol.~78, p. 103936, Sep.
+  2022.
+
+\bibitem{schellenberger2020dataset}
+S.~Schellenberger, K.~Shi, T.~Steigleder, A.~Malessa, F.~Michler, L.~Hameyer,
+  N.~Neumann, F.~Lurz, R.~Weigel, C.~Ostgathe, and A.~Koelpin, ``A dataset of
+  clinically recorded radar vital signs with synchronised reference sensor
+  signals,'' \emph{Scientific Data}, vol.~7, no.~1, pp. 1--11, Sep. 2020.
+
 \bibitem{yao2023waterscenes}
 S.~Yao, R.~Guan, Z.~Wu, Y.~Ni, Z.~Zhang, Z.~Huang, X.~Zhu, Y.~Yue, E.~G. Lim,
   H.~Seo \emph{et~al.}, ``Waterscenes: A multi-task {4D} radar-camera fusion
