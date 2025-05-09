@@ -1,4 +1,24 @@
-\chapter{Chapter} % Write in your own chapter title
-\label{ch:con} % Add a label in case you want to refer to the chapter.
+\chapter{Conclusion and Future Work} \label{ch:con} % Add a label in case you want to refer to the chapter.
 
-Another chapter.
+\section{Future Work}
+\subsection{Discussions and Future work}
+The proposed radarODE framework has shown outstanding performance compared with the previous work to generate faithful ECG signals under noisy scenarios, while the potential limitation will be discussed in this part to encourage future improvements in radar-based ECG recovery for real-life situations and applications.
+
+\subsubsection{Long-range ECG Monitoring}
+The direct impact brought by long-range monitoring is to reduce the SNR of the received radar signal according to the link budget analysis~\cite{liu2024diversity}. In addition, the cardiac location requires to be pre-identified to perform the accurate beamforming, because the current dataset assumes the majority of range-bins contain cardiac-related signals~\cite{chen2022contactless}.
+
+\subsubsection{Complex Monitoring Scenarios}
+Various new noises might be introduced and need to be eliminated, such as radar self-vibration introduced from car vibrations or hand-held radar~\cite{da2019theoretical}, mutual-radar interference for the future smart home with multiple electromagnetic devices~\cite{yang2024isense} and signal attenuation caused by human tissues for the monitoring of people with random body orientations~\cite{liu2024diversity}.
+
+\subsubsection{Evaluation on the Dataset for Patients}
+An important future application of radar-based ECG recovery is for clinical monitoring and diagnosis, while the ECG waveform for patients (e.g., arrhythmia) might be quite different, requiring massive new data for training. Some recent research has shown the feasibility of recovering abnormal ECG from radar signal~\cite{zhao2024airecg}, but more studies are required to investigate transfer learning or data augmentation techniques due to the scarcity of patient data. In addition, it is hard to preserve the noise-robustness for the ECG monitoring of patients, because the ODE model in this work is not designed for abnormal ECG patterns.
+
+
+% \subsection{Discussions and Future work}
+% The proposed radarODE-MTL framework has demonstrated superior performance compared to previous approaches in generating reliable ECG signals under noisy conditions. However, potential limitations will be discussed in this subsection to motivate future enhancements in radar-based ECG recovery for practical, real-world scenarios and applications.
+
+% \subsubsection{Clock Synchronization During Data Collection}
+% In Figure~\ref{fig:compare_noise}, it is obvious that all the ECG R-peaks lag the radar signal peaks in the dataset~\cite{chen2022contactless}, while the actual ECG signal should lead radar signal for several milliseconds due to the electromyographic activation time (EMAT)~\cite{gao2023portable,inan2014ballistocardiography}. The misalignment is blamed for poor synchronization between the devices for collecting radar and ECG signal, while such clock synchronization is commonly neglected because the essential features of ECG (e.g., shape, peak-to-peak interval) will not be affected by EMAT~\cite{chen2022contactless,li2024radarnet,zhao2024airecg}. In future work, strict clock synchronization should be ensured during data collection to provide faithful radar-ECG pairs for the diagnosis of more diseases with irregular EMAT (e.g., heart failure syndromes and paroxysmal atrial fibrillation)~\cite{gao2023portable,inan2014ballistocardiography}.
+
+% \subsubsection{Robustness During Continuous Large-scale Body Movement}
+% The noise robustness test in Section~\ref{sec:nr_test} shows the better performance of radarODE-MTL compared with other frameworks, because radarODE-MTL could leverage the information from adjacent clean cardiac cycles without noise distortion. However, the recovery may still have poor quality (i.e., bad MDR in Figure~\ref{fig:abrupt}) due to the continuous large-scale body movement. For example, if the majority of the input radar signal is contaminated by strong noise without containing any clean cardiac cycle, the deep learning model may not extract any useful information for ECG recovery. In future work, advanced signal processing algorithms are necessary to be developed to ensure a high SNR signal even under continuous large-scale body movement to enable radar-based cardiac monitoring in a general scenario (e.g., walking subjects).

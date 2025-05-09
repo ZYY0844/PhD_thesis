@@ -13,15 +13,25 @@
 \BOOKMARK [0][-]{chapter.2}{Background and Literature Review}{}% 13
 \BOOKMARK [1][-]{section.2.1}{Theoretical Background}{chapter.2}% 14
 \BOOKMARK [1][-]{section.2.2}{Literature Review for Cardiac Feature Extraction}{chapter.2}% 15
-\BOOKMARK [0][-]{chapter.3}{High-SNR Radar Signal}{}% 16
+\BOOKMARK [0][-]{chapter.3}{Efficient High-SNR Signal Acquisition}{}% 16
 \BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.2}{Theoretical Background and Challenges}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.3}{Methodology}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.4}{Details of Experiment and Dataset}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.5}{Experimental Results and Evaluations}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.6}{Conclusions}{chapter.3}% 22
-\BOOKMARK [0][-]{chapter.4}{Chapter}{}% 23
-\BOOKMARK [0][-]{chapter.5}{Chapter}{}% 24
-\BOOKMARK [0][-]{chapter.6}{Chapter}{}% 25
-\BOOKMARK [0][-]{chapter.7}{Chapter}{}% 26
-\BOOKMARK [0][-]{chapter.7}{References}{}% 27
+\BOOKMARK [1][-]{section.3.2}{Methodology}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.3}{Details of Experiment and Dataset}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.4}{Experimental Results and Evaluations}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.5}{Conclusions}{chapter.3}% 21
+\BOOKMARK [0][-]{chapter.4}{Robust Single-Cycle ECG Generation}{}% 22
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.2}{Methodology}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.3}{Dataset and Implementation Details}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.4}{Experimental Results and Evaluations}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.5}{Conclusions}{chapter.4}% 27
+\BOOKMARK [0][-]{chapter.5}{Robust Long-Term ECG Generation}{}% 28
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.2}{Background and Problem Statement}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.3}{Methodology}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.4}{Experimental Setting and Result Evaluation}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.5}{Conclusions}{chapter.5}% 33
+\BOOKMARK [0][-]{chapter.6}{Alleviate Data Scarcity for Radar-Based ECG Recovery}{}% 34
+\BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 35
+\BOOKMARK [1][-]{section.7.1}{Future Work}{chapter.7}% 36
+\BOOKMARK [0][-]{section*.116}{References}{}% 37
