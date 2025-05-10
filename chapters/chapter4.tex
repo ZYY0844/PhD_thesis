@@ -228,8 +228,6 @@ Input SST &  & $(N, 50, 71, 118)$ \\
 \ \ Transconv1d  & $(2,1,3,1)$ & $(N,1,200)$ \\
 \bottomrule
 \multicolumn{2}{l}{Output single-cycle ECG piece} &  $(N, 1, 200)$ \\
-\bottomrule
-
 \end{longtable}
 \begin{enumerate}[a.]
 \item \textbf{Backbone: } Backbone is typically used as the first block to extract both low-level (e.g., color, edge) and high-level features (e.g., presence of specific pattern) from the input images. In the context of this research, the backbone is expected to localize the vibrations $v_1$, $v_2$ revealed as periodically appeared bright triangles within the range of $[1,25]~Hz$ on SST plots, providing latent information of $T_1$, $T_2$ for the further ECG reconstruction. 

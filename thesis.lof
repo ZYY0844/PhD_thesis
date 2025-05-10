@@ -1,6 +1,6 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of different steps in radar-based cardiac monitoring.\relax }}{3}{figure.caption.12}% 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Overview of the thesis with unsolved challenges.\relax }}{8}{figure.caption.13}% 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Overview of the thesis with unsolved challenges.\relax }}{5}{figure.caption.13}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Relationships between cardiac mechanical and electrical activities within the same cardiac cycle.\relax }}{17}{figure.caption.16}% 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Illustration for spectrum-based methods: (a) raw radar signal; (b) spectrum obtained for raw radar signal from FFT, with RR, RR harmonic and HR peaks labelled; (c) raw radar signal after differentiation; (d) spectrum obtained for differentiated raw radar signal from FFT, with enhanced HR peak labelled.\relax }}{19}{figure.caption.17}% 
@@ -130,4 +130,26 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{106}{subfigure.9.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{106}{subfigure.9.2}% 
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Illustration of Horcrux: (a) Traditional augmentation with zero mask; (b) Missed detected heartbeat (HB) and distorted ECG recovery; (c) Horcrux with time consistency preserved; (d) Ideal cardiac monitoring with high fidelity.\relax }}{112}{figure.caption.114}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{112}{subfigure.1.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{112}{subfigure.1.2}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{112}{subfigure.1.3}% 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{112}{subfigure.1.4}% 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Pipeline of Horcrux with two branches: (a) Harmonic and percussive (H$\&$P) components decomposition; (b) Dynamic template matching.\relax }}{113}{figure.caption.115}% 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Illustration of RFcardi with pre-text training and fine-tuning stages.\relax }}{119}{figure.caption.117}% 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Identified vibrations using DTM for radar signals with various qualities (illustrated in normalized amplitude).\relax }}{123}{figure.caption.121}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{123}{subfigure.4.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{123}{subfigure.4.2}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{123}{subfigure.4.3}% 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{123}{subfigure.4.4}% 
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{123}{subfigure.4.5}% 
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{123}{subfigure.4.6}% 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Performance of using different scales of the dataset.\relax }}{125}{figure.caption.124}% 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Results of SSR: (a) Failed SSR due to lack of data and sparse penalty; (b) Ideal SSR result with good MSE and sparsity.\relax }}{126}{figure.caption.127}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{126}{subfigure.6.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{126}{subfigure.6.2}% 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Results of transfer learning using limited labeled data: (a) Poor ECG recovery without proper morphological feature and peak location; (b) Good ECG recovery owing to the pre-trained model.\relax }}{128}{figure.caption.129}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{128}{subfigure.7.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{128}{subfigure.7.2}% 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Overall performance of the radar-based ECG recovery.\relax }}{129}{figure.caption.130}% 
 \addvspace {10\p@ }

@@ -23,8 +23,16 @@ In recent years, the emergence of commercial radar platforms with high operating
 
 Based on the discussions above, it is believed that radar-based ECG recovery is an essential research direction to enable the realization of future wellness monitoring, even providing fine-grained cardiac features for clinical diagnosis. This thesis will thoroughly investigate all the stages in radar-based ECG recovery with multiply inventions proposed to overcome the unsolved challenges. In addition, this research has been approved by University Ethics Committee of Xi'anJiaotong-Liverpool University with proposal number ER-SAT-0010000090020220906151929.
 
+
+\begin{figure}[tbp] 
+    \centering 
+    \includegraphics[width=0.9\columnwidth]{first_plot.pdf}
+    \caption{Overview of the thesis with unsolved challenges.}
+    \label{fig:first_plot} 
+\end{figure}
+
 \section{Challenges in Radar-based ECG Recovery}
-The realization of radar-based ECG recovery needs two general stages: (a) radar signal collection and pre-processing to increase \gls{snr}; (b) ECG recovery from radar signal to realize domain transformation from cardiac mechanical activities to electrical activities using \gls{dnn}, and this thesis will elaborate on four challenges figured in both stages with corresponding solutions proposed.
+The realization of radar-based ECG recovery needs two general stages: (a) radar signal collection and pre-processing to increase \gls{snr}; (b) ECG recovery from radar signal to realize domain transformation from cardiac mechanical activities to electrical activities using \gls{dnn}, and this thesis will elaborate on four challenges figured in both stages with corresponding solutions proposed as shown in Figure~\ref{fig:first_plot}.
 
 \subsection{The First Challenge}\label{sec:the_first_challenge}
 In the literature, many studies are dedicated to inventing advanced signal processing algorithms to enhance the signal quality, because the deep learning model for ECG recovery is vulnerable to the inputs contaminated by noises and requires high-SNR radar signals as inputs~\cite{chen2022contactless,liu2024diversity}. The methods for capturing high-SNR radar signals can be categorized into two groups:
@@ -46,12 +54,7 @@ After the modeling and recovery of single-cycle ECG pieces, a follow-up issue is
 
 \subsection{The Fourth Challenge}\label{sec:the_fourth_challenge}
 According to the literature, radar-based ECG recovery is only realized by deep-learning-based methods, because the domain transformation is extremely complex to be modeled mathematically while such transformation can be learned by deep learning model due to the great nonlinear mapping ability~\cite{chen2022contactless}. Similar to other research fields involved with deep learning, radar-based ECG recovery also asks for numerous radar signals to train the deep learning model with synchronous ECG ground truths~\cite{li2024radarnet,zhang2024radarODE-MTL,chu2024vessel}. According to previous research, the performance of the deep learning model degrades heavily after reducing $30\%$ of the training data even after applying proper data augmentation techniques~\cite{zhang2025horcrux}, causing difficulties for the deployment in new scenarios due to the demand for hours of ECG collection~\cite{zhang2024radarODE}. However, the method for reducing dependence on data quantity is rarely investigated for radar-based ECG recovery, and all the deep-learning-based ECG recovery models are trained in a supervised manner with large dataset containing $3-32$ hours of synchronous radar-ECG pairs~\cite{chen2022contactless,zhao2024airecg,li2024radarnet}. In this case, the \textbf{fourth challenge} is to reduce the dependency on large-scale datasets and develop appropriate transfer learning or data augmentation methods to alleviate data scarcity, especially for the deployment in new scenarios with limited data.
-\begin{figure}[tb] 
-    \centering 
-    \includegraphics[width=0.9\columnwidth]{first_plot.pdf}
-    \caption{Overview of the thesis with unsolved challenges.}
-    \label{fig:first_plot} 
-\end{figure}
+
 \section{Contributions and Thesis Outline}
 The proposed solutions for the aforementioned challenges are elaborated in Chapter~\ref{ch:cft},~\ref{ch:radarODE},~\ref{ch:radarMTL} and~\ref{ch:RFcardi} with a general outline shown in Figure~\ref{fig:first_plot}, and the main contributions of this thesis can be concluded as:
 \begin{itemize}

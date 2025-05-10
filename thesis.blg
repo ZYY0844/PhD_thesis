@@ -18,51 +18,58 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10382 items from 5000.
+Reallocated field_info (elt_size=4) to 10658 items from 5000.
 Database file #1: reference.bib
+I was expecting a `,' or a `}'---line 426 of file reference.bib
+ :   month={May}
+ :              .
+I'm skipping whatever remains of this entry
+Warning--I'm ignoring fitzgerald2010harmonic's extra "year" field
+--line 436 of file reference.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 117 entries,
+You've used 123 entries,
             4087 wiz_defined-function locations,
-            1422 strings with 32906 characters,
-and the built_in function-call counts, 99273 in all, are:
-= -- 7818
-> -- 2985
-< -- 826
-+ -- 1613
-- -- 594
-* -- 4936
-:= -- 14207
-add.period$ -- 238
-call.type$ -- 117
-change.case$ -- 118
-chr.to.int$ -- 1869
-cite$ -- 117
-duplicate$ -- 7132
-empty$ -- 7607
-format.name$ -- 673
-if$ -- 23199
+            1453 strings with 33880 characters,
+and the built_in function-call counts, 104221 in all, are:
+= -- 8222
+> -- 3093
+< -- 876
++ -- 1677
+- -- 610
+* -- 5174
+:= -- 14915
+add.period$ -- 250
+call.type$ -- 123
+change.case$ -- 124
+chr.to.int$ -- 1989
+cite$ -- 123
+duplicate$ -- 7484
+empty$ -- 7999
+format.name$ -- 693
+if$ -- 24363
 int.to.chr$ -- 0
-int.to.str$ -- 117
-missing$ -- 1317
-newline$ -- 374
-num.names$ -- 117
-pop$ -- 3028
+int.to.str$ -- 123
+missing$ -- 1373
+newline$ -- 392
+num.names$ -- 123
+pop$ -- 3148
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 7400
+skip$ -- 7780
 stack$ -- 0
-substring$ -- 4634
-swap$ -- 6188
-text.length$ -- 203
+substring$ -- 4920
+swap$ -- 6496
+text.length$ -- 213
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 117
+type$ -- 123
 warning$ -- 0
-while$ -- 441
-width$ -- 120
-write$ -- 1160
+while$ -- 463
+width$ -- 126
+write$ -- 1218
+(There was 1 error message)
