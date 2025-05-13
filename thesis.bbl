@@ -675,20 +675,20 @@ P.~O. Hoyer, ``Non-negative matrix factorization with sparseness constraints,''
   \emph{Journal of machine learning research}, vol.~5, no. Nov, pp. 1457--1469,
   Apr. 2004.
 
-\bibitem{yao2022c}
-H.~Yao, Y.~Wang, L.~Zhang, J.~Y. Zou, and C.~Finn, ``C-mixup: Improving
-  generalization in regression,'' \emph{Advances in Neural Information
-  Processing Systems}, vol.~35, pp. 3361--3376, Nov. 2022.
-
-\bibitem{schneider2024anchor}
-N.~Schneider, S.~Goshtasbpour, and F.~Perez-Cruz, ``Anchor data augmentation,''
-  \emph{Advances in Neural Information Processing Systems}, vol.~36, Nov. 2024.
-
 \bibitem{hwang2024rc}
 S.-H. Hwang, M.~Kim, and S.~E. Whang, ``Rc-mixup: A data augmentation strategy
   against noisy data for regression tasks,'' in \emph{Proceedings of the 30th
   ACM SIGKDD Conference on Knowledge Discovery and Data Mining}, Aug. 2024, pp.
   1155--1165.
+
+\bibitem{schneider2024anchor}
+N.~Schneider, S.~Goshtasbpour, and F.~Perez-Cruz, ``Anchor data augmentation,''
+  \emph{Advances in Neural Information Processing Systems}, vol.~36, Nov. 2024.
+
+\bibitem{yao2022c}
+H.~Yao, Y.~Wang, L.~Zhang, J.~Y. Zou, and C.~Finn, ``C-mixup: Improving
+  generalization in regression,'' \emph{Advances in Neural Information
+  Processing Systems}, vol.~35, pp. 3361--3376, Nov. 2022.
 
 \bibitem{yang2024isense}
 S.~Yang, D.~Zhang, Y.~Li, Y.~Hu, Q.~Sun, and Y.~Chen, ``{iSense: Enabling radar

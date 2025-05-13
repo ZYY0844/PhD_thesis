@@ -1,0 +1,6 @@
+PWD /Users/zyy/Desktop/PhD/Writing/PhD_thesis/chapters
+INPUT /usr/local/texlive/2019/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT acknowledgements.tex
+OUTPUT acknowledgements.log

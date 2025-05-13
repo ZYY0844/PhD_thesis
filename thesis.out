@@ -1,10 +1,10 @@
-\BOOKMARK [0][-]{Doc-Start}{Abstract}{}% 1
-\BOOKMARK [0][-]{chapter*.1}{Acknowledgements}{}% 2
-\BOOKMARK [0][-]{chapter*.2}{Publications}{}% 3
+\BOOKMARK [0][-]{chapter*.1}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{Acknowledgements}{}% 2
+\BOOKMARK [0][-]{Item.7}{Publications}{}% 3
 \BOOKMARK [0][-]{chapter*.7}{Contents}{}% 4
 \BOOKMARK [0][-]{chapter*.8}{List of Figures}{}% 5
 \BOOKMARK [0][-]{chapter*.9}{List of Tables}{}% 6
-\BOOKMARK [0][-]{chapter*.9}{List of Acronyms}{}% 7
+\BOOKMARK [0][-]{chapter*.11}{List of Acronyms}{}% 7
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 8
 \BOOKMARK [1][-]{section.1.1}{Wireless Sensing for Vital Sign Monitoring}{chapter.1}% 9
 \BOOKMARK [1][-]{section.1.2}{Radar-based Vital Sign Monitoring}{chapter.1}% 10
@@ -33,11 +33,12 @@
 \BOOKMARK [1][-]{section.5.5}{Conclusions}{chapter.5}% 33
 \BOOKMARK [0][-]{chapter.6}{Alleviate Data Scarcity for Radar-Based ECG Recovery}{}% 34
 \BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 35
-\BOOKMARK [1][-]{section.6.2}{Data Augmentation for Spectrogram}{chapter.6}% 36
+\BOOKMARK [1][-]{section.6.2}{Data Augmentation for Radar Spectrogram}{chapter.6}% 36
 \BOOKMARK [1][-]{section.6.3}{Transfer Learning Framework Design}{chapter.6}% 37
 \BOOKMARK [1][-]{section.6.4}{Experimental Results for Horcrux}{chapter.6}% 38
 \BOOKMARK [1][-]{section.6.5}{Experimental Results for RFcardi}{chapter.6}% 39
 \BOOKMARK [1][-]{section.6.6}{Conclusion}{chapter.6}% 40
 \BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 41
-\BOOKMARK [1][-]{section.7.1}{Future Work}{chapter.7}% 42
-\BOOKMARK [0][-]{section*.133}{References}{}% 43
+\BOOKMARK [1][-]{section.7.1}{Conclusions}{chapter.7}% 42
+\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 43
+\BOOKMARK [0][-]{section.7.2}{References}{}% 44

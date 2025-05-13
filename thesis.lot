@@ -17,8 +17,8 @@
 \contentsline {table}{\numberline {5.4}{\ignorespaces Comparison of the frameworks under abrupt noises\relax }}{107}{table.caption.112}% 
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {6.1}{\ignorespaces Parameters for Signal Model\relax }}{117}{table.caption.116}% 
-\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of Different Augmentation Methods\relax }}{120}{table.caption.118}% 
-\contentsline {table}{\numberline {6.3}{\ignorespaces Ablation Study for Horcrux\relax }}{121}{table.caption.119}% 
+\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of Different Augmentation Methods\relax }}{123}{table.caption.121}% 
+\contentsline {table}{\numberline {6.3}{\ignorespaces Ablation Study for Horcrux\relax }}{124}{table.caption.123}% 
 \contentsline {table}{\numberline {6.4}{\ignorespaces Performance of SSL with ablation study\relax }}{126}{table.caption.126}% 
 \contentsline {table}{\numberline {6.5}{\ignorespaces Performance of ECG Recovery using different percentages of labeled data\relax }}{127}{table.caption.128}% 
 \addvspace {10\p@ }
