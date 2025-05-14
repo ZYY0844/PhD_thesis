@@ -1,6 +1,6 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of different steps in radar-based cardiac monitoring.\relax }}{3}{figure.caption.12}% 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Overview of the thesis with unsolved challenges.\relax }}{5}{figure.caption.13}% 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Overview of the thesis with unsolved challenges.\relax }}{6}{figure.caption.13}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Relationships between cardiac mechanical and electrical activities within the same cardiac cycle.\relax }}{17}{figure.caption.16}% 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Illustration for spectrum-based methods: (a) raw radar signal; (b) spectrum obtained for raw radar signal from FFT, with RR, RR harmonic and HR peaks labelled; (c) raw radar signal after differentiation; (d) spectrum obtained for differentiated raw radar signal from FFT, with enhanced HR peak labelled.\relax }}{19}{figure.caption.17}% 
@@ -137,13 +137,13 @@
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{112}{subfigure.1.4}% 
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Pipeline of Horcrux with two branches: (a) Harmonic and percussive (H$\&$P) components decomposition; (b) Dynamic template matching.\relax }}{114}{figure.caption.115}% 
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Illustration of RFcardi with pre-text training and fine-tuning stages.\relax }}{118}{figure.caption.117}% 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Identified vibrations using DTM for radar signals with various qualities (illustrated in normalized amplitude).\relax }}{121}{figure.caption.119}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{121}{subfigure.4.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{121}{subfigure.4.2}% 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{121}{subfigure.4.3}% 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{121}{subfigure.4.4}% 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{121}{subfigure.4.5}% 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{121}{subfigure.4.6}% 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Identified vibrations using DTM for radar signals with various qualities (illustrated in normalized amplitude).\relax }}{122}{figure.caption.119}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{122}{subfigure.4.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{122}{subfigure.4.2}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{122}{subfigure.4.3}% 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{122}{subfigure.4.4}% 
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{122}{subfigure.4.5}% 
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{122}{subfigure.4.6}% 
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Performance of using different scales of the dataset.\relax }}{125}{figure.caption.124}% 
 \contentsline {figure}{\numberline {6.6}{\ignorespaces Results of SSR: (a) Failed SSR due to lack of data and sparse penalty; (b) Ideal SSR result with good MSE and sparsity.\relax }}{126}{figure.caption.127}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{126}{subfigure.6.1}% 

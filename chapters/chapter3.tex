@@ -1,3 +1,4 @@
+\glsresetall % reset all the acronyms
 \chapter{Efficient High-SNR Signal Acquisition}\label{ch:cft}
 This chapter focuses on the first stage of radar-based ECG recovery to acquire high-SNR radar signals with ample cardiac features, because the quality of the radar inputs highly affects the fidelity of ECG recovery~\cite{chen2022contactless,zhang2024radarODE}. Previous methods either require traversing a large search space to extract high-SNR signal or applying signal accumulation to suppress constant noises and enhance cardiac features, causing massive demand on computational resources and only applicable to short-range monitoring. In this chapter, a novel algorithm called \gls{cft} is proposed to find the \gls{cf} point by iteratively evaluating the potential points in a discontinuous objective space, and the CFT algorithm is tested on the sitting subjects to provide radar measurements with better SNR compared with existing methods.
 
@@ -8,14 +9,14 @@ Radar-based vital sign monitoring, as a popular branch of radar-based sensing, h
 
 \begin{figure}[tb]
         \centering
-        \subfloat[]{\label{fig:radar_good}\includegraphics[width=0.3\columnwidth]{radar_good.eps}}
-        \subfloat[]{\label{fig:radar_bad}\includegraphics[width=0.3\columnwidth]{radar_bad.eps}} 
+        \subfloat[]{\label{fig:radar_good}\includegraphics[width=0.35\columnwidth]{radar_good.eps}}
+        \subfloat[]{\label{fig:radar_bad}\includegraphics[width=0.35\columnwidth]{radar_bad.eps}} 
         \caption{Challenges for radar-based ECG recovery: (a) and (b) Radar signals with high and low SNR for adjacent points with a distance of $0.03$m.}
         \label{fig:challenges}
 \end{figure}
-Based on the discussion Chapter~\ref{sec:the_first_challenge}, it is still a challenge to precisely locate and track the cardiac location during data collection to efficiently extract high-SNR radar signal. Although, it is natural to think the high-SNR radar signal can be searched in a constrained space by optimization, while there is no appropriate method to assess the signal SNR in terms of cardiac features contained, and the objective space is actually highly discontinuous with adjacent points may revealing totally different SNR as shown in Figure~\subref*{fig:radar_good} and~\subref*{fig:radar_bad}, restricting the application of common gradient-based optimization algorithms. To address these issues, the contributions of this study can be listed as: 
+Based on the discussion Chapter~\ref{sec:the_first_challenge}, it is still a challenge to precisely locate and track the cardiac location during data collection to efficiently extract high-SNR radar signal. Although, it is natural to think the high-SNR radar signal can be searched in a constrained space by optimization, there is no appropriate method to assess the signal SNR in terms of cardiac features contained, and the objective space is actually highly discontinuous with adjacent points may revealing totally different SNR as shown in Figure~\subref*{fig:radar_good} and~\subref*{fig:radar_bad}, restricting the application of common gradient-based optimization algorithms. To address these issues, the contributions of this study can be listed as: 
 \begin{itemize}
-\item A cardio-focusing and -tracking (CFT) algorithm is proposed based on derivative-free optimization (DFO) to find the cardio-focused (CF) point by iteratively evaluating the potential points in a discontinuous objective space, with a universal signal template designed to adaptively assess the signal SNR as costs.
+\item A \gls{cft} algorithm is proposed based on derivative-free optimization (DFO) to find the gls{cf} point by iteratively evaluating the potential points in a discontinuous objective space, with a universal signal template designed to adaptively assess the signal SNR as costs.
 \item The proposed CFT algorithm has been validated on sitting subjects in various scenarios and could provide radar measurements with better SNR compared with existing methods.
 \end{itemize}
 
@@ -75,7 +76,7 @@ An explicit SNR can be calculated with the known “clean” signal, while the "
 \begin{equation}
 h_m (t) = a_1 \exp(-\frac{(t-b_1)^2}{2c_1^2}) + a_2 \exp(-\frac{(t-b_2)^2}{2c_2^2})
 \end{equation}
-with $a_1$, $a_2$ controlling the amplitudes of the peaks, $b_1$, $b_2$ determining the centers of the peaks and $c_1$, $c_2$ adjusting the width of the peaks. In practice, $a_1$ and $b_1$ will be fixed based on the dominant peaks detected as the red points in Figure~\subref*{fig:target_sig}, and other parameters are left to be determined as a simple curve fitting problem. Finally, the mean square error (MSE) between the radar signal envelope and the synthetic template is reckoned to be an assessment of signal SNR as shown in Figure~\subref*{fig:target_sig}, because fewer components could fit the designed template for low-SNR radar signal without obvious cardiac features, as shown in Figure~\subref*{fig:target_org_bad} and~\subref*{fig:target_sig_bad}.
+with $a_1$, $a_2$ controlling the amplitudes of the peaks, $b_1$, $b_2$ determining the centers of the peaks and $c_1$, $c_2$ adjusting the width of the peaks. In practice, $a_1$ and $b_1$ will be fixed based on the dominant peaks detected as the red points in Figure~\subref*{fig:target_sig}, and other parameters are left to be determined as a simple curve fitting problem. Finally, the \gls{mse} between the radar signal envelope and the synthetic template is reckoned to be an assessment of signal SNR as shown in Figure~\subref*{fig:target_sig}, because fewer components could fit the designed template for low-SNR radar signal without obvious cardiac features, as shown in Figure~\subref*{fig:target_org_bad} and~\subref*{fig:target_sig_bad}.
 
 \begin{figure}[tb]
   \centering
@@ -261,18 +262,18 @@ During the data collection of this study, the subjects are allowed to change pos
 To evaluate the performance of different methods when increasing the monitoring range, the quality of extracted radar signals for all trials is evaluated in terms of:
 \begin{itemize}
 \item Absolute Peak error between ECG R peaks and the dominant peaks for the first vibrations in radar signal.
-\item Missed detection rate (MDR) to count the cardiac cycles with no peak detected or with the absolute peak error larger than $150$ms~\cite{chen2022contactless}.
+\item \Gls{mdr} to count the cardiac cycles with no peak detected or with the absolute peak error larger than $150$ms~\cite{chen2022contactless}.
 \end{itemize}
 
 Figure~\subref*{fig:pk_err_point} and~\subref*{fig:pk_mdr_point} illustrate the peak error and MDR for all $80$ trials with corresponding fitting curves indicating the mean peak error or MDR. All the methods show similar performance in the short range and experience certain degradation with respect to the increasing range. In particular, MMECG shows larger degradation and variance for longer-range cases because the rough localization based on FMCW signal processing cannot provide accurate cardiac location, and the resultant evaluated points may not capture useful information for clustering. In contrast, De-ViMo could provide a better cardiac location, and the accumulated results show better accuracy than MMECG, while the long-range monitoring still affects the quality because the accumulation is not robust to non-gaussian noise. At last, the proposed CFT could precisely focus on the CF point and keep tracking the high-SNR points during data collection, providing the best results with small variance for both peak error and MDR. 
 
-In addition, the cumulative distribution function (CDF) plots for all trials are shown in Figure~\subref*{fig:pk_err_cdf} and~\subref*{fig:pk_mdr_cdf}. The proposed CFT algorithm achieves the best peak error with a median value of $0.022$~sec, while DE-ViMo and MMECG have worse performances with larger median values of $0.028$~sec and $0.033$~sec, respectively. Similarly, the precise localization and tracking of CF point also reduces the MDR for CFT results with a median value of $14\%$, while DE-ViMo and MMECG may affected by the accumulated noise or inaccurate cardiac localization with the median MDR of $17\%$ and $23\%$, respectively.
+In addition, the \gls{cdf} plots for all trials are shown in Figure~\subref*{fig:pk_err_cdf} and~\subref*{fig:pk_mdr_cdf}. The proposed CFT algorithm achieves the best peak error with a median value of $0.022$~sec, while DE-ViMo and MMECG have worse performances with larger median values of $0.028$~sec and $0.033$~sec, respectively. Similarly, the precise localization and tracking of CF point also reduces the MDR for CFT results with a median value of $14\%$, while DE-ViMo and MMECG may affected by the accumulated noise or inaccurate cardiac localization with the median MDR of $17\%$ and $23\%$, respectively.
 
 
 \subsubsection{Impact of Signal Quality on ECG Recovery}
 The signals extracted using different methods are used for supervised training to verify the impact of different input qualities on the ECG recovery task. The quality of the recovered ECG signal is assessed in terms of:
 \begin{itemize}
-\item The morphological accuracy is measured using MSE and Pearson-correlation coefficient (PCC), with MSE sensitive to the peak deviation and PCC focusing on the similarity between the ECG patterns.
+\item The morphological accuracy is measured using MSE and \Gls{pcc}, with MSE sensitive to the peak deviation and PCC focusing on the similarity between the ECG patterns.
 \item The accurate recovery of ECG R peaks is crucial to coarse cardiac features calculation (e.g., heart rate variability) and is measured by absolute R peak error and MDR.
 \end{itemize}
 Table~\ref{tab:ecg_supervise} shows the performance of the deep learning model trained with datasets yielded by different methods. The training based on CFT dataset achieves the best results on both morphological accuracy (MSE$=0.0082$ and PCC$=85.47\%$) and R peak recovery (Peak Error$=7.61$ms and MDR$=6.85\%$), because the high-SNR inputs provide accurate peak locations with minor noise that affects the ECG pattern generation, as shown in Figure~\subref*{fig:radar_clean} and~\subref*{fig:ecg_pred_clean}. 
@@ -297,10 +298,10 @@ In contrast, MMECG and De-ViMo cannot preserve the signal quality especially for
 
 \begin{figure}[tb]
   \centering
-  \subfloat[]{\label{fig:radar_clean}\includegraphics[width=0.35\columnwidth]{radar_clean.eps}}
-  \subfloat[]{\label{fig:ecg_pred_clean}\includegraphics[width=0.35\columnwidth]{ecg_pred_clean.eps}} \\
-  \subfloat[]{\label{fig:radar_noise}\includegraphics[width=0.35\columnwidth]{radar_noise.eps}}
-  \subfloat[]{\label{fig:ecg_pred_noise}\includegraphics[width=0.35\columnwidth]{ecg_pred_noise.eps}} 
+  \subfloat[]{\label{fig:radar_clean}\includegraphics[width=0.4\columnwidth]{radar_clean.eps}}
+  \subfloat[]{\label{fig:ecg_pred_clean}\includegraphics[width=0.4\columnwidth]{ecg_pred_clean.eps}} \\
+  \subfloat[]{\label{fig:radar_noise}\includegraphics[width=0.4\columnwidth]{radar_noise.eps}}
+  \subfloat[]{\label{fig:ecg_pred_noise}\includegraphics[width=0.4\columnwidth]{ecg_pred_noise.eps}} 
   \caption{Impact of radar input quality on the final ECG recovery: (a) - (b) High-quality radar input and ECG recovery; (c) - (d) Low-quality radar input and ECG recovery.}
   \label{fig:ecg_recovery}
 \end{figure}

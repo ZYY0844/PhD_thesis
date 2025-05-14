@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {1.1}Wireless Sensing for Vital Sign Monitoring}{1}{section.1.1}% 
 \contentsline {section}{\numberline {1.2}Radar-based Vital Sign Monitoring}{2}{section.1.2}% 
 \contentsline {section}{\numberline {1.3}Challenges in Radar-based ECG Recovery}{5}{section.1.3}% 
-\contentsline {subsection}{\numberline {1.3.1}The First Challenge}{6}{subsection.1.3.1}% 
+\contentsline {subsection}{\numberline {1.3.1}The First Challenge}{5}{subsection.1.3.1}% 
 \contentsline {subsection}{\numberline {1.3.2}The Second Challenge}{7}{subsection.1.3.2}% 
 \contentsline {subsection}{\numberline {1.3.3}The Third Challenge}{8}{subsection.1.3.3}% 
 \contentsline {subsection}{\numberline {1.3.4}The Fourth Challenge}{8}{subsection.1.3.4}% 
@@ -19,8 +19,8 @@
 \contentsline {subsection}{\numberline {2.1.1}Radar Types}{11}{subsection.2.1.1}% 
 \contentsline {subsection}{\numberline {2.1.2}Radar Theory for Vital Sign Monitoring}{13}{subsection.2.1.2}% 
 \contentsline {subsubsection}{Cardiac Signal Extraction from CW Radar}{13}{section*.14}% 
-\contentsline {subsection}{\numberline {2.1.3}Cardiac Signal Extraction from FMCW Radar}{15}{subsection.2.1.3}% 
-\contentsline {subsubsection}{Radar-Based ECG Monitoring as a Domain Transformation Problem}{16}{section*.15}% 
+\contentsline {subsubsection}{Cardiac Signal Extraction from FMCW Radar}{15}{section*.15}% 
+\contentsline {subsection}{\numberline {2.1.3}Radar-Based ECG Monitoring as a Domain Transformation Problem}{16}{subsection.2.1.3}% 
 \contentsline {section}{\numberline {2.2}Literature Review for Cardiac Feature Extraction}{18}{section.2.2}% 
 \contentsline {subsection}{\numberline {2.2.1}Spectrum-based Methods}{18}{subsection.2.2.1}% 
 \contentsline {subsection}{\numberline {2.2.2}Periodicity-based Methods}{19}{subsection.2.2.2}% 
@@ -78,7 +78,7 @@
 \contentsline {subsubsection}{Corrupt ECG Reconstruction}{70}{section*.71}% 
 \contentsline {subsubsection}{Morphological Accuracy}{71}{section*.75}% 
 \contentsline {subsubsection}{Fine-Grained Cardiac Events Reconstruction}{73}{section*.78}% 
-\contentsline {subsubsection}{Summary of Long-term ECG Recovery Evaluation}{74}{section*.80}% 
+\contentsline {subsubsection}{Summary of Long-term ECG Recovery Evaluation}{75}{section*.80}% 
 \contentsline {section}{\numberline {4.5}Conclusions}{75}{section.4.5}% 
 \contentsline {chapter}{\numberline {5}Robust Long-Term ECG Generation}{77}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}Introduction}{78}{section.5.1}% 
@@ -128,18 +128,18 @@
 \contentsline {section}{\numberline {6.3}Transfer Learning Framework Design}{117}{section.6.3}% 
 \contentsline {subsection}{\numberline {6.3.1}Deep Learning Model Design}{117}{subsection.6.3.1}% 
 \contentsline {subsection}{\numberline {6.3.2}Pre-text Task Training and Fine-tuning}{118}{subsection.6.3.2}% 
-\contentsline {section}{\numberline {6.4}Experimental Results for Horcrux}{119}{section.6.4}% 
-\contentsline {subsubsection}{Evaluation Metrics}{119}{section*.118}% 
-\contentsline {subsection}{\numberline {6.4.1}Evaluation for DTM}{120}{subsection.6.4.1}% 
-\contentsline {subsection}{\numberline {6.4.2}Evaluation for Horcrux}{122}{subsection.6.4.2}% 
-\contentsline {subsubsection}{Comparison with State-of-the-art Methods}{122}{section*.120}% 
+\contentsline {section}{\numberline {6.4}Experimental Results for Horcrux}{120}{section.6.4}% 
+\contentsline {subsubsection}{Evaluation Metrics}{120}{section*.118}% 
+\contentsline {subsection}{\numberline {6.4.1}Evaluation for DTM}{121}{subsection.6.4.1}% 
+\contentsline {subsection}{\numberline {6.4.2}Evaluation for Horcrux}{121}{subsection.6.4.2}% 
+\contentsline {subsubsection}{Comparison with State-of-the-art Methods}{121}{section*.120}% 
 \contentsline {subsubsection}{Ablation Study}{123}{section*.122}% 
 \contentsline {subsubsection}{Performance under Different Dataset Scale}{124}{section*.125}% 
 \contentsline {section}{\numberline {6.5}Experimental Results for RFcardi}{125}{section.6.5}% 
 \contentsline {subsection}{\numberline {6.5.1}Evaluations and Ablation Studies of SSL}{125}{subsection.6.5.1}% 
-\contentsline {subsection}{\numberline {6.5.2}Evaluations of Fine-tuning Results}{126}{subsection.6.5.2}% 
-\contentsline {subsection}{\numberline {6.5.3}Summary of Transfer-learning-based ECG Recovery}{128}{subsection.6.5.3}% 
-\contentsline {section}{\numberline {6.6}Conclusion}{129}{section.6.6}% 
+\contentsline {subsection}{\numberline {6.5.2}Evaluations of Fine-tuning Results}{127}{subsection.6.5.2}% 
+\contentsline {subsection}{\numberline {6.5.3}Summary of Transfer-learning-based ECG Recovery}{129}{subsection.6.5.3}% 
+\contentsline {section}{\numberline {6.6}Conclusion}{130}{section.6.6}% 
 \contentsline {chapter}{\numberline {7}Conclusion and Future Work}{131}{chapter.7}% 
 \contentsline {section}{\numberline {7.1}Conclusions}{131}{section.7.1}% 
 \contentsline {section}{\numberline {7.2}Future Work}{132}{section.7.2}% 

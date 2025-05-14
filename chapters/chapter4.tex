@@ -1,3 +1,4 @@
+\glsresetall
 \chapter{Robust Single-Cycle ECG Generation}\label{ch:radarODE}
 This chapter is based on the high-SNR radar measurements that contain ample cardiac features and aim to realize the robust ECG recovery to resist inevitable noises (e.g., \gls{rbm} noise). Previous studies leverage the powerful fitting capability of the \gls{dnn} to model complex and non-linear projections from radar to ECG signal, but the inference results can be easily distorted under abrupt noises~\cite{chen2022contactless,zhao2024airecg,zhao2024mmarrhythmia}. In this chapter, the traditional DNN is integrated with \gls{ode} with prior morphological features that constrain the ECG recovery, and a signal model is also designed to explain the critical features in the transformation from radar to ECG signals. The proposed ODE-embedded deep learning model is validated on the dataset with RBM noise, and the recovered ECG pieces still show high fidelity even when the subtle cardiac features are ruined by the noises with large amplitude.
 
@@ -19,7 +20,7 @@ Inspired by the above discussions, this chapter aims to design a framework for r
 \begin{itemize}
     \item This study proposes an ODE-embedded framework called radarODE to produce robust long-term ECG recovery against abrupt noises with the aid of morphological ECG features as the reference.
     \item A signal model is designed to describe the fine-grained cardiac feature sensed by radar, enabling further domain transformation between cardiac mechanical and electrical activities, instead of using purely data-driven approaches without any explanation as in the literature.
-    \item Based on the proposed signal model, an ODE-embedded module called single-cycle ECG generator (SCEG) is designed to realize the domain transformation by parameterizing the radar signal into sparse representations and hence generate the morphological ECG features as references to resist noise.
+    \item Based on the proposed signal model, an ODE-embedded module called \gls{sceg} is designed to realize the domain transformation by parameterizing the radar signal into sparse representations and hence generate the morphological ECG features as references to resist noise.
 \end{itemize}
 
 The rest of the chapter is organized as follows. Section~\ref{sec:odemethod} explains the proposed model for radar signal and the structure of radarODE framework. Section~\ref{sec:odeexp} and~\ref{sec:odedataset} introduce the public dataset used for validation in this research and then present the results obtained with corresponding comparisons and evaluations. Finally, Section~\ref{sec:odeconclusions} concludes this chapter. 
@@ -35,14 +36,14 @@ The rest of the chapter is organized as follows. Section~\ref{sec:odemethod} exp
 In order to realize a robust radar-to-ECG reconstruction, the proposed radarODE framework is designed based on the domain transformation within a single cardiac cycle to generate faithful ECG reference that aids the domain transformation in long-term ECG recovery. The inputs of radarODE are $50$ synchronous radar signals that represent the measurements from $50$ spatial points within the chest region~\cite{chen2022contactless}, as shown in Figure~\ref{fig:radarODE}, and the entire domain transformation is realized by three modules:
 
 \begin{itemize}
-    \item The first module estimates the peak-to-peak interval (PPI) for consecutive heartbeats based on the proposed peak detection algorithm and provides information for single cardiac cycle segmentation, as shown in Figure~\ref{fig:radarODE}(a).
-    \item The second module first transforms the time-domain radar signal within a single cardiac cycle into a spectrogram using synchrosqueezed wavelet transform (SST). Then, the temporal and ODE decoder within SCEG will generate the faithful ECG pieces as morphological references while resisting noise disruption, as shown in Figure~\ref{fig:radarODE}(b).
+    \item The first module estimates the \gls{ppi} for consecutive heartbeats based on the proposed peak detection algorithm and provides information for single cardiac cycle segmentation, as shown in Figure~\ref{fig:radarODE}(a).
+    \item The second module first transforms the time-domain radar signal within a single cardiac cycle into a spectrogram using \gls{sst}. Then, the temporal and ODE decoder within SCEG will generate the faithful ECG pieces as morphological references while resisting noise disruption, as shown in Figure~\ref{fig:radarODE}(b).
     \item The third module is used to fuse the extracted morphological and temporal features hidden in the original radar signal to generate the final ECG recovery, as shown in Figure~\ref{fig:radarODE}(c).
 \end{itemize}
   
 \subsection{Model for Radar Signal and Pre-Processing}
 \subsubsection{Fine-Grained Model for Radar Signal}
-According to the discussion in the last section, the chest displacement $x(t)$ can be further decomposed as
+According to the literature in Chapter~\ref{ch:LR}, the chest displacement $x(t)$ can be further decomposed as
 \begin{equation}
 x(t) = x_c(t) + x_r(t) + x_n(t)
 \end{equation}
@@ -69,7 +70,7 @@ The aim of proposing the model in (\ref{equ:vib}) is not to perform the curve fi
 \subsubsection{Signal Pre-Processing with Synchrosqueezed Wavelet Transform (SST)}
 Based on the proposed radar signal model in (\ref{equ:vib}), the next step is to enhance the prominent vibrations (i.e., $T_1$, $T_2$). Figure~\ref{fig:scg_ecg} shows that the high SNR radar signal could reveal prominent peaks of $v_1$ and $v_2$ in the time domain, but in most cases, these two peaks (especially $v_2$) could be ruined by noise. Therefore, this research decides to extract the time-frequency domain information from the spectrogram obtained by synchrosqueezed wavelet transform (SST)~\cite{daubechies2011synchrosqueezed}, and the two vibrations can then be localized by the SCEG module proposed later in Section~\ref{sec:sceg}. 
 
-SST evolves from continuous wavelet transform (CWT) but with concentrated energy distribution along the frequency axis, providing a sparser time-frequency representation with enhanced prominent vibrations compared with other tools such as short-time Fourier transform (STFT) and CWT.
+SST evolves from \gls{cwt} but with concentrated energy distribution along the frequency axis, providing a sparser time-frequency representation with enhanced prominent vibrations compared with other tools such as \gls{stft} and CWT.
 
 The first step of SST is to calculate the CWT of radar signal $\tilde{x}(t)$ as
 \begin{equation}
@@ -88,7 +89,7 @@ T_{\tilde{x}}(2\pi f, b)=\int_{A(b)} W_{\tilde{x}}(a, b) a^{-3 / 2} \delta\left(
 \end{equation}
 where $A(b)=\left\{a ; W_{\tilde{x}}(a, b) \neq 0\right\}$, and $\delta$ represents the Dirac-delta function in a distribution version to smoothly squeeze the spread-out energy into a narrow band around the instantaneous frequency~\cite{daubechies2011synchrosqueezed}.
 
-The quality of the resultant spectrograms can be evaluated using power spectrogram entropy (PSE)~\cite{wang2023vital}, with a small value indicating that the energy is concentrated around a certain frequency. The calculated PSE for the spectrogram produced by STFT, CWT and SST is $0.94$, $0.90$ and $0.76$ respectively, with the visualized results shown in Figure~\subref*{fig:compare_stft},~\subref*{fig:compare_cwt} and~\subref*{fig:compare_sst}. It is clear that the spectrogram obtained by STFT only shows the rough positions of each $v_1$, while CWT gives a sharp position for both vibrations, but the energy is still spread out. By further concentrating the energy distribution, SST produces the spectrogram with a relatively clean background and sharp peaks for the vibrations, reducing the burden of the deep-learning-based SCEG module in extracting latent features (i.e., $T_1$, $T_2$).
+The quality of the resultant spectrograms can be evaluated using \gls{pse}~\cite{wang2023vital}, with a small value indicating that the energy is concentrated around a certain frequency. The calculated PSE for the spectrogram produced by STFT, CWT and SST is $0.94$, $0.90$ and $0.76$ respectively, with the visualized results shown in Figure~\subref*{fig:compare_stft},~\subref*{fig:compare_cwt} and~\subref*{fig:compare_sst}. It is clear that the spectrogram obtained by STFT only shows the rough positions of each $v_1$, while CWT gives a sharp position for both vibrations, but the energy is still spread out. By further concentrating the energy distribution, SST produces the spectrogram with a relatively clean background and sharp peaks for the vibrations, reducing the burden of the deep-learning-based SCEG module in extracting latent features (i.e., $T_1$, $T_2$).
 
 \begin{figure}[tb]
         \centering
@@ -337,11 +338,11 @@ The last step of SCEG is to resample all the ECG pieces generated after the feat
 \subsubsection{Long-Term ECG Reconstruction}
 The long-term ECG reconstruction network adopts a similar encoder-decoder-fusion structure with SCEG as shown in Figure~\ref{fig:radarODE}(c), with the detailed structure and parameters shown in Table~\ref{tab:long_structure} and Figure~\ref{fig:tcn_net}. The encoder takes $50$ series of 4-sec time-domain radar signals as input and is composed of three groups of residual and downsample blocks with the deformable 2D convolution in Figure~\ref{fig:backbone} replaced by 1D convolution. Then, the decoder is realized by three Transconv1d blocks to generate the temporal feature.
 
-The temporal feature generated from decoder in Table~\ref{tab:long_structure} will be stacked with morphological feature as illustrated in Figure~\ref{fig:radarODE}(c), and these two features act as two channels for later feature fusion by the temporal convolutional network (TCN). In general, TCN adopts dilation 1D convolution (Dilated Conv1d) to process multi-channel data structure using expanded receptive field with gaps between elements as shown in Figure~\ref{fig:tcn_net}, and the feature fusion is achieved during channel reduction as a common technique in traditional convolution neural network~\cite{xue2023novel}. Specifically, the solid line in Figure~\ref{fig:tcn_net} shows the connection of a $4$-layer TCN with the gaps for each layer $l$ as $d=D^{l-1}-1$, and the output $y_T$ is predicted based on a receptive field of $15$ input feature points $\{a_{T-14},\dots,a_T\}$. In this chapter, $9$-layer Dilated Conv1d is adopted with dilation factor $D=2$ and kernel size $K=3$, and the receptive field is $511$ to make the most of contextual information contained in the temporal and morphological features.
+The temporal feature generated from decoder in Table~\ref{tab:long_structure} will be stacked with morphological feature as illustrated in Figure~\ref{fig:radarODE}(c), and these two features act as two channels for later feature fusion by the \gls{tcn}. In general, TCN adopts dilation 1D convolution (Dilated Conv1d) to process multi-channel data structure using expanded receptive field with gaps between elements as shown in Figure~\ref{fig:tcn_net}, and the feature fusion is achieved during channel reduction as a common technique in traditional convolution neural network~\cite{xue2023novel}. Specifically, the solid line in Figure~\ref{fig:tcn_net} shows the connection of a $4$-layer TCN with the gaps for each layer $l$ as $d=D^{l-1}-1$, and the output $y_T$ is predicted based on a receptive field of $15$ input feature points $\{a_{T-14},\dots,a_T\}$. In this chapter, $9$-layer Dilated Conv1d is adopted with dilation factor $D=2$ and kernel size $K=3$, and the receptive field is $511$ to make the most of contextual information contained in the temporal and morphological features.
 
 \section{Dataset and Implementation Details}\label{sec:odedataset}
 \subsection{Hardware and Environment Settings for Data Collection}
-The public dataset can be requested from~\cite{chen2022contactless} and is collected by the TI AWR-1843 radar with $77$~GHz start frequency and $3.8$~GHz bandwidth, providing good SNR and resolution to detect subtle vibrations that fit the proposed signal model and framework. To realize the 3D beamforming to extract cardiac features from real 3D space, $3$ transmitters (Tx) and $4$ receivers (Rx) are enabled with time division multiplexing multi-input multi-output (TDM-MIMO) applied in chirp transmitting and receiving.
+The public dataset can be requested from~\cite{chen2022contactless} and is collected by the TI AWR-1843 radar with $77$~GHz start frequency and $3.8$~GHz bandwidth, providing good SNR and resolution to detect subtle vibrations that fit the proposed signal model and framework. To realize the 3D beamforming to extract cardiac features from real 3D space, $3$ transmitters (Tx) and $4$ receivers (Rx) are enabled with \gls{tdmmimo} applied in chirp transmitting and receiving.
 
 The data collection is performed for subjects lying on the bed with quasi-static status to ensure good SNR with the least RBM noise. In addition, radar is placed right above the human chest region in a range of $0.4-0.5$m with minor propagation attenuation as shown in Figure~\ref{fig:env_set}, and hence the large- or small-scale signal variations (e.g., path loss, multi-path fading) are not considered in~\cite{chen2022contactless}.
 
@@ -517,8 +518,8 @@ The long-term ECG reconstruction module finally generates 3-minute-long ECG sign
 The ideal reconstructed ECG signals are shown in Figure~\subref*{fig:overall_ode} and~\subref*{fig:overall_mmecg} with corresponding RMSE/PCC labeled. However, the long-term ECG signal may contain corrupt parts due to the presence of body movements (especially in IB and PE). Figure~\subref*{fig:overall_noise} shows the corrupted ECG reconstruction yield by MMECG with the falsely detected R peaks noted as red dots, and Figure~\subref*{fig:overall_rcg} is the raw radar signal with extensive distortion induced by body movements. In contrast, the radarODE could still provide faithful ECG reconstructions under body movements due to the introduction of prior knowledge (ODE model) about ECG as the morphological reference, hence gaining certain robustness in resisting noises.
 \begin{figure}[tb]
     \centering
-    \subfloat[]{\label{fig:rmse_cdf}\includegraphics[width=0.33\columnwidth]{rmse_cdf.eps}}
-    \subfloat[]{\label{fig:cor_cdf}\includegraphics[width=0.33\columnwidth]{cor_cdf.eps}}
+    \subfloat[]{\label{fig:rmse_cdf}\includegraphics[width=0.35\columnwidth]{rmse_cdf.eps}}
+    \subfloat[]{\label{fig:cor_cdf}\includegraphics[width=0.35\columnwidth]{cor_cdf.eps}}
     \caption{Morphological accuracy comparison for all trials: (a) and (b) Overall CDF of RMSE and PCC for all trials.}
     \label{fig:rmse_cor}
 \end{figure}
@@ -533,8 +534,8 @@ The ideal reconstructed ECG signals are shown in Figure~\subref*{fig:overall_ode
 
 \begin{figure}[tb]
     \centering
-    \subfloat[]{\label{fig:rmse_phy}\includegraphics[width=0.33\columnwidth]{rmse_phy.eps}}
-    \subfloat[]{\label{fig:cor_phy}\includegraphics[width=0.33\columnwidth]{cor_phy.eps}}
+    \subfloat[]{\label{fig:rmse_phy}\includegraphics[width=0.35\columnwidth]{rmse_phy.eps}}
+    \subfloat[]{\label{fig:cor_phy}\includegraphics[width=0.35\columnwidth]{cor_phy.eps}}
     \caption{Morphological accuracy comparison for different physical statuses: (a) and (b) RMSE and PCC under different physical statuses.}
     \label{fig:rmse_cor3}
 \end{figure}
@@ -590,4 +591,4 @@ Figure~\subref*{fig:peak_phy_ode} and~\subref*{fig:peak_phy_mmecg} demonstrate t
 The experimental results illustrated that the proposed radarODE could yield high-quality long-term ECG recovery even under extensive body movement noise, with better RMSE and PCC compared with the benchmark. In addition, the introduction of the SST spectrogram and the ODE decoder further improves the accuracy of the fine-grained cardiac features that are crucial to the potential applications in clinical diagnosis.
 
 \section{Conclusions}\label{sec:odeconclusions}
-Radar-based ECG reconstruction is highly reliant on purely data-driven approaches and lacks theoretical support regarding the transformation between mechanical activities measured by radar and electrical activities described as ECG. This research aims to bridge the gap to realize the transformation from the mechanical domain to the electrical domain by proposing the signal model with fine-grained features considered and further designing a deep learning framework radarODE with morphological prior embedding as ODEs. The radarODE framework is validated on the public dataset containing $4.5$ hours of radar measurements with corresponding ablation study and comparisons with the benchmark. The experimental result shows that radarODE could achieve a better MDR, morphological accuracy and peak accuracy than the benchmark, proving the rationality of the proposed signal model and the effectiveness of the radarODE under various physical statuses and random body movement. In the future, the complexity of the deep learning model needs to be reduced by squeezing the input size, and several data augmentation techniques might be applied to alleviate the data shortages, especially for patients.
+Radar-based ECG reconstruction is highly reliant on purely data-driven approaches and lacks theoretical support regarding the transformation between mechanical activities measured by radar and electrical activities described as ECG. This research aims to bridge the gap to realize the transformation from the mechanical domain to the electrical domain by proposing the signal model with fine-grained features considered and further designing a deep learning framework radarODE with morphological prior embedding as ODEs. The radarODE framework is validated on the public dataset containing $4.5$ hours of radar measurements with corresponding ablation study and comparisons with the benchmark. The experimental result shows that radarODE could achieve a better MDR, morphological accuracy and peak accuracy than the benchmark, proving the rationality of the proposed signal model and the effectiveness of the radarODE under various physical statuses and random body movement.

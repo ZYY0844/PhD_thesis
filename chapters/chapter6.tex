@@ -1,5 +1,6 @@
+\glsresetall
 \chapter{Alleviate Data Scarcity for Radar-Based ECG Recovery} \label{ch:RFcardi}
-This chapter focuses on the data scarcity in the training of \gls{dnn} for radar-based ECG recovery. In the previous research, most studies either develop advanced signal processing methods to improve \gls{snr}~\cite{liu2024diversity,zhang2023overview} or leverage various deep learning frameworks to realize accurate ECG recovery~\cite{zhao2024airecg,zhang2024radarODE-MTL}. However, the method for reducing dependence on data quantity is rarely investigated for radar-based ECG recovery, and all the deep-learning-based ECG recovery models are trained in a supervised manner~\cite{chen2022contactless,zhao2024airecg,li2024radarnet}. In this chapter, a transfer learning framework is proposed following \gls{ssl} paradigm to extract cardio-related information from the radar signal without ECG ground truth based on the intrinsic sparsity of cardiac features, and only a few synchronous radar-ECG pairs are required to fine-tune the pre-trained model for the ECG recovery. In addition, a data augmentation method is designed to increase the diversity of input samples while the augmented spectrogram is still faithful to the original ground truth vital sign.
+This chapter focuses on the data scarcity in the training of \gls{dnn} for radar-based ECG recovery. In the previous research, most studies either develop advanced signal processing methods to improve SNR~\cite{liu2024diversity,zhang2023overview} or leverage various deep learning frameworks to realize accurate ECG recovery~\cite{zhao2024airecg,zhang2024radarODE-MTL}. However, the method for reducing dependence on data quantity is rarely investigated for radar-based ECG recovery, and all the deep-learning-based ECG recovery models are trained in a supervised manner~\cite{chen2022contactless,zhao2024airecg,li2024radarnet}. In this chapter, a transfer learning framework is proposed following \gls{ssl} paradigm to extract cardio-related information from the radar signal without ECG ground truth based on the intrinsic sparsity of cardiac features, and only a few synchronous radar-ECG pairs are required to fine-tune the pre-trained model for the ECG recovery. In addition, a data augmentation method is designed to increase the diversity of input samples while the augmented spectrogram is still faithful to the original ground truth vital sign.
 
 \section{Introduction}
 The trials on the radar-based ECG recovery can be categorized into two paradigms. The first paradigm only performs the extraction of high-resolution cardiac mechanical activities to produce quasi-ECG signals, omitting the morphological ECG features while maintaining certain fine-grained features. For example, the mostly adopted quasi-ECG signal only preserves R and T peaks and can be realized by signal decomposition~\cite{dong2024robust} or state estimation~\cite{ji2022rbhhm,xia2021radar}. In contrast, the second paradigm aims to reconstruct the ECG waveform as measured by clinical apparatus, because the doctor and ECG analysis toolbox all rely on the shape of ECG to make diagnosis~\cite{makowski2021neurokit2}. However, decoupling the ECG signal from the measured radar signal requires establishing an extremely complex model from the perspective of electrophysiology (i.e., excitation-contraction coupling~\cite{swift2021stop}), and the existing research can only leverage deep learning methods to learning such domain transformation from the dataset containing numerous radar/ECG pairs~\cite{chen2022contactless,wu2023contactless,wang2023ecg,zhang2024radarODE}.
@@ -21,7 +22,7 @@ In the literature, data augmentation and SSL are two popular methods to alleviat
 Based on the discussion above, the contributions of this study can be listed as: 
 \begin{itemize}
 \item A data augmentation method called Horcrux is designed for extracting cardiac features from radar by preserving the intrinsic time consistency hidden in the input radar spectrogram to restrict the potential distribution shift as illustrated in Figure~\ref{fig:hp_compare}, expanding the diversity of the limited training dataset without distorting the key features.
-\item A transfer learning framework RFcardi is proposed following a SSL paradigm to effectively learn the latent representations from radar signals by leveraging an appropriate pre-text task. Accordingly, this work further designates the sparse signal recovery (SSR) as the pre-text task, assisting the RFcardi to learn essential representations for the later ECG recovery.
+\item A transfer learning framework RFcardi is proposed following a SSL paradigm to effectively learn the latent representations from radar signals by leveraging an appropriate pre-text task. Accordingly, this work further designates the \gls{ssr} as the pre-text task, assisting the RFcardi to learn essential representations for the later ECG recovery.
 \item The experimental results illustrate that the proposed Horcrux outperforms the existing augmentation methods in both classification and regression tasks (i.e., heartbeat detection and ECG recovery). In addition, the pre-trained RFcardi framework can be easily adapted to realize radar-based ECG recovery with a small amount of synchronous radar-ECG measurements for fine-tuning. 
 \end{itemize}
 
@@ -44,7 +45,7 @@ The traditional augmentation methods either cannot be directly applied to the gr
 \end{figure}
 
 \subsection{Harmonic and Percussive Components Decomposition} 
-Signal decomposition is widely used in signal processing to identify components with different features and help the downstream algorithm extract target information e.g., ICA decomposes the signal from different sources based on statistical independence, and EMD decomposes the signal based on the oscillatory modes with different time scales~\cite{chen2022contactless}. Considering the nature of the cardiac activities, the radar signal reflected from the chest region reveals two characteristics on the spectrogram: (a) the stable components along certain frequency bands that represent either the heart rate frequency (near $1$Hz) or the center frequency of the prominent vibrations ($10-25$ Hz)~\cite{zhang2024radarODE-MTL}; (b) the transient components simply indicates the pulsatile heartbeats with large energy. In this research, these two components are named harmonic and percussive components (features) as highlighted in the red boxes in Figure~\ref{fig:HP_pipline}.
+Signal decomposition is widely used in signal processing to identify components with different features and help the downstream algorithm extract target information e.g., \gls{ica} decomposes the signal from different sources based on statistical independence, and \gls{emd} decomposes the signal based on the oscillatory modes with different time scales~\cite{chen2022contactless}. Considering the nature of the cardiac activities, the radar signal reflected from the chest region reveals two characteristics on the spectrogram: (a) the stable components along certain frequency bands that represent either the heart rate frequency (near $1$Hz) or the center frequency of the prominent vibrations ($10-25$ Hz)~\cite{zhang2024radarODE-MTL}; (b) the transient components simply indicates the pulsatile heartbeats with large energy. In this research, these two components are named harmonic and percussive components (features) as highlighted in the red boxes in Figure~\ref{fig:HP_pipline}.
 
 The decomposition process is based on the spectrogram $\mathcal{Y}(m, n)$ obtained using any time-frequency representation tools such as synchrosqueezed wavelet transform~\cite{zhang2024radarODE-MTL}, with $m$ and $n$ indicating the time frame index and frequency bin index, respectively. Then, the median filter $\mathcal{F}(\cdot)$ is applied along the time axis of $\mathcal{Y}(m,n)$ to get the harmonic-enhanced spectrogram as:
 \begin{equation}
@@ -108,7 +109,7 @@ Lastly, the harmonic spectrogram with zero mask is added with the percussive spe
 
 \section{Transfer Learning Framework Design}\label{sec:tf_design}
 \subsection{Deep Learning Model Design}
-In the previously designed data deep learning model~\cite{zhang2024radarODE-MTL}, the radar signals with hihg-SNR should be convert to spectrograms, providing extra frequency-domain information to assist model training. The deep learning model adopts the popular backbone-decoder structure as designed in~\cite{zhang2024radarODE-MTL}:
+In the previously designed data deep learning model~\cite{zhang2024radarODE-MTL}, the radar signals with high-SNR should be convert to spectrograms, providing extra frequency-domain information to assist model training. The deep learning model adopts the popular backbone-decoder structure as designed in~\cite{zhang2024radarODE-MTL}:
 \begin{itemize}
   \item The backbone leverages ResNet~\cite{he2020resnet} framework with deformable 2D convolution layer~\cite{dai2017deformable} to efficiently extract cardiac features from image-like spectrogram inputs.
   \item The decoder is based on 1D convolutional neural network (CNN) to generate corresponding signals either for the pre-text task or ECG signal recovery. 
@@ -160,12 +161,12 @@ The DTM module aims to figure out the most prominent vibrations for a certain ca
 
 \begin{figure}[tbp]
         \centering
-        \subfloat[]{\label{fig:eg_0}\includegraphics[width=0.45\columnwidth]{synthetic_signal_3.pdf}}
-        \subfloat[]{\label{fig:eg_1}\includegraphics[width=0.45\columnwidth]{synthetic_signal_0.pdf}}\\
-        \subfloat[]{\label{fig:eg_2}\includegraphics[width=0.45\columnwidth]{synthetic_signal_2.pdf}}
-        \subfloat[]{\label{fig:eg_3}\includegraphics[width=0.45\columnwidth]{synthetic_signal_1.pdf}}\\
-        \subfloat[]{\label{fig:eg_4}\includegraphics[width=0.45\columnwidth]{synthetic_signal_5.pdf}}
-        \subfloat[]{\label{fig:eg_5}\includegraphics[width=0.45\columnwidth]{synthetic_signal_6.pdf}}
+        \subfloat[]{\label{fig:eg_0}\includegraphics[width=0.4\columnwidth]{synthetic_signal_3.pdf}}
+        \subfloat[]{\label{fig:eg_1}\includegraphics[width=0.4\columnwidth]{synthetic_signal_0.pdf}}\\
+        \subfloat[]{\label{fig:eg_2}\includegraphics[width=0.4\columnwidth]{synthetic_signal_2.pdf}}
+        \subfloat[]{\label{fig:eg_3}\includegraphics[width=0.4\columnwidth]{synthetic_signal_1.pdf}}\\
+        \subfloat[]{\label{fig:eg_4}\includegraphics[width=0.4\columnwidth]{synthetic_signal_5.pdf}}
+        \subfloat[]{\label{fig:eg_5}\includegraphics[width=0.4\columnwidth]{synthetic_signal_6.pdf}}
         \caption{Identified vibrations using DTM for radar signals with various qualities (illustrated in normalized amplitude).}
         \label{fig:temp_match}
 \end{figure}
@@ -241,7 +242,7 @@ In addition, the H$\&$P decomposition itself also improves the cardiac features 
 
 \begin{figure}[tbp] 
     \centering 
-    \includegraphics[width=0.7\columnwidth]{performance.pdf}
+    \includegraphics[width=0.6\columnwidth]{performance.pdf}
     \caption{Performance of using different scales of the dataset.} 
     \label{fig:perfor} 
 \end{figure}
