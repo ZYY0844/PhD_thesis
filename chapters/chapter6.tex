@@ -22,7 +22,7 @@ In the literature, data augmentation and SSL are two popular methods to alleviat
 Based on the discussion above, the contributions of this study can be listed as: 
 \begin{itemize}
 \item A data augmentation method called Horcrux is designed for extracting cardiac features from radar by preserving the intrinsic time consistency hidden in the input radar spectrogram to restrict the potential distribution shift as illustrated in Figure~\ref{fig:hp_compare}, expanding the diversity of the limited training dataset without distorting the key features.
-\item A transfer learning framework RFcardi is proposed following a SSL paradigm to effectively learn the latent representations from radar signals by leveraging an appropriate pre-text task. Accordingly, this work further designates the \gls{ssr} as the pre-text task, assisting the RFcardi to learn essential representations for the later ECG recovery.
+\item A transfer learning framework RFcardi is proposed following an SSL paradigm to effectively learn the latent representations from radar signals by leveraging an appropriate pre-text task. Accordingly, this work further designates the \gls{ssr} as the pre-text task, assisting the RFcardi to learn essential representations for the later ECG recovery.
 \item The experimental results illustrate that the proposed Horcrux outperforms the existing augmentation methods in both classification and regression tasks (i.e., heartbeat detection and ECG recovery). In addition, the pre-trained RFcardi framework can be easily adapted to realize radar-based ECG recovery with a small amount of synchronous radar-ECG measurements for fine-tuning. 
 \end{itemize}
 
