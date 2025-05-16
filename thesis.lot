@@ -1,24 +1,24 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Parameters for data collection interface\relax }}{34}{table.caption.33}% 
-\contentsline {table}{\numberline {3.2}{\ignorespaces Performance of supervised ECG recovery\relax }}{39}{table.caption.41}% 
+\contentsline {table}{\numberline {3.1}{\ignorespaces Parameters for data collection interface\relax }}{34}{table.caption.32}% 
+\contentsline {table}{\numberline {3.2}{\ignorespaces Performance of supervised ECG recovery\relax }}{39}{table.caption.37}% 
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Structure and Parameters for SCEG\relax }}{52}{table.4.1}% 
-\contentsline {table}{\numberline {4.2}{\ignorespaces Default values for $\eta $\relax }}{56}{table.caption.52}% 
-\contentsline {table}{\numberline {4.3}{\ignorespaces Structure and Parameters for Long-term ECG Reconstruction\relax }}{59}{table.caption.53}% 
-\contentsline {table}{\numberline {4.4}{\ignorespaces Parameters for Link Budget Analysis\relax }}{62}{table.caption.57}% 
-\contentsline {table}{\numberline {4.5}{\ignorespaces Performance Comparison for Single-cycle ECG Recovery and Ablation Study\relax }}{67}{table.caption.63}% 
-\contentsline {table}{\numberline {4.6}{\ignorespaces Absolute Timing Error for Reconstructed ECG Peaks\relax }}{74}{table.caption.79}% 
+\contentsline {table}{\numberline {4.2}{\ignorespaces Default values for $\eta $\relax }}{56}{table.caption.48}% 
+\contentsline {table}{\numberline {4.3}{\ignorespaces Structure and Parameters for Long-term ECG Reconstruction\relax }}{59}{table.caption.49}% 
+\contentsline {table}{\numberline {4.4}{\ignorespaces Parameters for Link Budget Analysis\relax }}{62}{table.caption.53}% 
+\contentsline {table}{\numberline {4.5}{\ignorespaces Performance Comparison for Single-cycle ECG Recovery and Ablation Study\relax }}{67}{table.caption.59}% 
+\contentsline {table}{\numberline {4.6}{\ignorespaces Absolute Timing Error for Reconstructed ECG Peaks\relax }}{74}{table.caption.75}% 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Comparison of different optimization strategies on radar-based ECG recovery\relax }}{94}{table.caption.96}% 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Comparison of different optimization strategies on indoor scene understanding\relax }}{96}{table.caption.97}% 
-\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison of the frameworks under different SNR\relax }}{105}{table.caption.110}% 
-\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison of the frameworks under abrupt noises\relax }}{107}{table.caption.112}% 
+\contentsline {table}{\numberline {5.1}{\ignorespaces Comparison of different optimization strategies on radar-based ECG recovery\relax }}{94}{table.caption.92}% 
+\contentsline {table}{\numberline {5.2}{\ignorespaces Comparison of different optimization strategies on indoor scene understanding\relax }}{96}{table.caption.93}% 
+\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison of the frameworks under different SNR\relax }}{105}{table.caption.106}% 
+\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison of the frameworks under abrupt noises\relax }}{107}{table.caption.108}% 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Parameters for Signal Model\relax }}{117}{table.caption.116}% 
-\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of Different Augmentation Methods\relax }}{123}{table.caption.121}% 
-\contentsline {table}{\numberline {6.3}{\ignorespaces Ablation Study for Horcrux\relax }}{124}{table.caption.123}% 
-\contentsline {table}{\numberline {6.4}{\ignorespaces Performance of SSL with ablation study\relax }}{126}{table.caption.126}% 
-\contentsline {table}{\numberline {6.5}{\ignorespaces Performance of ECG Recovery using different percentages of labeled data\relax }}{127}{table.caption.128}% 
+\contentsline {table}{\numberline {6.1}{\ignorespaces Parameters for Signal Model\relax }}{117}{table.caption.112}% 
+\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of Different Augmentation Methods\relax }}{123}{table.caption.117}% 
+\contentsline {table}{\numberline {6.3}{\ignorespaces Ablation Study for Horcrux\relax }}{124}{table.caption.119}% 
+\contentsline {table}{\numberline {6.4}{\ignorespaces Performance of SSL with ablation study\relax }}{126}{table.caption.122}% 
+\contentsline {table}{\numberline {6.5}{\ignorespaces Performance of ECG Recovery using different percentages of labeled data\relax }}{127}{table.caption.124}% 
 \addvspace {10\p@ }

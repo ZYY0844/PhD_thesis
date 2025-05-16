@@ -11,7 +11,7 @@ Radar-based vital sign monitoring, as a popular branch of radar-based sensing, h
         \centering
         \subfloat[]{\label{fig:radar_good}\includegraphics[width=0.35\columnwidth]{radar_good.eps}}
         \subfloat[]{\label{fig:radar_bad}\includegraphics[width=0.35\columnwidth]{radar_bad.eps}} 
-        \caption{Challenges for radar-based ECG recovery: (a) and (b) Radar signals with high and low SNR for adjacent points with a distance of $0.03$m.}
+        \caption{Challenges for high-SNR signal collection: (a) and (b) Radar signals with high and low SNR for adjacent points with a distance of $0.03$m.}
         \label{fig:challenges}
 \end{figure}
 Based on the discussion Chapter~\ref{sec:the_first_challenge}, it is still a challenge to precisely locate and track the cardiac location during data collection to efficiently extract high-SNR radar signal. Although, it is natural to think the high-SNR radar signal can be searched in a constrained space by optimization, there is no appropriate method to assess the signal SNR in terms of cardiac features contained, and the objective space is actually highly discontinuous with adjacent points may revealing totally different SNR as shown in Figure~\subref*{fig:radar_good} and~\subref*{fig:radar_bad}, restricting the application of common gradient-based optimization algorithms. To address these issues, the contributions of this study can be listed as: 
@@ -170,8 +170,8 @@ The searching step enables the finding of better points $E_i$ in a broad space, 
 The visualization of the CFT algorithm in Figure~\ref{fig:CFTRFcardi}(b) shows that initial iterations search in a large space, and the algorithm could jump out of the green local minima to find the red CF point within the fine blue grid points. In addition, the tracking of the CF points along time can be naturally realized by repeating Algorithm~\ref{alg:CFT} with previous $E_b$ as the new $E_0$, and the SNR evaluated on the previous point might have already achieved SNR$_d$ due to the quasi-static human body, saving a huge amount of time for calculating useless channel information for filtering or clustering~\cite{li2024radarnet,chen2022contactless,liu2024diversity}. 
 
 \section{Details of Experiment and Dataset}\label{sec:cftexp}
-\subsection{Experimental Details}\label{sec:cftdata_coll}
-\subsubsection{Dataset Collection and Preparation}
+\subsection{Dataset Collection and Preparation}\label{sec:cftdata_coll}
+% \subsubsection{Dataset Collection and Preparation}
 The dataset contains a total of $80$-minute synchronous radar-ECG pairs collected for $5$ healthy subjects ($3$ men, $2$ women) in $2$ indoor scenarios as shown in Figure~\ref{fig:data_col}. The subjects are asked to sit causally and are allowed to change postures during data collection, and each data trial lasts for $1$ minute. The distance between radar and human body varies from $0.5-1.2$m, and a longer distance causes the decrease of signal SNR with a smaller portion of the space points containing useful cardiac features. 
 
 TI-AWR 1843 radar with $2$ Tx and $4$ Rx is used for data collection with $8$ virtual antenna channels created~\cite{AWR1843}, and the radar configurations are listed in Table~\ref{tab:data_param} with the name provided in TI mmWave-Studio interface. The signal will be sampled as $200$Hz, and only a band-pass filter from $0.5$ to $50$Hz and a differentiator are used for removing respiration noise because the radar signal extracted from CF points already has high SNR. Lastly, the ECG ground truth is collected using TI ADS1292, and the related ECG processing (e.g., smoothing and peak finding) is realized by NeuroKit2 python package~\cite{makowski2021neurokit2}.
@@ -242,8 +242,7 @@ The comparison is performed with the representative methods based on accumulatio
 \end{figure*}
 
 \section{Experimental Results and Evaluations}\label{sec:cftresult}
-\subsection{Performance of CFT Algorithm}
-\subsubsection{Effectiveness of CFT Algorithm}
+\subsection{Effectiveness of CFT Algorithm}
 The examples of the extracted radar signal for different methods are shown in Figure~\ref{fig:compare_overall}, illustrating that precise cardiac localization has a huge effect on the signal quality. For example, if the rough body location is around CF point, all three methods can obtain high-SNR signals with clear first and second vibrations using either space search (CFT, Figure~\subref*{fig:bf_good}), clustering (MMECG, Figure~\subref*{fig:MMECG_good}) or accumulation (De-ViMo, Figure~\subref*{fig:vimo_good}). 
 
 In contrast, only a few range bins will contain useful cardiac features if the rough body location is far from CF points, especially when increasing the monitoring range. Therefore, the signal accumulation may enhance the noises as shown in Figure~\subref*{fig:vimo_bad} while the signal clustering may also encounter a failure due to the lack of homogeneous cardiac signals as shown in Figure~\subref*{fig:MMECG_bad}. However, The proposed CFT could precisely locate the CF point with good SNR subject to the designed signal template and DFO searching strategy, and the extracted radar signal still shows clear peaks as shown in Figure~\subref*{fig:bf_bad}.
@@ -258,7 +257,7 @@ During the data collection of this study, the subjects are allowed to change pos
   \caption{Illustration of performance in terms of peak error and MDR: (a) - (b) Scattered points with fitting curves along range axis; (c) - (d) CDF plots for all trails.}
   \label{fig:range_impact}
 \end{figure}
-\subsubsection{Impact of Monitoring Range}
+\subsection{Impact of Monitoring Range}
 To evaluate the performance of different methods when increasing the monitoring range, the quality of extracted radar signals for all trials is evaluated in terms of:
 \begin{itemize}
 \item Absolute Peak error between ECG R peaks and the dominant peaks for the first vibrations in radar signal.
@@ -270,7 +269,7 @@ Figure~\subref*{fig:pk_err_point} and~\subref*{fig:pk_mdr_point} illustrate the 
 In addition, the \gls{cdf} plots for all trials are shown in Figure~\subref*{fig:pk_err_cdf} and~\subref*{fig:pk_mdr_cdf}. The proposed CFT algorithm achieves the best peak error with a median value of $0.022$~sec, while DE-ViMo and MMECG have worse performances with larger median values of $0.028$~sec and $0.033$~sec, respectively. Similarly, the precise localization and tracking of CF point also reduces the MDR for CFT results with a median value of $14\%$, while DE-ViMo and MMECG may affected by the accumulated noise or inaccurate cardiac localization with the median MDR of $17\%$ and $23\%$, respectively.
 
 
-\subsubsection{Impact of Signal Quality on ECG Recovery}
+\subsection{Impact of Signal Quality on ECG Recovery}
 The signals extracted using different methods are used for supervised training to verify the impact of different input qualities on the ECG recovery task. The quality of the recovered ECG signal is assessed in terms of:
 \begin{itemize}
 \item The morphological accuracy is measured using MSE and \Gls{pcc}, with MSE sensitive to the peak deviation and PCC focusing on the similarity between the ECG patterns.

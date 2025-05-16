@@ -6,8 +6,8 @@
 \contentsline {chapter}{List of Tables}{xvii}{chapter*.9}% 
 \contentsline {chapter}{List of Acronyms}{xx}{chapter*.11}% 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Wireless Sensing for Vital Sign Monitoring}{1}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}Radar-based Vital Sign Monitoring}{2}{section.1.2}% 
+\contentsline {section}{\numberline {1.1}Wireless Sensing for Vital Sign Monitoring}{2}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Radar-based Vital Sign Monitoring}{3}{section.1.2}% 
 \contentsline {section}{\numberline {1.3}Challenges in Radar-based ECG Recovery}{5}{section.1.3}% 
 \contentsline {subsection}{\numberline {1.3.1}The First Challenge}{5}{subsection.1.3.1}% 
 \contentsline {subsection}{\numberline {1.3.2}The Second Challenge}{7}{subsection.1.3.2}% 
@@ -37,29 +37,27 @@
 \contentsline {subsubsection}{Template Design for Assessing SNR}{29}{section*.27}% 
 \contentsline {subsubsection}{Derivative-free Optimization (DFO)}{29}{section*.29}% 
 \contentsline {section}{\numberline {3.3}Details of Experiment and Dataset}{33}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Experimental Details}{33}{subsection.3.3.1}% 
-\contentsline {subsubsection}{Dataset Collection and Preparation}{33}{section*.31}% 
+\contentsline {subsection}{\numberline {3.3.1}Dataset Collection and Preparation}{33}{subsection.3.3.1}% 
 \contentsline {subsection}{\numberline {3.3.2}Implementation Details}{35}{subsection.3.3.2}% 
-\contentsline {subsubsection}{Parameters for CFT Algorithm}{35}{section*.34}% 
-\contentsline {subsubsection}{Deep Learning Model Training}{35}{section*.35}% 
+\contentsline {subsubsection}{Parameters for CFT Algorithm}{35}{section*.33}% 
+\contentsline {subsubsection}{Deep Learning Model Training}{35}{section*.34}% 
 \contentsline {subsection}{\numberline {3.3.3}Methods for Comparison}{35}{subsection.3.3.3}% 
 \contentsline {section}{\numberline {3.4}Experimental Results and Evaluations}{36}{section.3.4}% 
-\contentsline {subsection}{\numberline {3.4.1}Performance of CFT Algorithm}{36}{subsection.3.4.1}% 
-\contentsline {subsubsection}{Effectiveness of CFT Algorithm}{36}{section*.37}% 
-\contentsline {subsubsection}{Impact of Monitoring Range}{37}{section*.39}% 
-\contentsline {subsubsection}{Impact of Signal Quality on ECG Recovery}{39}{section*.40}% 
+\contentsline {subsection}{\numberline {3.4.1}Effectiveness of CFT Algorithm}{36}{subsection.3.4.1}% 
+\contentsline {subsection}{\numberline {3.4.2}Impact of Monitoring Range}{37}{subsection.3.4.2}% 
+\contentsline {subsection}{\numberline {3.4.3}Impact of Signal Quality on ECG Recovery}{39}{subsection.3.4.3}% 
 \contentsline {section}{\numberline {3.5}Conclusions}{40}{section.3.5}% 
 \contentsline {chapter}{\numberline {4}Robust Single-Cycle ECG Generation}{42}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Introduction}{42}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}Methodology}{45}{section.4.2}% 
 \contentsline {subsection}{\numberline {4.2.1}Overview}{45}{subsection.4.2.1}% 
 \contentsline {subsection}{\numberline {4.2.2}Model for Radar Signal and Pre-Processing}{46}{subsection.4.2.2}% 
-\contentsline {subsubsection}{Fine-Grained Model for Radar Signal}{46}{section*.44}% 
-\contentsline {subsubsection}{Signal Pre-Processing with Synchrosqueezed Wavelet Transform (SST)}{47}{section*.45}% 
+\contentsline {subsubsection}{Fine-Grained Model for Radar Signal}{46}{section*.40}% 
+\contentsline {subsubsection}{Signal Pre-Processing with Synchrosqueezed Wavelet Transform (SST)}{47}{section*.41}% 
 \contentsline {subsection}{\numberline {4.2.3}radarODE Framework Design}{49}{subsection.4.2.3}% 
-\contentsline {subsubsection}{Single-cycle ECG Length Estimation}{49}{section*.47}% 
-\contentsline {subsubsection}{Single-cycle ECG Generator (SCEG)}{51}{section*.49}% 
-\contentsline {subsubsection}{Long-Term ECG Reconstruction}{58}{section*.55}% 
+\contentsline {subsubsection}{Single-cycle ECG Length Estimation}{49}{section*.43}% 
+\contentsline {subsubsection}{Single-cycle ECG Generator (SCEG)}{51}{section*.45}% 
+\contentsline {subsubsection}{Long-Term ECG Reconstruction}{58}{section*.51}% 
 \contentsline {section}{\numberline {4.3}Dataset and Implementation Details}{60}{section.4.3}% 
 \contentsline {subsection}{\numberline {4.3.1}Hardware and Environment Settings for Data Collection}{60}{subsection.4.3.1}% 
 \contentsline {subsection}{\numberline {4.3.2}Link Budget Analysis}{60}{subsection.4.3.2}% 
@@ -68,28 +66,28 @@
 \contentsline {section}{\numberline {4.4}Experimental Results and Evaluations}{63}{section.4.4}% 
 \contentsline {subsection}{\numberline {4.4.1}Evaluations of PPI Estimation}{64}{subsection.4.4.1}% 
 \contentsline {subsection}{\numberline {4.4.2}Evaluations of SCEG Module in radarODE}{64}{subsection.4.4.2}% 
-\contentsline {subsubsection}{Comparison of Morphological Accuracy}{64}{section*.60}% 
-\contentsline {subsubsection}{Comparison of Corrupt ECG Recovery}{65}{section*.61}% 
-\contentsline {subsubsection}{Comparison of R-peak Timing Error}{67}{section*.62}% 
-\contentsline {subsubsection}{Ablation Study}{67}{section*.66}% 
-\contentsline {subsubsection}{Visualization of Training Process}{68}{section*.69}% 
-\contentsline {subsubsection}{Summary of SCEG Evaluation}{69}{section*.70}% 
+\contentsline {subsubsection}{Comparison of Morphological Accuracy}{64}{section*.56}% 
+\contentsline {subsubsection}{Comparison of Corrupt ECG Recovery}{65}{section*.57}% 
+\contentsline {subsubsection}{Comparison of R-peak Timing Error}{67}{section*.58}% 
+\contentsline {subsubsection}{Ablation Study}{67}{section*.62}% 
+\contentsline {subsubsection}{Visualization of Training Process}{68}{section*.65}% 
+\contentsline {subsubsection}{Summary of SCEG Evaluation}{69}{section*.66}% 
 \contentsline {subsection}{\numberline {4.4.3}Overall Evaluations of radarODE}{70}{subsection.4.4.3}% 
-\contentsline {subsubsection}{Corrupt ECG Reconstruction}{70}{section*.71}% 
-\contentsline {subsubsection}{Morphological Accuracy}{71}{section*.75}% 
-\contentsline {subsubsection}{Fine-Grained Cardiac Events Reconstruction}{73}{section*.78}% 
-\contentsline {subsubsection}{Summary of Long-term ECG Recovery Evaluation}{75}{section*.80}% 
+\contentsline {subsubsection}{Corrupt ECG Reconstruction}{70}{section*.67}% 
+\contentsline {subsubsection}{Morphological Accuracy}{71}{section*.71}% 
+\contentsline {subsubsection}{Fine-Grained Cardiac Events Reconstruction}{73}{section*.74}% 
+\contentsline {subsubsection}{Summary of Long-term ECG Recovery Evaluation}{75}{section*.76}% 
 \contentsline {section}{\numberline {4.5}Conclusions}{75}{section.4.5}% 
 \contentsline {chapter}{\numberline {5}Robust Long-Term ECG Generation}{77}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}Introduction}{78}{section.5.1}% 
 \contentsline {section}{\numberline {5.2}Background and Problem Statement}{80}{section.5.2}% 
 \contentsline {subsection}{\numberline {5.2.1}Model for Domain Transformation and Problem Statement}{80}{subsection.5.2.1}% 
-\contentsline {subsubsection}{Signal Model for Cardiac Mechanical Activities}{80}{section*.82}% 
-\contentsline {subsubsection}{Model of Domain Transformation}{81}{section*.83}% 
-\contentsline {subsubsection}{Problem Statement for Domain Transformation}{82}{section*.84}% 
+\contentsline {subsubsection}{Signal Model for Cardiac Mechanical Activities}{80}{section*.78}% 
+\contentsline {subsubsection}{Model of Domain Transformation}{81}{section*.79}% 
+\contentsline {subsubsection}{Problem Statement for Domain Transformation}{82}{section*.80}% 
 \contentsline {subsection}{\numberline {5.2.2}Optimization Strategies for MTL}{82}{subsection.5.2.2}% 
-\contentsline {subsubsection}{Optimization of MTL Network}{82}{section*.85}% 
-\contentsline {subsubsection}{Problem Statement for Designing MTL Optimization Strategies}{83}{section*.86}% 
+\contentsline {subsubsection}{Optimization of MTL Network}{82}{section*.81}% 
+\contentsline {subsubsection}{Problem Statement for Designing MTL Optimization Strategies}{83}{section*.82}% 
 \contentsline {section}{\numberline {5.3}Methodology}{85}{section.5.3}% 
 \contentsline {subsection}{\numberline {5.3.1}Overview of radarODE-MTL with EGA Strategy}{85}{subsection.5.3.1}% 
 \contentsline {subsection}{\numberline {5.3.2}Backbone and Encoder}{85}{subsection.5.3.2}% 
@@ -97,26 +95,26 @@
 \contentsline {subsection}{\numberline {5.3.4}ECG Anchor Decoder and Cycle Length Decoder}{86}{subsection.5.3.4}% 
 \contentsline {subsection}{\numberline {5.3.5}Input, Output and Loss Function}{87}{subsection.5.3.5}% 
 \contentsline {subsection}{\numberline {5.3.6}Eccentric Gradient Alignment (EGA) Strategy}{87}{subsection.5.3.6}% 
-\contentsline {subsubsection}{Preparations for EGA Optimization}{89}{section*.89}% 
-\contentsline {subsubsection}{Gradients Projection and Normalization}{89}{section*.90}% 
-\contentsline {subsubsection}{Eccentric Gradient Alignment}{90}{section*.91}% 
+\contentsline {subsubsection}{Preparations for EGA Optimization}{89}{section*.85}% 
+\contentsline {subsubsection}{Gradients Projection and Normalization}{89}{section*.86}% 
+\contentsline {subsubsection}{Eccentric Gradient Alignment}{90}{section*.87}% 
 \contentsline {section}{\numberline {5.4}Experimental Setting and Result Evaluation}{92}{section.5.4}% 
 \contentsline {subsection}{\numberline {5.4.1}Dataset and Implementation}{92}{subsection.5.4.1}% 
-\contentsline {subsubsection}{Dataset for ECG Recovery}{92}{section*.92}% 
-\contentsline {subsubsection}{Dataset for Evaluating EGA}{93}{section*.93}% 
-\contentsline {subsubsection}{Implementation Details}{93}{section*.94}% 
+\contentsline {subsubsection}{Dataset for ECG Recovery}{92}{section*.88}% 
+\contentsline {subsubsection}{Dataset for Evaluating EGA}{93}{section*.89}% 
+\contentsline {subsubsection}{Implementation Details}{93}{section*.90}% 
 \contentsline {subsection}{\numberline {5.4.2}Performance of EGA}{93}{subsection.5.4.2}% 
-\contentsline {subsubsection}{Radar-based ECG Recovery}{93}{section*.95}% 
-\contentsline {subsubsection}{Indoor Scene Understanding}{96}{section*.98}% 
+\contentsline {subsubsection}{Radar-based ECG Recovery}{93}{section*.91}% 
+\contentsline {subsubsection}{Indoor Scene Understanding}{96}{section*.94}% 
 \contentsline {subsection}{\numberline {5.4.3}Evaluations on the Long-term Recovered ECG}{98}{subsection.5.4.3}% 
-\contentsline {subsubsection}{General Visualization for ECG Reconstruction}{98}{section*.99}% 
-\contentsline {subsubsection}{Corrupt ECG Reconstruction}{99}{section*.102}% 
-\contentsline {subsubsection}{Coarse Cardiac Feature Reconstruction}{101}{section*.104}% 
-\contentsline {subsubsection}{Fine-Grained Morphological Feature Reconstruction}{101}{section*.105}% 
-\contentsline {subsubsection}{Fine-Grained ECG Peaks Reconstruction}{102}{section*.107}% 
+\contentsline {subsubsection}{General Visualization for ECG Reconstruction}{98}{section*.95}% 
+\contentsline {subsubsection}{Corrupt ECG Reconstruction}{99}{section*.98}% 
+\contentsline {subsubsection}{Coarse Cardiac Feature Reconstruction}{101}{section*.100}% 
+\contentsline {subsubsection}{Fine-Grained Morphological Feature Reconstruction}{101}{section*.101}% 
+\contentsline {subsubsection}{Fine-Grained ECG Peaks Reconstruction}{102}{section*.103}% 
 \contentsline {subsection}{\numberline {5.4.4}Noise Robustness Test}{103}{subsection.5.4.4}% 
-\contentsline {subsubsection}{Constant Noise}{103}{section*.109}% 
-\contentsline {subsubsection}{Abrupt Noise}{105}{section*.113}% 
+\contentsline {subsubsection}{Constant Noise}{103}{section*.105}% 
+\contentsline {subsubsection}{Abrupt Noise}{105}{section*.109}% 
 \contentsline {section}{\numberline {5.5}Conclusions}{108}{section.5.5}% 
 \contentsline {chapter}{\numberline {6}Alleviate Data Scarcity for Radar-Based ECG Recovery}{110}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}Introduction}{111}{section.6.1}% 
@@ -129,18 +127,18 @@
 \contentsline {subsection}{\numberline {6.3.1}Deep Learning Model Design}{117}{subsection.6.3.1}% 
 \contentsline {subsection}{\numberline {6.3.2}Pre-text Task Training and Fine-tuning}{118}{subsection.6.3.2}% 
 \contentsline {section}{\numberline {6.4}Experimental Results for Horcrux}{120}{section.6.4}% 
-\contentsline {subsubsection}{Evaluation Metrics}{120}{section*.118}% 
+\contentsline {subsubsection}{Evaluation Metrics}{120}{section*.114}% 
 \contentsline {subsection}{\numberline {6.4.1}Evaluation for DTM}{121}{subsection.6.4.1}% 
 \contentsline {subsection}{\numberline {6.4.2}Evaluation for Horcrux}{121}{subsection.6.4.2}% 
-\contentsline {subsubsection}{Comparison with State-of-the-art Methods}{121}{section*.120}% 
-\contentsline {subsubsection}{Ablation Study}{123}{section*.122}% 
-\contentsline {subsubsection}{Performance under Different Dataset Scale}{124}{section*.125}% 
+\contentsline {subsubsection}{Comparison with State-of-the-art Methods}{121}{section*.116}% 
+\contentsline {subsubsection}{Ablation Study}{123}{section*.118}% 
+\contentsline {subsubsection}{Performance under Different Dataset Scale}{124}{section*.121}% 
 \contentsline {section}{\numberline {6.5}Experimental Results for RFcardi}{125}{section.6.5}% 
 \contentsline {subsection}{\numberline {6.5.1}Evaluations and Ablation Studies of SSL}{125}{subsection.6.5.1}% 
 \contentsline {subsection}{\numberline {6.5.2}Evaluations of Fine-tuning Results}{127}{subsection.6.5.2}% 
 \contentsline {subsection}{\numberline {6.5.3}Summary of Transfer-learning-based ECG Recovery}{129}{subsection.6.5.3}% 
 \contentsline {section}{\numberline {6.6}Conclusion}{130}{section.6.6}% 
-\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{131}{chapter.7}% 
+\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{131}{chapter.7}% 
 \contentsline {section}{\numberline {7.1}Conclusions}{131}{section.7.1}% 
 \contentsline {section}{\numberline {7.2}Future Work}{132}{section.7.2}% 
 \contentsline {chapter}{References}{134}{section.7.2}% 

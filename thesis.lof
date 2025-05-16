@@ -9,7 +9,7 @@
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{19}{subfigure.2.3}% 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{19}{subfigure.2.4}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Challenges for radar-based ECG recovery: (a) and (b) Radar signals with high and low SNR for adjacent points with a distance of $0.03$m.\relax }}{24}{figure.caption.22}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Challenges for high-SNR signal collection: (a) and (b) Radar signals with high and low SNR for adjacent points with a distance of $0.03$m.\relax }}{24}{figure.caption.22}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{24}{subfigure.1.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{24}{subfigure.1.2}% 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of using CFT for radar-based ECG covery: (a) Rough localization of human body; (b) Use CFT to find CF point and extract high-SNR radar signals; (c) Deep learning for ECG recovery.\relax }}{26}{figure.caption.23}% 
@@ -23,133 +23,133 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{31}{subfigure.5.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{31}{subfigure.5.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{31}{subfigure.5.3}% 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Indoor scenarios for data collection.\relax }}{34}{figure.caption.32}% 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Visualization of the extracted radar signal for all methods: (a) - (c) If CF point is around rough body location; (d) - (f) If CF point is far from rough body location.\relax }}{36}{figure.caption.36}% 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Indoor scenarios for data collection.\relax }}{34}{figure.caption.31}% 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Visualization of the extracted radar signal for all methods: (a) - (c) If CF point is around rough body location; (d) - (f) If CF point is far from rough body location.\relax }}{36}{figure.caption.35}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{36}{subfigure.7.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{36}{subfigure.7.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{36}{subfigure.7.3}% 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{36}{subfigure.7.4}% 
 \contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{36}{subfigure.7.5}% 
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{36}{subfigure.7.6}% 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Illustration of performance in terms of peak error and MDR: (a) - (b) Scattered points with fitting curves along range axis; (c) - (d) CDF plots for all trails.\relax }}{38}{figure.caption.38}% 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Illustration of performance in terms of peak error and MDR: (a) - (b) Scattered points with fitting curves along range axis; (c) - (d) CDF plots for all trails.\relax }}{38}{figure.caption.36}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{38}{subfigure.8.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{38}{subfigure.8.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{38}{subfigure.8.3}% 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{38}{subfigure.8.4}% 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Impact of radar input quality on the final ECG recovery: (a) - (b) High-quality radar input and ECG recovery; (c) - (d) Low-quality radar input and ECG recovery.\relax }}{40}{figure.caption.42}% 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Impact of radar input quality on the final ECG recovery: (a) - (b) High-quality radar input and ECG recovery; (c) - (d) Low-quality radar input and ECG recovery.\relax }}{40}{figure.caption.38}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{40}{subfigure.9.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{40}{subfigure.9.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{40}{subfigure.9.3}% 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{40}{subfigure.9.4}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Overview of the radarODE framework for domain transformation: (a) Single-cycle ECG length (PPI) estimation; (b) Single-cycle ECG generator; (c) Long-term ECG reconstruction.\relax }}{45}{figure.caption.43}% 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Spectrograms obtained from the same radar signal: (a) Radar signal $\mathaccentV {tilde}07E{x}(t)$; (b) STFT result; (c) CWT result; (d) SST result with $T_1$, $T_2$ labeled, revealing concentrated energy around vibrations and clean background.\relax }}{49}{figure.caption.46}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Overview of the radarODE framework for domain transformation: (a) Single-cycle ECG length (PPI) estimation; (b) Single-cycle ECG generator; (c) Long-term ECG reconstruction.\relax }}{45}{figure.caption.39}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Spectrograms obtained from the same radar signal: (a) Radar signal $\mathaccentV {tilde}07E{x}(t)$; (b) STFT result; (c) CWT result; (d) SST result with $T_1$, $T_2$ labeled, revealing concentrated energy around vibrations and clean background.\relax }}{49}{figure.caption.42}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{49}{subfigure.2.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{49}{subfigure.2.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{49}{subfigure.2.3}% 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{49}{subfigure.2.4}% 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Energy plot of the synchronous radar signals with different detected peaks: (a) Energy plot with high SNR and correct detection; (b) Energy plot with low SNR and wrong detection.\relax }}{50}{figure.caption.48}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Energy plot of the synchronous radar signals with different detected peaks: (a) Energy plot with high SNR and correct detection; (b) Energy plot with low SNR and wrong detection.\relax }}{50}{figure.caption.44}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{50}{subfigure.3.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{50}{subfigure.3.2}% 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Architecture of SCEG with SST segments as input and single-cycle ECG pieces as output.\relax }}{52}{figure.caption.50}% 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Structure of backbone composed of residual block and downsample block: DeformConv2d means deformable 2D convolution, BN is batch normalization, and ReLU is the rectified linear unit activation function.\relax }}{55}{figure.caption.51}% 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces The structure of the $9$-layer TCN with dilation factor $D=2$ and kernel size $K=3$.\relax }}{58}{figure.caption.54}% 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Environment settings for data collection from quasi-static subject\nobreakspace {}\cite {chen2022contactless}.\relax }}{61}{figure.caption.56}% 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces PPI estimation error of KDE-based and mean-based method: (a) View of different subjects; (b) View of different physiological statuses; (c) CDF for the overall PPI estimation error.\relax }}{65}{figure.caption.58}% 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Architecture of SCEG with SST segments as input and single-cycle ECG pieces as output.\relax }}{52}{figure.caption.46}% 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Structure of backbone composed of residual block and downsample block: DeformConv2d means deformable 2D convolution, BN is batch normalization, and ReLU is the rectified linear unit activation function.\relax }}{55}{figure.caption.47}% 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The structure of the $9$-layer TCN with dilation factor $D=2$ and kernel size $K=3$.\relax }}{58}{figure.caption.50}% 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Environment settings for data collection from quasi-static subject\nobreakspace {}\cite {chen2022contactless}.\relax }}{61}{figure.caption.52}% 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces PPI estimation error of KDE-based and mean-based method: (a) View of different subjects; (b) View of different physiological statuses; (c) CDF for the overall PPI estimation error.\relax }}{65}{figure.caption.54}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{65}{subfigure.8.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{65}{subfigure.8.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{65}{subfigure.8.3}% 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Performance comparison for single-cycle ECG recovery: (a) - (d) CDF of RMSE, PCC, MDR and R-peak error for all trials.\relax }}{66}{figure.caption.59}% 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Performance comparison for single-cycle ECG recovery: (a) - (d) CDF of RMSE, PCC, MDR and R-peak error for all trials.\relax }}{66}{figure.caption.55}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{66}{subfigure.9.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{66}{subfigure.9.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{66}{subfigure.9.3}% 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{66}{subfigure.9.4}% 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Ablation study for training process: (a) Rigid reconstruction (ODE Recon.) from ODE decoder with ground truth (GT); (b) Training loss comparison.\relax }}{68}{figure.caption.64}% 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Ablation study for training process: (a) Rigid reconstruction (ODE Recon.) from ODE decoder with ground truth (GT); (b) Training loss comparison.\relax }}{68}{figure.caption.60}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{68}{subfigure.10.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{68}{subfigure.10.2}% 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Visualization of misalignment: (a) and (b) High- and Low-fidelity morphological references (Ref.) caused by PPI estimation error.\relax }}{69}{figure.caption.65}% 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Visualization of misalignment: (a) and (b) High- and Low-fidelity morphological references (Ref.) caused by PPI estimation error.\relax }}{69}{figure.caption.61}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{69}{subfigure.11.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{69}{subfigure.11.2}% 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Corrupt ECG reconstruction: (a) and (b) Ideal reconstruction results for radarODE and MMECG; (c) Corrupt ECG reconstruction yield by MMECG and faithful reconstruction from radarODE; (d) Corresponding radar signal during body movements.\relax }}{70}{figure.caption.67}% 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Corrupt ECG reconstruction: (a) and (b) Ideal reconstruction results for radarODE and MMECG; (c) Corrupt ECG reconstruction yield by MMECG and faithful reconstruction from radarODE; (d) Corresponding radar signal during body movements.\relax }}{70}{figure.caption.63}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{70}{subfigure.12.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{70}{subfigure.12.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{70}{subfigure.12.3}% 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{70}{subfigure.12.4}% 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Statistical results for corrupt ECG reconstruction: (a) Overall missed detection rate (MDR); (b) MDR under different physical statuses.\relax }}{71}{figure.caption.68}% 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Statistical results for corrupt ECG reconstruction: (a) Overall missed detection rate (MDR); (b) MDR under different physical statuses.\relax }}{71}{figure.caption.64}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{71}{subfigure.13.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{71}{subfigure.13.2}% 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Morphological accuracy comparison for all trials: (a) and (b) Overall CDF of RMSE and PCC for all trials.\relax }}{72}{figure.caption.72}% 
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Morphological accuracy comparison for all trials: (a) and (b) Overall CDF of RMSE and PCC for all trials.\relax }}{72}{figure.caption.68}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{72}{subfigure.14.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{72}{subfigure.14.2}% 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Morphological accuracy comparison across all subjects: (a) and (b) RMSE and PCC across all subjects.\relax }}{73}{figure.caption.73}% 
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Morphological accuracy comparison across all subjects: (a) and (b) RMSE and PCC across all subjects.\relax }}{73}{figure.caption.69}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{73}{subfigure.15.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{73}{subfigure.15.2}% 
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Morphological accuracy comparison for different physical statuses: (a) and (b) RMSE and PCC under different physical statuses.\relax }}{74}{figure.caption.74}% 
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Morphological accuracy comparison for different physical statuses: (a) and (b) RMSE and PCC under different physical statuses.\relax }}{74}{figure.caption.70}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{74}{subfigure.16.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{74}{subfigure.16.2}% 
-\contentsline {figure}{\numberline {4.17}{\ignorespaces CDF of the overall timing error.\relax }}{75}{figure.caption.76}% 
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Evaluations of fine-grained cardiac events: (a) and (b) The timing error for different peaks under various physical statuses for radarODE and MMECG.\relax }}{76}{figure.caption.77}% 
+\contentsline {figure}{\numberline {4.17}{\ignorespaces CDF of the overall timing error.\relax }}{75}{figure.caption.72}% 
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Evaluations of fine-grained cardiac events: (a) and (b) The timing error for different peaks under various physical statuses for radarODE and MMECG.\relax }}{76}{figure.caption.73}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{76}{subfigure.18.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{76}{subfigure.18.2}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The impact of strong noise and misalignment: (a) ECG recovery distorted by RBM noise\nobreakspace {}\cite {chen2022contactless}; (b) Misaligned ECG recovery due to the inaccurate PPI estimation\nobreakspace {}\cite {zhang2024radarODE}.\relax }}{79}{figure.caption.81}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The impact of strong noise and misalignment: (a) ECG recovery distorted by RBM noise\nobreakspace {}\cite {chen2022contactless}; (b) Misaligned ECG recovery due to the inaccurate PPI estimation\nobreakspace {}\cite {zhang2024radarODE}.\relax }}{79}{figure.caption.77}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{79}{subfigure.1.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{79}{subfigure.1.2}% 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Overview of the radarODE-MTL framework with EGA strategy: (a) Shared backbone extracts time-frequency features; (b) Morphological decoder only reconstructs the shape of the current ECG piece; (c) ECG anchor decoder estimates the time-index of anchors ; (d) Cycle length decoder estimates the cardiac cycle length; (e) The proposed EGA strategy for optimizing shared parameter space.\relax }}{84}{figure.caption.87}% 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Illustration of EGA: (a) Original gradient space with gradient conflict and magnitude dominance; (b) The projection of the original gradient space into the orthogonal space with equal \IeC {\textquotedblleft }learning rate\IeC {\textquotedblright }; (c) The implementation of eccentric gradient alignment to skew the joint gradient $\mathaccentV {tilde}07E{g}_{joint}$ towards the hard task by introducing the eccentric vector $v_{ecc}$.\relax }}{88}{figure.caption.88}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Overview of the radarODE-MTL framework with EGA strategy: (a) Shared backbone extracts time-frequency features; (b) Morphological decoder only reconstructs the shape of the current ECG piece; (c) ECG anchor decoder estimates the time-index of anchors ; (d) Cycle length decoder estimates the cardiac cycle length; (e) The proposed EGA strategy for optimizing shared parameter space.\relax }}{84}{figure.caption.83}% 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Illustration of EGA: (a) Original gradient space with gradient conflict and magnitude dominance; (b) The projection of the original gradient space into the orthogonal space with equal \IeC {\textquotedblleft }learning rate\IeC {\textquotedblright }; (c) The implementation of eccentric gradient alignment to skew the joint gradient $\mathaccentV {tilde}07E{g}_{joint}$ towards the hard task by introducing the eccentric vector $v_{ecc}$.\relax }}{88}{figure.caption.84}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{88}{subfigure.3.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{88}{subfigure.3.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{88}{subfigure.3.3}% 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Illustration of the recovered ECG with ground truth (GT) for different frameworks under no noise:(a) - (d) Radar signal with good quality and the recovered ECG signals.\relax }}{98}{figure.caption.100}% 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Illustration of the recovered ECG with ground truth (GT) for different frameworks under no noise:(a) - (d) Radar signal with good quality and the recovered ECG signals.\relax }}{98}{figure.caption.96}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{98}{subfigure.4.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{98}{subfigure.4.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{98}{subfigure.4.3}% 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{98}{subfigure.4.4}% 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Illustration of the recovered ECG with ground truth (GT) for different frameworks under constant noise:(a) - (d) Radar signal with constant noise and the recovered ECG signals.\relax }}{99}{figure.caption.101}% 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Illustration of the recovered ECG with ground truth (GT) for different frameworks under constant noise:(a) - (d) Radar signal with constant noise and the recovered ECG signals.\relax }}{99}{figure.caption.97}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{99}{subfigure.5.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{99}{subfigure.5.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{99}{subfigure.5.3}% 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{99}{subfigure.5.4}% 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Illustration of the recovered ECG with ground truth (GT) for different frameworks under abrupt noise: (a) - (d) Radar signal with abrupt noise and the recovered ECG signals. \relax }}{100}{figure.caption.103}% 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Illustration of the recovered ECG with ground truth (GT) for different frameworks under abrupt noise: (a) - (d) Radar signal with abrupt noise and the recovered ECG signals. \relax }}{100}{figure.caption.99}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{100}{subfigure.6.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{100}{subfigure.6.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{100}{subfigure.6.3}% 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{100}{subfigure.6.4}% 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Evaluations for long-term ECG recovery: (a) - (e) CDF plots of MDR, HR Error, RMSE, PCC and $R^2$, with corresponding improvements.\relax }}{102}{figure.caption.106}% 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Evaluations for long-term ECG recovery: (a) - (e) CDF plots of MDR, HR Error, RMSE, PCC and $R^2$, with corresponding improvements.\relax }}{102}{figure.caption.102}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{102}{subfigure.7.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{102}{subfigure.7.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{102}{subfigure.7.3}% 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{102}{subfigure.7.4}% 
 \contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{102}{subfigure.7.5}% 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces {Evaluations for fine-grained ECG peaks recovery: (a) - (d) CDF plots of the timing error for QRST peaks, with corresponding improvements.}\relax }}{104}{figure.caption.108}% 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces {Evaluations for fine-grained ECG peaks recovery: (a) - (d) CDF plots of the timing error for QRST peaks, with corresponding improvements.}\relax }}{104}{figure.caption.104}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{104}{subfigure.8.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{104}{subfigure.8.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{104}{subfigure.8.3}% 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{104}{subfigure.8.4}% 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Noise robustness test: (a) Impact of constant noises with different intensities, (b) Impact of abrupt noises with different intensities and durations.\relax }}{106}{figure.caption.111}% 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Noise robustness test: (a) Impact of constant noises with different intensities, (b) Impact of abrupt noises with different intensities and durations.\relax }}{106}{figure.caption.107}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{106}{subfigure.9.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{106}{subfigure.9.2}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Illustration of Horcrux: (a) Traditional augmentation with zero mask; (b) Missed detected heartbeat (HB) and distorted ECG recovery; (c) Horcrux with time consistency preserved; (d) Ideal cardiac monitoring with high fidelity.\relax }}{112}{figure.caption.114}% 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Illustration of Horcrux: (a) Traditional augmentation with zero mask; (b) Missed detected heartbeat (HB) and distorted ECG recovery; (c) Horcrux with time consistency preserved; (d) Ideal cardiac monitoring with high fidelity.\relax }}{112}{figure.caption.110}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{112}{subfigure.1.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{112}{subfigure.1.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{112}{subfigure.1.3}% 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{112}{subfigure.1.4}% 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Pipeline of Horcrux with two branches: (a) Harmonic and percussive (H$\&$P) components decomposition; (b) Dynamic template matching.\relax }}{114}{figure.caption.115}% 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Illustration of RFcardi with pre-text training and fine-tuning stages.\relax }}{118}{figure.caption.117}% 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Identified vibrations using DTM for radar signals with various qualities (illustrated in normalized amplitude).\relax }}{122}{figure.caption.119}% 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Pipeline of Horcrux with two branches: (a) Harmonic and percussive (H$\&$P) components decomposition; (b) Dynamic template matching.\relax }}{114}{figure.caption.111}% 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Illustration of RFcardi with pre-text training and fine-tuning stages.\relax }}{118}{figure.caption.113}% 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Identified vibrations using DTM for radar signals with various qualities (illustrated in normalized amplitude).\relax }}{122}{figure.caption.115}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{122}{subfigure.4.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{122}{subfigure.4.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{122}{subfigure.4.3}% 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{122}{subfigure.4.4}% 
 \contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{122}{subfigure.4.5}% 
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{122}{subfigure.4.6}% 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Performance of using different scales of the dataset.\relax }}{125}{figure.caption.124}% 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Results of SSR: (a) Failed SSR due to lack of data and sparse penalty; (b) Ideal SSR result with good MSE and sparsity.\relax }}{126}{figure.caption.127}% 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Performance of using different scales of the dataset.\relax }}{125}{figure.caption.120}% 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Results of SSR: (a) Failed SSR due to lack of data and sparse penalty; (b) Ideal SSR result with good MSE and sparsity.\relax }}{126}{figure.caption.123}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{126}{subfigure.6.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{126}{subfigure.6.2}% 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Results of transfer learning using limited labeled data: (a) Poor ECG recovery without proper morphological feature and peak location; (b) Good ECG recovery owing to the pre-trained model.\relax }}{128}{figure.caption.129}% 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Results of transfer learning using limited labeled data: (a) Poor ECG recovery without proper morphological feature and peak location; (b) Good ECG recovery owing to the pre-trained model.\relax }}{128}{figure.caption.125}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{128}{subfigure.7.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{128}{subfigure.7.2}% 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Overall performance of the radar-based ECG recovery.\relax }}{129}{figure.caption.130}% 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Overall performance of the radar-based ECG recovery.\relax }}{129}{figure.caption.126}% 
 \addvspace {10\p@ }
