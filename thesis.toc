@@ -141,4 +141,4 @@
 \contentsline {chapter}{\numberline {7}Conclusions and Future Work}{131}{chapter.7}% 
 \contentsline {section}{\numberline {7.1}Conclusions}{131}{section.7.1}% 
 \contentsline {section}{\numberline {7.2}Future Work}{132}{section.7.2}% 
-\contentsline {chapter}{References}{134}{section.7.2}% 
+\contentsline {chapter}{References}{149}{chapter*.127}% 
