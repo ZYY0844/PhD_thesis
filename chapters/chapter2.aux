@@ -7,7 +7,7 @@
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{ch:LR}{{2}{11}{Background and Literature Review}{chapter.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Theoretical Background}{11}{section.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Background Knowledge}{11}{section.2.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Radar Types}{11}{subsection.2.1.1}\protected@file@percent }
 \@gls@reference{acronym}{cw}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{11}}
 \@gls@reference{acronym}{uwb}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{11}}
@@ -27,8 +27,8 @@
 \citation{singh2020multi,wang2020experimental}
 \@gls@reference{acronym}{snr}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{12}}
 \citation{droitcour2004range}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Radar Theory for Vital Sign Monitoring}{13}{subsection.2.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Cardiac Signal Extraction from CW Radar}{13}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Theoretical Background for Vital Sign Monitoring}{13}{subsection.2.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2.1}Cardiac Signal Extraction from CW Radar}{13}{subsubsection.2.1.2.1}\protected@file@percent }
 \citation{droitcour2004range,lin2022broadband}
 \citation{lin2022broadband}
 \citation{droitcour2004range}
@@ -41,7 +41,7 @@
 \citation{xiong2022vital}
 \citation{AWR1843}
 \@gls@reference{acronym}{rbm}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{15}}
-\@writefile{toc}{\contentsline {subsubsection}{Cardiac Signal Extraction from FMCW Radar}{15}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2.2}Cardiac Signal Extraction from FMCW Radar}{15}{subsubsection.2.1.2.2}\protected@file@percent }
 \@gls@reference{acronym}{aoa}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{15}}
 \@gls@reference{acronym}{mimo}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{15}}
 \citation{chen2022contactless}
@@ -51,9 +51,10 @@
 \newlabel{equ:raw_sig}{{2.10}{16}{Cardiac Signal Extraction from FMCW Radar}{equation.2.1.10}{}}
 \newlabel{equ:phase}{{2.11}{16}{Cardiac Signal Extraction from FMCW Radar}{equation.2.1.11}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Radar-Based ECG Monitoring as a Domain Transformation Problem}{16}{subsection.2.1.3}\protected@file@percent }
+\citation{petrovic2019high,saluja2019supervised,yang2020vital,zhu2018fundamental,le2020heartbeat,zhao2016emotion,xiong2020differential,hu2014real,xiong2017accurate,tu2015fast,park2017polyphase,shih2021quadrature,tomii2015heartbeat,li2017wavelet,mercuri2019vital,wang2020remote,liu2022vital,ling2022non}
 \citation{mogi2017heartbeat}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Relationships between cardiac mechanical and electrical activities within the same cardiac cycle.\relax }}{17}{figure.caption.16}\protected@file@percent }
-\newlabel{fig:scg_ecg}{{2.1}{17}{Relationships between cardiac mechanical and electrical activities within the same cardiac cycle.\relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Relationships between cardiac mechanical and electrical activities within the same cardiac cycle.\relax }}{17}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:scg_ecg}{{2.1}{17}{Relationships between cardiac mechanical and electrical activities within the same cardiac cycle.\relax }{figure.caption.14}{}}
 \citation{hu2014real,park2017polyphase}
 \citation{obadi2021survey}
 \citation{shi2021contactless}
@@ -68,13 +69,11 @@
 \@gls@reference{acronym}{fft}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{18}}
 \@gls@reference{acronym}{cwt}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{18}}
 \@gls@reference{acronym}{fpga}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{18}}
-\citation{xia2021radar}
+\citation{kim2019peak,zhang2020health,mogi2017heartbeat,yamamoto2018spectrogram,xu2021accurate,ye2021spectral,will2018radar,wang2020remote,nosrati2017high,ha2021wistress,will2016instantaneous,lv2018doppler,ha2020contactless,zhao2016emotion,chen2022contactless,will2017advanced,sakamoto2015feature,xia2021radar,mei2020fast,will2018radar,shi2021contactless}
 \citation{shi2021contactless}
 \citation{will2017advanced}
 \citation{sakamoto2015feature}
 \citation{ha2020contactless}
-\citation{gong2021rf}
-\citation{zhang2020health}
 \newlabel{fig:rawRadar}{{2.2a}{19}{Subfigure 2 2.2a}{subfigure.2.2.1}{}}
 \newlabel{sub@fig:rawRadar}{{(a)}{2.2(a)}{Subfigure 2 2.2a\relax }{subfigure.2.2.1}{}}
 \newlabel{fig:rawRadar_fft}{{2.2b}{19}{Subfigure 2 2.2b}{subfigure.2.2.2}{}}
@@ -83,15 +82,17 @@
 \newlabel{sub@fig:rawRadar_diff}{{(c)}{2.2(c)}{Subfigure 2 2.2c\relax }{subfigure.2.2.3}{}}
 \newlabel{fig:rawRadar_diff_fft}{{2.2d}{19}{Subfigure 2 2.2d}{subfigure.2.2.4}{}}
 \newlabel{sub@fig:rawRadar_diff_fft}{{(d)}{2.2(d)}{Subfigure 2 2.2d\relax }{subfigure.2.2.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Illustration for spectrum-based methods: (a) raw radar signal; (b) spectrum obtained for raw radar signal from FFT, with RR, RR harmonic and HR peaks labelled; (c) raw radar signal after differentiation; (d) spectrum obtained for differentiated raw radar signal from FFT, with enhanced HR peak labelled.\relax }}{19}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:fftForHR}{{2.2}{19}{Illustration for spectrum-based methods: (a) raw radar signal; (b) spectrum obtained for raw radar signal from FFT, with RR, RR harmonic and HR peaks labelled; (c) raw radar signal after differentiation; (d) spectrum obtained for differentiated raw radar signal from FFT, with enhanced HR peak labelled.\relax }{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Illustration for spectrum-based methods: (a) raw radar signal; (b) spectrum obtained for raw radar signal from FFT, with RR, RR harmonic and HR peaks labelled; (c) raw radar signal after differentiation; (d) spectrum obtained for differentiated raw radar signal from FFT, with enhanced HR peak labelled.\relax }}{19}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:fftForHR}{{2.2}{19}{Illustration for spectrum-based methods: (a) raw radar signal; (b) spectrum obtained for raw radar signal from FFT, with RR, RR harmonic and HR peaks labelled; (c) raw radar signal after differentiation; (d) spectrum obtained for differentiated raw radar signal from FFT, with enhanced HR peak labelled.\relax }{figure.caption.15}{}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{19}{subfigure.2.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{19}{subfigure.2.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{19}{subfigure.2.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{19}{subfigure.2.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Periodicity-based Methods}{19}{subsection.2.2.2}\protected@file@percent }
+\citation{gong2021rf}
+\citation{zhang2020health}
 \citation{cardoso1998blind}
-\citation{chen2021movi}
+\citation{lee2016tracking,bechet2013non,yamamoto2018non,mercuri2018direct,yamamoto2019music,ye2019blind,mercuri2021enabling,xu2021accurate,lv2021non,liu2020vital,diraco2017radar,zhang2020health,sun2020remote,shyu2018detection,shyu2020uwb,shen2018respiration,duan2018non,zhang2021mutual,wang2021mmhrv,wang2019noncontact,ye2018robust,ye2018stochastic}
 \citation{shen2018respiration}
 \@gls@reference{acronym}{ppi}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{20}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Blind Source Separation Methods}{20}{subsection.2.2.3}\protected@file@percent }
@@ -103,7 +104,7 @@
 \@gls@reference{acronym}{ssr}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{20}}
 \citation{weishaupt2018vital}
 \citation{shyu2018detection}
-\citation{chen2022contactless}
+\citation{ha2020contactless,chen2021movi,chen2022contactless,wu2019person,yamamoto2020ecg,gong2021rf,shi2021contactless,li2019standalone,ye2021spectral}
 \citation{chen2021movi}
 \citation{chen2022contactless,zhang2024radarODE}
 \citation{ji2022rbhhm}

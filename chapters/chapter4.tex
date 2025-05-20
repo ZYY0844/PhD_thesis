@@ -157,7 +157,7 @@ For architecture design, the SCEG module adopts the popular backbone-encoder-dec
 \end{figure*}
 
 \begin{longtable}{l l l}
-\caption{Structure and Parameters for SCEG} \label{tab:param} \\
+\caption{Structure and parameters for SCEG} \label{tab:param} \\
 
 \toprule
 \textbf{Layers} & \textbf{Parameters}  & \textbf{Output Shape} \\
@@ -296,7 +296,7 @@ The last step of SCEG is to resample all the ECG pieces generated after the feat
 
 \begin{table}[tb]
 \centering
-\caption{Structure and Parameters for Long-term ECG Reconstruction}
+\caption{Structure and parameters for long-term ECG reconstruction}
     \begin{tabular}{l l l}
     \toprule
     \textbf{Layers} & \textbf{Parameters}  & \textbf{Output Shape} \\
@@ -375,7 +375,7 @@ All the radar-related values in (\ref{equ:r_max}) are shown in Table~\ref{tab:li
 
 \begin{table}[tb]
 \centering
-\caption{Parameters for Link Budget Analysis}
+\caption{Parameters for link budget analysis}
     \begin{tabular}{lc?lc}
     \toprule
     \textbf{Parameter} & \textbf{Value} & \textbf{Parameter} & \textbf{Value} \\
@@ -447,7 +447,7 @@ The results of MDR are shown in Table~\ref{tab:ablation} with CDF plots of all t
 After filtering the corrupt ECG pieces, the absolute timing error of R peaks is calculated to evaluate the quality of fine-grained ECG features, with the median value and CDF plots shown in Table~\ref{tab:ablation} and Figure~\subref*{fig:sceg_r_cdf} respectively. The results are still similar to previous evaluations, with radarODE recovering the most accurate R peaks and the other three frameworks showing larger R-peak deviation. In addition to the benefits brought by ODE decoder, the adopted SST inputs also provide necessary time-frequency features to help the deep learning model identify indistinctive vibrations under low-SNR scenarios.
 \begin{table}[tb]
 \centering
-\caption{Performance Comparison for Single-cycle ECG Recovery and Ablation Study}
+\caption{Performance comparison for single-cycle ECG recovery and ablation study}
 \resizebox{\textwidth}{!}{%
     \begin{tabular}{c c c c | c c c c}
     \toprule
@@ -565,11 +565,11 @@ Lastly, Figure~\subref*{fig:rmse_phy} and~\subref*{fig:cor_phy} illustrate the R
 \end{figure}
 
 \subsubsection{Fine-Grained Cardiac Events Reconstruction}
-The evaluation of fine-grained cardiac features aims to analyze the timing accuracy of the QRST peaks and the P peak is not considered in this evaluation as also suggested in the benchmark paper~\cite{chen2022contactless}, because the P peak is inconspicuous and even unable to be detected for some ground truth ECG signal. The overall result is shown in Figure~\ref{fig:peak_cdf} as CDF with the median/$90$-percentile absolute timing error for QRST peaks shown in Table~\ref{tab:peak_acc}. The improvement owes to the use of SST spectrogram with more evident patterns for the prominent heart vibrations, and the ODE decoder contributes to calibrating the peak positions according to $\eta$ and $\tau$, hence improving the overall peak accuracy.
+The evaluation of fine-grained cardiac features aims to analyze the timing accuracy of the QRST peaks and the P peak is not considered in this evaluation as also suggested in~\cite{chen2022contactless}, because the P peak is inconspicuous and even unable to be detected for some ground truth ECG signal. The overall result is shown in Figure~\ref{fig:peak_cdf} as CDF with the median/$90$-percentile absolute timing error for QRST peaks shown in Table~\ref{tab:peak_acc}. The improvement owes to the use of SST spectrogram with more evident patterns for the prominent heart vibrations, and the ODE decoder contributes to calibrating the peak positions according to $\eta$ and $\tau$, hence improving the overall peak accuracy.
 
 \begin{table}[tb]
 \centering
-\caption{Absolute Timing Error for Reconstructed ECG Peaks}
+\caption{Absolute timing error for reconstructed ECG peaks}
     \begin{tabular}{c c cccc}
     \toprule
     Framework & Percentile & Q & R & S & T \\

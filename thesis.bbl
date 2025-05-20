@@ -109,6 +109,120 @@ S.~M. Islam, O.~Boric-Lubecke, V.~M. Lubecke, A.-K. Moadi, and A.~E. Fathy,
   of multiple subjects,'' \emph{IEEE Microwave Magazine}, vol.~23, no.~7, pp.
   47--60, Jul. 2022.
 
+\bibitem{Liu2022Integrated}
+F.~Liu, Y.~Cui, C.~Masouros, J.~Xu, T.~X. Han, Y.~Feng, and Y.~Luo,
+  ``Integrated sensing and communications: Toward dual-functional wireless
+  networks for {6G} and beyond,'' \emph{IEEE Journal on Selected Areas in
+  Communications}, vol.~40, no.~6, pp. 1728--1767, Jun. 2022.
+
+\bibitem{Wang2023STARS}
+Z.~Wang, X.~Mu, and Y.~Liu, ``{STARS} enabled integrated sensing and
+  communications,'' \emph{IEEE Transactions on Wireless Communications},
+  vol.~22, no.~10, pp. 6747--6761, Oct. 2023.
+
+\bibitem{Liu2022Holographic}
+F.~Liu, Y.~Cui, C.~Masouros, J.~Xu, T.~X. Han, Y.~Luo, and Y.~Feng,
+  ``Holographic integrated sensing and communications,'' \emph{IEEE Journal on
+  Selected Areas in Communications}, vol.~40, no.~9, pp. 2706--2731, Sep. 2022.
+
+\bibitem{Liu2022Cramer}
+F.~Liu, L.~Zhou, C.~Masouros, A.~Li, W.~Luo, and A.~Petropulu, ``Cramér-rao
+  bound optimization for joint radar-communication beamforming,'' \emph{IEEE
+  Transactions on Signal Processing}, vol.~70, pp. 240--253, Jan. 2022.
+
+\bibitem{Hua2022Performance}
+M.~Hua, Q.~Wu, D.~Yang, A.~L. Swindlehurst, H.~V. Poor, and L.~Hanzo,
+  ``Performance of downlink and uplink integrated sensing and communications
+  ({ISAC}) systems,'' \emph{IEEE Wireless Communications Letters}, vol.~11,
+  no.~8, pp. 1606--1610, Aug. 2022.
+
+\bibitem{Liu2022Generalized}
+F.~Liu, Y.~Zhou, C.~Masouros, A.~Petropulu, and W.~Luo, ``Generalized
+  transceiver beamforming for dfrc with {MIMO} radar and {MU-MIMO}
+  communication,'' \emph{IEEE Journal on Selected Areas in Communications},
+  vol.~40, no.~6, pp. 1798--1813, Jun. 2022.
+
+\bibitem{Xu2022Target}
+J.~Xu, F.~Liu, T.~X. Han, C.~Masouros, Y.~Feng, and Y.~Luo, ``Target sensing
+  with intelligent reflecting surface: Architecture and performance,''
+  \emph{IEEE Journal on Selected Areas in Communications}, vol.~40, no.~8, pp.
+  2525--2539, Aug. 2022.
+
+\bibitem{Ren2022Joint}
+S.~Ren, L.~Zhang, F.~Liu, S.~Chatzinotas, B.~Ottersten, and L.~Hanzo, ``Joint
+  waveform and discrete phase shift design for {RIS}-assisted integrated
+  sensing and communication system under cramer-rao bound constraint,''
+  \emph{IEEE Transactions on Vehicular Technology}, vol.~70, no.~12, pp.
+  13\,229--13\,234, Dec. 2021.
+
+\bibitem{Liu2022Joint}
+F.~Liu, Y.~Cui, C.~Masouros, Z.~Ding, T.~Ratnarajah, and J.~Luo, ``Joint
+  transmit waveform and passive beamforming design for {RIS}-aided {DFRC}
+  systems,'' \emph{IEEE Journal of Selected Topics in Signal Processing},
+  vol.~16, no.~5, pp. 995--1010, Aug. 2022.
+
+\bibitem{Jiang2022STAR}
+Y.~Jiang, J.~Xu, F.~Liu, C.~Masouros, R.~Schober, Z.~Zhong, and Y.~Luo,
+  ``S{TAR-RISs}: A correlated {TR} phase-shift model and practical phase-shift
+  configuration strategies,'' \emph{IEEE Journal of Selected Topics in Signal
+  Processing}, vol.~16, no.~5, pp. 986--994, Aug. 2022.
+
+\bibitem{Xu2021Simultaneously}
+J.~Xu, Y.~Bi, Z.~Zhong, F.~Liu, Y.~Feng, and Y.~Luo, ``Simultaneously
+  transmitting and reflecting ({STAR}) {RIS} aided wireless communications,''
+  \emph{IEEE Transactions on Wireless Communications}, vol.~21, no.~5, pp.
+  3083--3098, May 2022.
+
+\bibitem{Stoica2006Target}
+P.~Stoica, J.~Li, and Y.~Xie, ``Target detection and localization using {MIMO}
+  radars and sonars,'' \emph{IEEE Transactions on Signal Processing}, vol.~54,
+  no.~11, pp. 4239--4250, Nov. 2006.
+
+\bibitem{Liu2020Joint}
+F.~Liu, L.~Zhou, C.~Masouros, A.~Li, W.~Luo, and A.~Petropulu, ``Joint transmit
+  beamforming for multiuser {MIMO} communications and {MIMO} radar,''
+  \emph{IEEE Transactions on Signal Processing}, vol.~68, pp. 3929--3944, Jun.
+  2020.
+
+\bibitem{Liu2022MetaRadar}
+F.~Liu, Y.~Cui, C.~Masouros, J.~Xu, T.~X. Han, Y.~Luo, and Y.~Feng,
+  ``{MetaRadar}: Multi-target detection for reconfigurable intelligent surface
+  aided radar systems,'' \emph{IEEE Transactions on Wireless Communications},
+  vol.~21, no.~8, pp. 6241--6256, Aug. 2022.
+
+\bibitem{Luo2022Cramer}
+Y.~Luo, F.~Liu, C.~Masouros, and T.~X. Han, ``Cramér–rao lower bound
+  optimization for hidden moving target sensing via multi-{IRS}-aided radar,''
+  \emph{IEEE Signal Processing Letters}, vol.~29, pp. 2406--2410, Dec. 2022.
+
+\bibitem{Liu2021Enabling}
+F.~Liu, Y.~Cui, C.~Masouros, J.~Xu, T.~X. Han, Y.~Luo, and Y.~Feng, ``Enabling
+  joint communication and radar sensing in mobile networks—a survey,''
+  \emph{IEEE Communications Surveys \& Tutorials}, vol.~24, no.~1, pp.
+  306--345, Jan. 2022.
+
+\bibitem{Mu2021STAR}
+X.~Mu, Y.~Liu, L.~Guo, J.~Lin, and H.~V. Poor, ``{STAR}: Simultaneous
+  transmission and reflection for 360 degree coverage by intelligent
+  surfaces,'' \emph{IEEE Wireless Communications}, vol.~28, no.~6, pp.
+  102--109, Dec. 2021.
+
+\bibitem{Wu2021Reconfigurable}
+Q.~Wu, S.~Zhang, B.~Zheng, C.~You, and R.~Zhang, ``Reconfigurable intelligent
+  surfaces: Principles and opportunities,'' \emph{IEEE Communications Surveys
+  \& Tutorials}, vol.~23, no.~3, pp. 1546--1577, Jul. 2021.
+
+\bibitem{Liu2018MU}
+F.~Liu, C.~Masouros, A.~Petropulu, H.~Griffiths, and L.~Hanzo, ``{MU-MIMO}
+  communications with {MIMO} radar: From co-existence to joint transmission,''
+  \emph{IEEE Transactions on Wireless Communications}, vol.~17, no.~4, pp.
+  2755--2770, Apr. 2018.
+
+\bibitem{Yu2021Channel}
+Z.~Yu, J.~Xu, F.~Liu, C.~Masouros, R.~Schober, Z.~Zhong, and Y.~Luo, ``Channel
+  estimation for {STAR-RIS}-aided wireless communication,'' \emph{IEEE
+  Communications Letters}, vol.~26, no.~2, pp. 274--278, Feb. 2022.
+
 \bibitem{ha2020contactless}
 U.~Ha, S.~Assana, and F.~Adib, ``Contactless seismocardiography via deep
   learning radars,'' in \emph{Proceedings of the 26th Annual International
@@ -159,8 +273,8 @@ J.~Liu, J.~Wang, Q.~Gao, X.~Li, M.~Pan, and Y.~Fang, ``{Diversity-enhanced
 \bibitem{li2024robust}
 Y.~Li, C.~Gu, and J.~Mao, ``A robust and accurate {FMCW MIMO} radar vital sign
   monitoring framework with {4-D} cardiac beamformer and heart-rate trace
-  carving technique,'' \emph{IEEE transactions on microwave theory and
-  techniques}, Oct. 2024.
+  carving technique,'' \emph{IEEE Transactions on Microwave Theory and
+  Techniques}, Oct. 2024.
 
 \bibitem{xiong2022vital}
 J.~Xiong, H.~Hong, L.~Xiao, E.~Wang, and X.~Zhu, ``Vital signs detection with
@@ -340,21 +454,101 @@ M.~Tang, P.~Teckchandani, J.~He, H.~Guo, and E.~Soltanaghai, ``{BSENSE}:
   sensor integrating DSP, MCU and radar accelerator},'' 2018,
   \url{https://www.ti.com/product/AWR1843}, Accessed: Mar. 8, 2025.
 
-\bibitem{mogi2017heartbeat}
-E.~Mogi and T.~Ohtsuki, ``{Heartbeat detection with Doppler radar based on
-  spectrogram},'' in \emph{2017 IEEE International Conference on Communications
-  (ICC)}, May 2017, pp. 1--6.
+\bibitem{petrovic2019high}
+V.~L. Petrovi{\'c}, M.~M. Jankovi{\'c}, A.~V. Lup{\v{s}}i{\'c}, V.~R.
+  Mihajlovi{\'c}, and J.~S. Popovi{\'c}-Bo{\v{z}}ovi{\'c}, ``{High-accuracy
+  real-time monitoring of heart rate variability using 24 GHz continuous-wave
+  Doppler radar},'' \emph{IEEE Access}, vol.~7, pp. 74\,721--74\,733, Jun.
+  2019.
+
+\bibitem{saluja2019supervised}
+J.~Saluja, J.~Casanova, and J.~Lin, ``{A supervised machine learning algorithm
+  for heart-rate detection using Doppler motion-sensing radar},'' \emph{IEEE
+  Journal of Electromagnetics, RF and Microwaves in Medicine and Biology},
+  vol.~4, no.~1, pp. 45--51, Mar. 2020.
+
+\bibitem{yang2020vital}
+Z.-K. Yang, H.~Shi, S.~Zhao, and X.-D. Huang, ``{Vital sign detection during
+  large-scale and fast body movements based on an adaptive noise cancellation
+  algorithm using a single Doppler radar sensor},'' \emph{Sensors}, vol.~20,
+  no.~15, p. 4183, Jul. 2020.
+
+\bibitem{zhu2018fundamental}
+F.~Zhu, K.~Wang, and K.~Wu, ``{A fundamental-and-harmonic dual-frequency
+  Doppler radar system for vital signs detection enabling radar movement
+  self-cancellation},'' \emph{IEEE Transactions on Microwave Theory and
+  Techniques}, vol.~66, no.~11, pp. 5106--5118, Nov. 2018.
+
+\bibitem{le2020heartbeat}
+M.~Le, ``Heartbeat extraction based on a high order derivative for
+  ultra-wideband impulse radar application,'' \emph{Journal of Physics D:
+  Applied Physics}, vol.~53, no.~18, p. 18LT02, Feb. 2020.
+
+\bibitem{zhao2016emotion}
+M.~Zhao, F.~Adib, and D.~Katabi, ``Emotion recognition using wireless
+  signals,'' in \emph{Proceedings of the 22nd Annual International Conference
+  on Mobile Computing and Networking (MobiCom)}, Oct. 2016, pp. 95--108.
+
+\bibitem{xiong2020differential}
+Y.~Xiong, Z.~Peng, C.~Gu, S.~Li, D.~Wang, and W.~Zhang, ``Differential
+  enhancement method for robust and accurate heart rate monitoring via
+  microwave vital sign sensing,'' \emph{IEEE Transactions on Instrumentation
+  and Measurement}, vol.~69, no.~9, pp. 7108--7118, Sep. 2020.
 
 \bibitem{hu2014real}
 W.~Hu, H.~Zhang, Z.~Zhao, Y.~Wang, and X.~Wang, ``{Real-time remote vital sign
   detection using a portable Doppler sensor system},'' in \emph{2014 IEEE
   Sensors Applications Symposium (SAS)}, Feb. 2014, pp. 89--93.
 
+\bibitem{xiong2017accurate}
+Y.~Xiong, S.~Chen, X.~Dong, Z.~Peng, and W.~Zhang, ``{Accurate measurement in
+  Doppler radar vital sign detection based on parameterized demodulation},''
+  \emph{IEEE Transactions on Microwave Theory and Techniques}, vol.~65, no.~11,
+  pp. 4483--4492, Mar. 2017.
+
+\bibitem{tu2015fast}
+J.~Tu and J.~Lin, ``Fast acquisition of heart rate in noncontact vital sign
+  radar measurement using time-window-variation technique,'' \emph{IEEE
+  Transactions on Instrumentation and Measurement}, vol.~65, no.~1, pp.
+  112--122, Jan. 2016.
+
 \bibitem{park2017polyphase}
 J.~Park, J.-W. Ham, S.~Park, D.-H. Kim, S.-J. Park, H.~Kang, and S.-O. Park,
   ``{Polyphase-basis discrete cosine transform for real-time measurement of
   heart rate with CW Doppler radar},'' \emph{IEEE Transactions on Microwave
   Theory and Techniques}, vol.~66, no.~3, pp. 1644--1659, Mar. 2018.
+
+\bibitem{shih2021quadrature}
+J.-Y. Shih and F.-K. Wang, ``{Quadrature cosine transform (QCT) with varying
+  window length (VWL) technique for noncontact vital sign monitoring using a
+  continuous-wave (CW) radar},'' \emph{IEEE Transactions on Microwave Theory
+  and Techniques}, Mar. 2022.
+
+\bibitem{tomii2015heartbeat}
+S.~Tomii and T.~Ohtsuki, ``{Heartbeat detection by using Doppler radar with
+  wavelet transform based on scale factor learning},'' in \emph{2015 IEEE
+  International Conference on Communications (ICC)}, Jun. 2015, pp. 483--488.
+
+\bibitem{li2017wavelet}
+M.~Li and J.~Lin, ``{Wavelet-transform-based data-length-variation technique
+  for fast heart rate detection using 5.8-GHz CW Doppler radar},'' \emph{IEEE
+  Transactions on Microwave Theory and Techniques}, vol.~66, no.~1, pp.
+  568--576, Jan. 2017.
+
+\bibitem{liu2022vital}
+S.~Liu, Q.~Qi, H.~Cheng, L.~Sun, Y.~Zhao, and J.~Chai, ``{A Vital Signs Fast
+  Detection and Extraction Method of UWB Impulse Radar Based on SVD},''
+  \emph{Sensors}, vol.~22, no.~3, p. 1177, Feb. 2022.
+
+\bibitem{ling2022non}
+Z.~Ling, W.~Zhou, Y.~Ren, J.~Wang, and L.~Guo, ``Non-contact heart rate
+  monitoring based on millimeter wave radar,'' \emph{IEEE Access}, vol.~10, pp.
+  74\,033--74\,044, 2022.
+
+\bibitem{mogi2017heartbeat}
+E.~Mogi and T.~Ohtsuki, ``{Heartbeat detection with Doppler radar based on
+  spectrogram},'' in \emph{2017 IEEE International Conference on Communications
+  (ICC)}, May 2017, pp. 1--6.
 
 \bibitem{shi2021contactless}
 K.~Shi, T.~Steigleder, S.~Schellenberger, F.~Michler, A.~Malessa, F.~Lurz,
@@ -391,6 +585,45 @@ S.~D. Da~Cruz, H.-P. Beise, U.~Schr{\"o}der, and U.~Karahasanovic, ``A
   Transactions on Vehicular Technology}, vol.~68, no.~4, pp. 3374--3385, Apr.
   2019.
 
+\bibitem{kim2019peak}
+J.-Y. Kim, J.-H. Park, S.-Y. Jang, and J.-R. Yang, ``{Peak detection algorithm
+  for vital sign detection using Doppler radar sensors},'' \emph{Sensors},
+  vol.~19, no.~7, p. 1575, Apr. 2019.
+
+\bibitem{xu2021accurate}
+H.~Xu, M.~P. Ebrahim, K.~Hasan, F.~Heydari, P.~Howley, and M.~R. Yuce,
+  ``Accurate heart rate and respiration rate detection based on a higher-order
+  harmonics peak selection method using radar non-contact sensors,''
+  \emph{Sensors}, vol.~22, no.~1, p.~83, Dec. 2021.
+
+\bibitem{ye2021spectral}
+C.~Ye and T.~Ohtsuki, ``Spectral viterbi algorithm for contactless wide-range
+  heart rate estimation with deep clustering,'' \emph{IEEE Transactions on
+  Microwave Theory and Techniques}, vol.~69, no.~5, pp. 2629--2641, May 2021.
+
+\bibitem{will2018radar}
+C.~Will, K.~Shi, S.~Schellenberger, T.~Steigleder, F.~Michler, J.~Fuchs,
+  R.~Weigel, C.~Ostgathe, and A.~Koelpin, ``Radar-based heart sound
+  detection,'' \emph{Scientific Reports}, vol.~8, no.~1, pp. 1--14, Jul. 2018.
+
+\bibitem{nosrati2017high}
+M.~Nosrati and N.~Tavassolian, ``{High-accuracy heart rate variability
+  monitoring using Doppler radar based on Gaussian pulse train modeling and
+  FTPR algorithm},'' \emph{IEEE Transactions on Microwave Theory and
+  Techniques}, vol.~66, no.~1, pp. 556--567, Jan. 2017.
+
+\bibitem{ha2021wistress}
+U.~Ha, S.~Madani, and F.~Adib, ``Wistress: Contactless stress monitoring using
+  wireless signals,'' in \emph{Proceedings of the ACM on Interactive, Mobile,
+  Wearable and Ubiquitous Technologies (IMWUT)}, vol.~5, no.~3, Sep. 2021, pp.
+  1--37.
+
+\bibitem{will2016instantaneous}
+C.~Will, K.~Shi, F.~Lurz, R.~Weigel, and A.~Koelpin, ``Instantaneous heartbeat
+  detection using a cross-correlation based template matching for continuous
+  wave radar systems,'' in \emph{2016 IEEE Topical Conference on Wireless
+  Sensors and Sensor Networks (WiSNet)}, Jan. 2016, pp. 31--34.
+
 \bibitem{will2017advanced}
 C.~Will, K.~Shi, R.~Weigel, and A.~Koelpin, ``Advanced template matching
   algorithm for instantaneous heartbeat detection using continuous wave radar
@@ -404,6 +637,12 @@ T.~Sakamoto, R.~Imasaka, H.~Taki, T.~Sato, M.~Yoshioka, K.~Inoue, T.~Fukuda,
   Transactions on Biomedical Engineering}, vol.~63, no.~4, pp. 747--757, Apr.
   2015.
 
+\bibitem{mei2020fast}
+Z.~Mei, Q.~Wu, Z.~Hu, and J.~Tao, ``{A fast non-contact vital signs detection
+  method based on regional hidden Markov model in a 77GHz LFMCW radar
+  system},'' in \emph{IEEE International Conference on Acoustics, Speech and
+  Signal Processing (ICASSP)}, May 2020, pp. 1145--1149.
+
 \bibitem{gong2021rf}
 J.~Gong, X.~Zhang, K.~Lin, J.~Ren, Y.~Zhang, and W.~Qiu, ``{RF Vital Sign
   Sensing Under Free Body Movement},'' \emph{Proceedings of the ACM on
@@ -414,15 +653,120 @@ J.~Gong, X.~Zhang, K.~Lin, J.~Ren, Y.~Zhang, and W.~Qiu, ``{RF Vital Sign
 J.-F. Cardoso, ``Blind signal separation: statistical principles,''
   \emph{Proceedings of the IEEE}, vol.~86, no.~10, pp. 2009--2025, Oct. 1998.
 
-\bibitem{weishaupt2018vital}
-F.~Weishaupt, I.~Walterscheid, O.~Biallawons, and J.~Klare, ``{Vital sign
-  localization and measurement using an LFMCW MIMO radar},'' in \emph{2018 19th
-  International Radar Symposium (IRS)}, Jun. 2018, pp. 1--8.
+\bibitem{lee2016tracking}
+K.~J. Lee, C.~Park, and B.~Lee, ``{Tracking driver's heart rate by
+  continuous-wave Doppler radar},'' in \emph{2016 38th Annual International
+  Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
+  Aug. 2016, pp. 5417--5420.
+
+\bibitem{bechet2013non}
+P.~Bechet, R.~Mitran, and M.~Munteanu, ``A non-contact method based on multiple
+  signal classification algorithm to reduce the measurement time for accurately
+  heart rate detection,'' \emph{Review of Scientific Instruments}, vol.~84,
+  no.~8, p. 084707, Aug. 2013.
+
+\bibitem{yamamoto2018non}
+K.~Yamamoto, K.~Toyoda, and T.~Ohtsuki, ``{Non-contact heartbeat detection by
+  MUSIC with discrete cosine transform-based parameter adjustment},'' in
+  \emph{2018 IEEE Global Communications Conference (GLOBECOM)}, Dec. 2018, pp.
+  1--6.
+
+\bibitem{mercuri2018direct}
+M.~Mercuri, Y.-H. Liu, I.~Lorato, T.~Torfs, F.~Wieringa, A.~Bourdoux, and
+  C.~Van~Hoof, ``{A direct phase-tracking Doppler radar using wavelet
+  independent component analysis for non-contact respiratory and heart rate
+  monitoring},'' \emph{IEEE Transactions on Biomedical Circuits and Systems},
+  vol.~12, no.~3, pp. 632--643, Jun. 2018.
+
+\bibitem{yamamoto2019music}
+K.~Yamamoto, K.~Toyoda, and T.~Ohtsuki, ``{MUSIC-based non-contact heart rate
+  estimation with adaptive window size setting},'' in \emph{2019 41st Annual
+  International Conference of the IEEE Engineering in Medicine and Biology
+  Society (EMBC)}, Jul. 2019, pp. 6073--6076.
+
+\bibitem{ye2019blind}
+C.~Ye, K.~Toyoda, and T.~Ohtsuki, ``Blind source separation on non-contact
+  heartbeat detection by non-negative matrix factorization algorithms,''
+  \emph{IEEE Transactions on Biomedical Engineering}, vol.~67, no.~2, pp.
+  482--494, Feb. 2020.
+
+\bibitem{lv2021non}
+W.~Lv, W.~He, X.~Lin, and J.~Miao, ``{Non-Contact Monitoring of Human Vital
+  Signs Using FMCW Millimeter Wave Radar in the 120 GHz Band},''
+  \emph{Sensors}, vol.~21, no.~8, p. 2732, Oct. 2021.
+
+\bibitem{liu2020vital}
+Z.~Liu, Y.~Kong, X.~Zhang, J.~Wu, and W.~Lu, ``Vital sign extraction in the
+  presence of radar mutual interference,'' \emph{IEEE Signal Processing
+  Letters}, vol.~27, pp. 1745--1749, Sep. 2020.
+
+\bibitem{diraco2017radar}
+G.~Diraco, A.~Leone, and P.~Siciliano, ``A radar-based smart sensor for
+  unobtrusive elderly monitoring in ambient assisted living applications,''
+  \emph{Biosensors}, vol.~7, no.~4, p.~55, Nov. 2017.
+
+\bibitem{sun2020remote}
+L.~Sun, S.~Huang, Y.~Li, C.~Gu, H.~Pan, H.~Hong, and X.~Zhu, ``{Remote
+  measurement of human vital signs based on joint-range adaptive EEMD},''
+  \emph{IEEE Access}, vol.~8, pp. 68\,514--68\,524, Apr. 2020.
 
 \bibitem{shyu2018detection}
 K.~Shyu, L.~Chiu, P.~Lee, T.~Tung, and S.~Yang, ``{Detection of breathing and
   heart rates in UWB radar sensor data using FVPIEF-based two-layer EEMD},''
   \emph{IEEE Sensors Journal}, vol.~19, no.~2, pp. 774--784, Jan. 2019.
+
+\bibitem{shyu2020uwb}
+K.~Shyu, L.~Chiu, P.~Lee, and L.~Lee, ``{UWB simultaneous breathing and heart
+  rate detections in driving scenario using multi-feature alignment two-layer
+  EEMD method},'' \emph{IEEE Sensors Journal}, vol.~20, no.~17, pp.
+  10\,251--10\,266, Sep. 2020.
+
+\bibitem{duan2018non}
+Z.~Duan and J.~Liang, ``{Non-contact detection of vital signs using a UWB radar
+  sensor},'' \emph{IEEE Access}, vol.~7, pp. 36\,888--36\,895, Dec. 2018.
+
+\bibitem{zhang2021mutual}
+X.~Zhang, Z.~Liu, Y.~Kong, and C.~Li, ``Mutual interference suppression using
+  signal separation and adaptive mode decomposition in noncontact vital sign
+  measurements,'' \emph{IEEE Transactions on Instrumentation and Measurement},
+  Dec. 2021.
+
+\bibitem{wang2021mmhrv}
+F.~Wang, X.~Zeng, C.~Wu, B.~Wang, and K.~R. Liu, ``{mmHRV: Contactless heart
+  rate variability monitoring using millimeter-wave radio},'' \emph{IEEE
+  Internet of Things Journal}, vol.~8, no.~22, pp. 16\,623--16\,636, Nov. 2021.
+
+\bibitem{wang2019noncontact}
+P.~Wang, F.~Qi, M.~Liu, F.~Liang, H.~Xue, Y.~Zhang, H.~Lv, and J.~Wang,
+  ``{Noncontact heart rate measurement based on an improved convolutional
+  sparse coding method using IR-UWB radar},'' \emph{IEEE Access}, vol.~7, pp.
+  158\,492--158\,502, Oct. 2019.
+
+\bibitem{ye2018robust}
+C.~Ye, K.~Toyoda, and T.~Ohtsuki, ``{Robust heartbeat detection with Doppler
+  radar based on stochastic gradient approach},'' in \emph{2018 IEEE
+  International Conference on Communications (ICC)}, May 2018, pp. 1--6.
+
+\bibitem{weishaupt2018vital}
+F.~Weishaupt, I.~Walterscheid, O.~Biallawons, and J.~Klare, ``{Vital sign
+  localization and measurement using an LFMCW MIMO radar},'' in \emph{2018 19th
+  International Radar Symposium (IRS)}, Jun. 2018, pp. 1--8.
+
+\bibitem{wu2019person}
+S.~Wu, T.~Sakamoto, K.~Oishi, T.~Sato, K.~Inoue, T.~Fukuda, K.~Mizutani, and
+  H.~Sakai, ``Person-specific heart rate estimation with ultra-wideband radar
+  using convolutional neural networks,'' \emph{IEEE Access}, vol.~7, pp.
+  168\,484--168\,494, Nov. 2019.
+
+\bibitem{yamamoto2020ecg}
+K.~Yamamoto, R.~Hiromatsu, and T.~Ohtsuki, ``{ECG signal reconstruction via
+  Doppler sensor by hybrid deep learning model with CNN and LSTM},'' \emph{IEEE
+  Access}, vol.~8, pp. 130\,551--130\,560, Jul. 2020.
+
+\bibitem{li2019standalone}
+Y.~Li, Z.~Xia, and Y.~Zhang, ``{Standalone systolic profile detection of
+  non-contact SCG signal with LSTM network},'' \emph{IEEE Sensors Journal},
+  vol.~20, no.~6, pp. 3123--3131, Mar. 2020.
 
 \bibitem{ji2022rbhhm}
 S.~Ji, Z.~Zhang, Z.~Xia, H.~Wen, J.~Zhu, and K.~Zhao, ``{RBHHM: A novel remote
@@ -441,6 +785,337 @@ S.~Yao, R.~Guan, Z.~Wu, Y.~Ni, Z.~Zhang, Z.~Huang, X.~Zhu, Y.~Yue, E.~G. Lim,
   H.~Seo \emph{et~al.}, ``Waterscenes: A multi-task {4D} radar-camera fusion
   dataset and benchmark for autonomous driving on water surfaces,'' \emph{IEEE
   Transactions on Intelligent Transportation Systems}, Jul. 2023.
+
+\bibitem{bilik2019rise}
+I.~Bilik, O.~Longman, S.~Villeval, and J.~Tabrikian, ``The rise of radar for
+  autonomous vehicles: Signal processing solutions and future research
+  directions,'' \emph{IEEE Signal Processing Magazine}, vol.~36, no.~5, pp.
+  20--31, Sep. 2019.
+
+\bibitem{wang2021exploring}
+Y.~Wang, Z.~Jiang, X.~Gao, J.-N. Hwang, G.~Xing, and H.~Liu, ``Exploring radar
+  data representations in autonomous driving,'' \emph{IEEE Transactions on
+  Intelligent Transportation Systems}, vol.~22, no.~12, pp. 7777--7791, Dec.
+  2021.
+
+\bibitem{sun2020deep}
+P.~Sun, H.~Kretzschmar, X.~Dotiwalla, A.~Chouard, V.~Patnaik, P.~Tsui, J.~Guo,
+  Y.~Zhou, Y.~Chai, B.~Caine, V.~Vasudevan, W.~Han, J.~Ngiam, H.~Zhao,
+  A.~Timofeev, S.~Ettinger, M.~Krivokon, A.~Gao, A.~Joshi, Y.~Zhang, J.~Shlens,
+  Z.~Chen, and D.~Anguelov, ``Scalability in perception for autonomous driving:
+  {Waymo} open dataset,'' \emph{IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pp. 2446--2454, Jun. 2020.
+
+\bibitem{meyer2019automotive}
+M.~Meyer and G.~Kuschk, ``Automotive radar dataset for deep learning based {3D}
+  object detection,'' \emph{IEEE European Radar Conference}, pp. 129--132, Oct.
+  2019.
+
+\bibitem{li2020lidar}
+Y.~Li, Z.~Ma, Z.~Wang, X.~Chen, and Y.~Liu, ``{LiDAR-Camera} fusion for road
+  detection using fully convolutional neural networks,'' \emph{IEEE
+  Transactions on Intelligent Transportation Systems}, vol.~21, no.~4, pp.
+  1758--1773, Apr. 2020.
+
+\bibitem{feng2020deep}
+D.~Feng, C.~Haase-Schuetz, L.~Rosenbaum, H.~Hertlein, C.~Glaeser, F.~Timm,
+  W.~Wiesbeck, and K.~Dietmayer, ``Deep multi-modal object detection and
+  semantic segmentation for autonomous driving: Datasets, methods, and
+  challenges,'' \emph{IEEE Transactions on Intelligent Transportation Systems},
+  vol.~21, no.~11, pp. 4589--4612, Nov. 2020.
+
+\bibitem{caesar2020nuscenes}
+H.~Caesar, V.~Bankiti, A.~H. Lang, S.~Vora, V.~E. Liong, Q.~Xu, A.~Krishnan,
+  Y.~Pan, G.~Baldan, and O.~Beijbom, ``{nuScenes}: A multimodal dataset for
+  autonomous driving,'' \emph{IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pp. 11\,621--11\,631, Jun. 2020.
+
+\bibitem{wang2021rodnet}
+Y.~Wang, Z.~Jiang, Y.~Li, J.-N. Hwang, G.~Xing, and H.~Liu, ``{RODNet}: Radar
+  object detection using cross-modal supervision,'' \emph{IEEE/CVF Winter
+  Conference on Applications of Computer Vision}, pp. 504--513, Jan. 2021.
+
+\bibitem{palffy2020cnn}
+A.~Palffy, J.~Dong, J.~F.~P. Kooij, and D.~M. Gavrila, ``{CNN} based road user
+  detection using the {3D} radar cube,'' \emph{IEEE Robotics and Automation
+  Letters}, vol.~5, no.~2, pp. 1263--1270, Apr. 2020.
+
+\bibitem{kim2020multi}
+G.~Kim, J.~Park, U.~Kim, Y.~Lee, and J.~Yim, ``Multi-modal sensor fusion for
+  auto driving,'' \emph{IEEE Access}, vol.~8, pp. 94\,207--94\,220, May 2020.
+
+\bibitem{nobis2019deep}
+F.~Nobis, M.~Geisslinger, M.~Weber, J.~Betz, and M.~Lienkamp, ``A deep
+  learning-based radar and camera sensor fusion architecture for object
+  detection,'' \emph{IEEE Sensor Data Fusion Conference}, pp. 1--7, Oct. 2019.
+
+\bibitem{zhang2021radar}
+F.~Zhang, D.~Clarke, and A.~Knoll, ``Radar-camera sensor fusion for joint
+  object detection and distance estimation in autonomous vehicles,'' \emph{IEEE
+  International Conference on Multisensor Fusion and Integration}, pp. 1--6,
+  Sep. 2021.
+
+\bibitem{svenningsson2021radar}
+P.~Svenningsson, C.~Olsson, H.~Cederberg, F.~Birgersson, and J.~Henriksson,
+  ``Radar-camera fusion for increased robustness in off-road autonomous
+  driving,'' \emph{IEEE Intelligent Vehicles Symposium}, pp. 773--780, Jul.
+  2021.
+
+\bibitem{guan2020through}
+J.~Guan, S.~Madani, S.~Jog, S.~Gupta, and H.~Liu, ``Through fog high-resolution
+  imaging using millimeter wave radar,'' \emph{IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}, pp. 11\,464--11\,473, Jun. 2020.
+
+\bibitem{scheiner2020seeing}
+N.~Scheiner, F.~Kraus, F.~Wei, B.~Phan, F.~Mannan, N.~Appenrodt, W.~Ritter,
+  J.~Dickmann, K.~Dietmayer, B.~Sick, and A.~Felix, ``Seeing through fog
+  without seeing fog: Deep multimodal sensor fusion in unseen adverse
+  weather,'' \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pp. 11\,682--11\,692, Jun. 2020.
+
+\bibitem{li2021lidar}
+Z.~Li, Y.~Wang, J.~Guo, L.-F. Cheong, and S.~Z. Zhou, ``Lidar and camera
+  calibration using motion estimated by sensor fusion odometry,'' \emph{IEEE
+  Robotics and Automation Letters}, vol.~6, no.~2, pp. 2125--2132, Apr. 2021.
+
+\bibitem{kim2020low}
+G.~Kim, Y.~S. Park, Y.~Cho, J.~Jeong, and A.~Kim, ``Low-cost sensor fusion
+  system for autonomous vehicle localization in challenging weather
+  conditions,'' \emph{IEEE Transactions on Intelligent Transportation Systems},
+  vol.~21, no.~6, pp. 2376--2386, Jun. 2020.
+
+\bibitem{yin2021radar}
+J.~Yin, Z.~Deng, and S.~Scherer, ``Radar-inertial ego-velocity estimation for
+  visually degraded environments,'' \emph{IEEE International Conference on
+  Robotics and Automation}, pp. 4277--4283, May 2021.
+
+\bibitem{barnes2020oxford}
+D.~Barnes, M.~Gadd, P.~Murcutt, P.~Newman, and I.~Posner, ``The {Oxford} radar
+  robotcar dataset: A radar extension to the oxford robotcar dataset,''
+  \emph{IEEE International Conference on Robotics and Automation}, pp.
+  6433--6438, May 2020.
+
+\bibitem{wang2021rethinking}
+Y.~Wang, Z.~Jiang, X.~Gao, J.-N. Hwang, G.~Xing, and H.~Liu, ``Rethinking
+  radar-based perception for autonomous driving,'' \emph{IEEE Signal Processing
+  Magazine}, vol.~38, no.~4, pp. 90--102, Jul. 2021.
+
+\bibitem{kim2021deep}
+J.~Kim, S.~Kim, D.~Jung, J.~Ryu, and H.~Kim, ``Deep learning-based automotive
+  radar interference mitigation for environment perception,'' \emph{IEEE
+  Access}, vol.~9, pp. 94\,776--94\,785, Jun. 2021.
+
+\bibitem{lim2019radar}
+T.~Y. Lim, A.~Ansari, B.~Major, D.~Fontijne, M.~Hamilton, R.~Gowaikar, and
+  S.~Subramanian, ``Radar and camera early fusion for vehicle detection in
+  advanced driver assistance systems,'' \emph{IEEE Conference on Neural
+  Information Processing Systems}, pp. 1--8, Dec. 2019.
+
+\bibitem{sless2019road}
+L.~Sless, G.~Cohen, B.~E. Shlomo, and S.~Oron, ``Road scene understanding by
+  occupancy grid learning from sparse radar data,'' \emph{IEEE/CVF
+  International Conference on Computer Vision Workshop}, pp. 819--827, Oct.
+  2019.
+
+\bibitem{major2019vehicle}
+B.~Major, D.~Fontijne, A.~Ansari, R.~Teja~Sukhavasi, R.~Gowaikar, M.~Hamilton,
+  S.~Lee, S.~Grzechnik, and S.~Subramanian, ``Vehicle detection with automotive
+  radar using deep learning on range-azimuth-doppler tensors,'' \emph{IEEE/CVF
+  International Conference on Computer Vision Workshop}, pp. 924--932, Oct.
+  2019.
+
+\bibitem{mostajabi2020high}
+M.~Mostajabi, C.-M. Wang, D.~Ranjan, and G.~Hsyu, ``High-resolution radar
+  dataset for semi-supervised learning of dynamic objects,'' \emph{IEEE/CVF
+  Conference on Computer Vision and Pattern Recognition Workshops}, pp.
+  100--101, Jun. 2020.
+
+\bibitem{long2021radar}
+B.~Long, S.~Wang, H.~Chai, G.~Du, T.~Gao, W.~Zheng, G.~Gu, L.~Li, Y.~Chen,
+  B.~Zhu, L.~Peng, J.~Su, D.~Li, and Y.~Yang, ``Radar-camera fusion via vision
+  transformers,'' \emph{IEEE Transactions on Intelligent Transportation
+  Systems}, vol.~22, no.~10, pp. 6372--6382, Oct. 2021.
+
+\bibitem{ouaknine2021carrada}
+A.~Ouaknine, A.~Newson, J.~Rebut, F.~Tupin, and P.~Perez, ``{CARRADA} dataset:
+  Camera and automotive radar with range-angle-doppler annotations,''
+  \emph{IEEE International Conference on Pattern Recognition}, pp. 5068--5075,
+  Jan. 2021.
+
+\bibitem{gao2021ramp}
+X.~Gao, G.~Xing, S.~Roy, and H.~Liu, ``{RAMP-CNN}: A novel neural network for
+  enhanced automotive radar object recognition,'' \emph{IEEE Sensors Journal},
+  vol.~21, no.~4, pp. 5119--5132, Feb. 2021.
+
+\bibitem{yang2020radarnet}
+B.~Yang, M.~Liang, and R.~Urtasun, ``{RadarNet}: Exploiting radar for robust
+  perception of dynamic objects,'' \emph{IEEE European Conference on Computer
+  Vision}, pp. 496--512, Aug. 2020.
+
+\bibitem{xu2021rpfa}
+F.~Xu, Z.~Wang, C.~Zhang, M.~Tian, R.~Fang, H.~Zhao, Y.~Zhou, and B.~Guan,
+  ``{RPFA-Net: A 4D} radar point feature attention network for automotive
+  object detection,'' \emph{IEEE Transactions on Intelligent Transportation
+  Systems}, vol.~22, no.~11, pp. 7131--7142, Nov. 2021.
+
+\bibitem{sasakawa2019human}
+D.~Sasakawa, N.~Honma, T.~Nakayama, and S.~Iizuka, ``Human activity
+  identification by height and doppler {RCS} information detected by {MIMO}
+  radar,'' \emph{IEICE Transactions on Communications}, vol. E102.B, no.~4, pp.
+  785--793, Apr. 2019.
+
+\bibitem{sakamoto2017radar}
+T.~Sakamoto, X.~Gao, E.~Yavari, A.~Rahman, O.~Boric-Lubecke, and V.~M. Lubecke,
+  ``Radar-based hand gesture recognition using {I–Q} echo plot and
+  convolutional neural network,'' \emph{IEEE Conference on Antenna Measurements
+  \& Applications (CAMA)}, pp. 394--397, Dec. 2017.
+
+\bibitem{kim2016hand}
+Y.~Kim and B.~Toomajian, ``Hand gesture recognition using micro-doppler
+  signatures with convolutional neural network,'' \emph{IEEE Access}, vol.~4,
+  pp. 7125--7130, Oct. 2016.
+
+\bibitem{amin2019hand}
+M.~G. Amin, Z.~Zeng, and T.~Shan, ``Hand gesture recognition based on radar
+  micro-doppler signature envelopes,'' \emph{IEEE Radar Conference}, pp.
+  1089--1093, Feb. 2019.
+
+\bibitem{zhang2016dynamic}
+S.~Zhang, G.~Li, M.~Ritchie, F.~Fioranelli, and H.~Griffiths, ``Dynamic hand
+  gesture classification based on radar micro-doppler signatures,'' \emph{IEEE
+  International Conference on Radar}, pp. 1--4, Oct. 2016.
+
+\bibitem{ritchie2017hand}
+M.~Ritchie, A.~Jones, J.~Brown, and H.~D. Griffiths, ``Hand gesture
+  classification using {24 GHz FMCW} dual polarised radar,'' \emph{IEEE
+  International Conference on Radar Systems}, pp. 1--6, Oct. 2017.
+
+\bibitem{li2018dynamic}
+G.~Li, S.~Zhang, M.~Ritchie, and F.~Fioranelli, ``Dynamic hand gesture
+  recognition using millimeter-wave radar,'' \emph{IEEE Transactions on
+  Aerospace and Electronic Systems}, vol.~54, no.~2, pp. 655--665, Apr. 2018.
+
+\bibitem{zhang2018latern}
+Z.~Zhang, Z.~Tian, and M.~Zhou, ``Latern: Dynamic continuous hand gesture
+  recognition using {FMCW} radar sensor,'' \emph{IEEE Sensors Journal},
+  vol.~18, no.~8, pp. 3278--3289, Apr. 2018.
+
+\bibitem{zhao2023low}
+J.~Zhao, J.~Zhao, J.~Müller, and J.~C. Scheytt, ``Low complexity radar gesture
+  recognition using synthetic hand gesture features,'' \emph{IEEE Sensors
+  Journal}, vol.~23, no.~1, pp. 308--325, Jan. 2023.
+
+\bibitem{sun2021smart}
+H.~Sun and C.~Yang, ``Smart, portable, short-range radars for human-aware
+  sensing and localization,'' \emph{IEEE Microwave Magazine}, vol.~22, no.~4,
+  pp. 81--95, Apr. 2021.
+
+\bibitem{wang2024rodar}
+Z.~Wang, Y.~Gu, X.~Jiang, J.~Ren, and Y.~Zhao, ``Rodar: Robust gesture
+  recognition based on {mmWave} radar,'' \emph{IEEE Transactions on Mobile
+  Computing}, vol.~23, no.~12, pp. 8634--8649, Dec. 2024.
+
+\bibitem{lien2016soli}
+J.~Lien, N.~Gillian, M.~E. Karagozler, P.~Amihood, C.~Schwesig, E.~Olson,
+  H.~Raja, and I.~Poupyrev, ``{Soli}: Ubiquitous gesture sensing with
+  millimeter wave radar,'' \emph{IEEE Transactions on Visualization and
+  Computer Graphics}, vol.~35, no.~4, pp. 1--14, Jul. 2016.
+
+\bibitem{chen2018micro}
+Z.~Chen, L.~Zhang, C.~Jiang, J.~Cao, and W.~Cui, ``{WiFi CSI} based passive
+  human activity recognition using attention based {BLSTM},'' \emph{IEEE
+  Transactions on Mobile Computing}, vol.~18, no.~11, pp. 2714--2724, Nov.
+  2018.
+
+\bibitem{singh2019radhar}
+A.~Singh, S.~S. Lee, M.~Butler, and V.~Lubecke, ``Activity monitoring using
+  smart radar sensors,'' \emph{IEEE Sensors Journal}, vol.~19, no.~22, pp.
+  10\,775--10\,784, Nov. 2019.
+
+\bibitem{wang2021joint}
+S.~Wang, J.~Song, J.~Lien, I.~Poupyrev, and O.~Hilliges, ``Joint hand gesture
+  and interaction recognition from a single millimeter-wave radar,'' \emph{IEEE
+  Transactions on Human-Machine Systems}, vol.~51, no.~4, pp. 344--354, Aug.
+  2021.
+
+\bibitem{yang2020mm}
+Z.~Yang, P.~H. Pathak, Y.~Zeng, X.~Liran, and P.~Mohapatra, ``Monitoring vital
+  signs using millimeter wave,'' \emph{IEEE Transactions on Mobile Computing},
+  vol.~20, no.~8, pp. 2603--2617, Aug. 2020.
+
+\bibitem{li2019robust}
+X.~Li, Y.~He, and X.~Jing, ``A survey of deep learning-based human activity
+  recognition in radar,'' \emph{IEEE Access}, vol.~7, pp. 47\,290--47\,301,
+  Apr. 2019.
+
+\bibitem{wang2016phase}
+W.~Wang, A.~X. Liu, and M.~Shahzad, ``Gait recognition using {WiFi} signals,''
+  \emph{IEEE Transactions on Mobile Computing}, vol.~16, no.~11, pp.
+  3026--3037, Nov. 2016.
+
+\bibitem{sun2020gesture}
+Y.~Sun, T.~Fei, F.~Schliep, and N.~Pohl, ``Gesture classification with
+  handcrafted micro-doppler features using a {FMCW} radar,'' \emph{IEEE
+  Transactions on Microwave Theory and Techniques}, vol.~68, no.~5, pp.
+  1831--1844, May 2020.
+
+\bibitem{yang2020portable}
+C.~Yang, T.~Gao, D.~Wilkinson, and D.~Petkie, ``A {K}-band portable {FMCW}
+  radar with beamforming array for short-range localization and vital-doppler
+  targets discrimination,'' \emph{IEEE Transactions on Microwave Theory and
+  Techniques}, vol.~69, no.~1, pp. 1091--1100, Jan. 2020.
+
+\bibitem{wang2021g}
+S.~Wang, J.~Song, J.~Lien, I.~Poupyrev, and O.~Hilliges, ``{G-RMI}:
+  Generalizable cross-user hand gesture recognition via millimeter-wave
+  radar,'' \emph{IEEE Transactions on Human-Machine Systems}, vol.~51, no.~6,
+  pp. 637--647, Dec. 2021.
+
+\bibitem{chen2021mGesture}
+Z.~Chen, C.~Jiang, M.~Xie, J.~Zhao, and W.~Zou, ``{mGesture}: Detecting
+  millimeter-level gestures with acoustic signals,'' \emph{IEEE Transactions on
+  Mobile Computing}, vol.~20, no.~12, pp. 3493--3506, Dec. 2021.
+
+\bibitem{wang2022radar}
+F.~Wang, S.~Zhang, P.~Zhou, and G.-Z. Yang, ``Radar-based human identification
+  via micro-doppler signatures and transfer learning,'' \emph{IEEE Sensors
+  Journal}, vol.~22, no.~7, pp. 6546--6555, Apr. 2022.
+
+\bibitem{ma2019signfi}
+Y.~Ma, G.~Zhou, and S.~Wang, ``{WiFi} sensing with channel state information: A
+  survey,'' \emph{IEEE Access}, vol.~7, pp. 8004--8014, Jan. 2019.
+
+\bibitem{li2020wireless}
+H.~Li, X.~Yang, X.~Yang, E.~Ding, and J.~Xie, ``Wireless sensing with deep
+  learning: A survey,'' \emph{IEEE Communications Surveys \& Tutorials},
+  vol.~22, no.~3, pp. 1630--1655, Jul. 2020.
+
+\bibitem{chen2022radar}
+J.~Chen, Z.~Guo, Y.~Xu, and X.~Chen, ``Radar-based human activity recognition
+  using deep convolutional neural networks,'' \emph{IEEE Sensors Journal},
+  vol.~22, no.~14, pp. 13\,939--13\,950, Jul. 2022.
+
+\bibitem{zhang2018multimodal}
+Z.~Zhang, Z.~Tian, and M.~Zhou, ``Multimodal fusion of radar and image data for
+  human motion recognition,'' \emph{IEEE Sensors Journal}, vol.~19, no.~11, pp.
+  4285--4295, Jun. 2018.
+
+\bibitem{yang2025g3r}
+Z.~Yang, Y.~Jiang, Y.~Zhao, and Y.~Gu, ``{G3R}: Generating rich and
+  fine-grained mmwave radar data from {RGB} videos for gesture recognition,''
+  \emph{IEEE Transactions on Mobile Computing}, vol.~24, no.~4, pp. 1591--1605,
+  Apr. 2025.
+
+\bibitem{amin2018radar}
+M.~G. Amin, F.~Ahmad, and Y.~D. Zhang, ``Radar signal processing for elderly
+  fall detection: The future for in-home monitoring,'' \emph{IEEE Signal
+  Processing Magazine}, vol.~35, no.~2, pp. 41--58, Mar. 2018.
+
+\bibitem{wang2023radhar}
+Z.~Wang, Y.~Gu, X.~Jiang, J.~Ren, and Y.~Zhao, ``{RadHAR}: Human activity
+  recognition from point clouds generated through a millimeter-wave radar,''
+  \emph{IEEE Transactions on Mobile Computing}, vol.~22, no.~8, pp. 4342--4356,
+  Aug. 2023.
 
 \bibitem{song2025dual}
 Y.~Song, K.~Zhang, T.~Yan, T.~Jin, Y.~Dai, and T.~Wang, ``Dual-modal human pose

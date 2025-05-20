@@ -1,5 +1,5 @@
 \glsresetall
-\chapter{Alleviate Data Scarcity for Radar-Based ECG Recovery} \label{ch:RFcardi}
+\chapter{Alleviation of Data Scarcity for Radar-Based ECG Recovery} \label{ch:RFcardi}
 This chapter focuses on the data scarcity in the training of \gls{dnn} for radar-based ECG recovery. In the previous research, most studies either develop advanced signal processing methods to improve SNR~\cite{liu2024diversity,zhang2023overview} or leverage various deep learning frameworks to realize accurate ECG recovery~\cite{zhao2024airecg,zhang2024radarODE-MTL}. However, the method for reducing dependence on data quantity is rarely investigated for radar-based ECG recovery, and all the deep-learning-based ECG recovery models are trained in a supervised manner~\cite{chen2022contactless,zhao2024airecg,li2024radarnet}. In this chapter, a transfer learning framework is proposed following \gls{ssl} paradigm to extract cardio-related information from the radar signal without ECG ground truth based on the intrinsic sparsity of cardiac features, and only a few synchronous radar-ECG pairs are required to fine-tune the pre-trained model for the ECG recovery. In addition, a data augmentation method is designed to increase the diversity of input samples while the augmented spectrogram is still faithful to the original ground truth vital sign.
 
 \section{Introduction}
@@ -89,7 +89,7 @@ To simplify the optimization, only one cardiac cycle is considered for one segme
 
 \begin{table}[tb]
 \centering
-\caption{Parameters for Signal Model}
+\caption{Parameters for signal model}
     \begin{tabular}{cc?cc?cc?cc}
     \toprule
     \textbf{Par.} & \textbf{Value} & \textbf{Par.} & \textbf{Value} & \textbf{Par.} & \textbf{Value} & \textbf{Par.} & \textbf{Value} \\
@@ -182,7 +182,7 @@ From Table~\ref{tab:res}, Horcrux achieves the best result when applying on $20\
 
 \begin{table}[tbp]
   \centering
-  \caption{Comparison of Different Augmentation Methods}
+  \caption{Comparison of different augmentation methods}
   \begin{tabular}{lcccc|c}
   \toprule
   Methods & \makecell[c]{RMSE \\ (mV) } $\downarrow$ & PCC $\uparrow$ & \makecell[c]{H. E. \\ (ms) } $\downarrow$ & MDR $\downarrow$ &  $\Delta m\%$\\
@@ -211,7 +211,7 @@ In addition, the H$\&$P decomposition itself also improves the cardiac features 
 
 \begin{table}[tbp]
   \centering
-  \caption{Ablation Study for Horcrux}
+  \caption{Ablation study for Horcrux}
   \resizebox{\textwidth}{!}{
   \begin{tabular}{c|cc|cc|cccc|c}
   \toprule
@@ -289,7 +289,7 @@ The fine-tuning is based on the model pre-trained by $100\%$ dataset with or wit
 
 \begin{table}[tb]
 \centering
-\caption{Performance of ECG Recovery using different percentages of labeled data}
+\caption{Performance of ECG recovery using different percentages of labeled data}
 \resizebox{\textwidth}{!}{
     \begin{tabular}{c |cccc|c?cccc|c}
     \toprule
