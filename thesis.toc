@@ -56,7 +56,7 @@
 \contentsline {subsubsection}{\numberline {4.2.2.2}Signal Pre-Processing with Synchrosqueezed Wavelet Transform (SST)}{47}{subsubsection.4.2.2.2}% 
 \contentsline {subsection}{\numberline {4.2.3}radarODE Framework Design}{49}{subsection.4.2.3}% 
 \contentsline {subsubsection}{\numberline {4.2.3.1}Single-cycle ECG Length Estimation}{49}{subsubsection.4.2.3.1}% 
-\contentsline {subsubsection}{\numberline {4.2.3.2}Single-cycle ECG Generator (SCEG)}{51}{subsubsection.4.2.3.2}% 
+\contentsline {subsubsection}{\numberline {4.2.3.2}Single-cycle ECG Generator}{51}{subsubsection.4.2.3.2}% 
 \contentsline {subsubsection}{\numberline {4.2.3.3}Long-Term ECG Reconstruction}{58}{subsubsection.4.2.3.3}% 
 \contentsline {section}{\numberline {4.3}Dataset and Implementation Details}{60}{section.4.3}% 
 \contentsline {subsection}{\numberline {4.3.1}Hardware and Environment Settings for Data Collection}{60}{subsection.4.3.1}% 

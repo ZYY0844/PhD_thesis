@@ -144,7 +144,7 @@ where $\hat{f}(p)$ means the estimated probability density function at point $p$
 \end{algorithmic} 
 \end{algorithm} 
 
-\subsubsection{Single-cycle ECG Generator (SCEG)}\label{sec:sceg}
+\subsubsection{Single-cycle ECG Generator}\label{sec:sceg}
 Based on the yielded $PPI$, the SST spectrogram can be sliced into segments corresponding to a single cardiac cycle, and the aim of the SCEG module is to reconstruct the ECG for each single cardiac cycle, hence realizing the transformation from mechanical to electrical domain. In general, the input of the SCEG is $N$ segments of the SST plot within $[1,25]$~Hz with the size of $F\times T$ on frequency and time axis, and the output is the corresponding $N$ ECG pieces with the same length $T$, as shown in Figure~\ref{fig:sceg}. In practice, the deep neural network only accepts the inputs/outputs of the same size. Therefore, the actual SST segment is centered at the current cardiac cycle and expands to $4$ seconds, and the corresponding ECG ground truth is resampled to a fixed length of $200$ for loss calculation.
 
 For architecture design, the SCEG module adopts the popular backbone-encoder-decoder structure as verified by enormous image-related tasks~\cite{li2023euclidean,chu2024vessel}, with detailed parameters shown in Table~\ref{tab:param}. In addition, a feature fusion block is added after the decoder to fuse the temporal and morphological features and generate the final ECG reconstructions. The detailed implementation of each part in Table~\ref{tab:param} with explanations can be elaborated as:
