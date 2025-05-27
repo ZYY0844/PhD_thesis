@@ -33,24 +33,24 @@ Warning--I'm ignoring fitzgerald2010harmonic's extra "year" field
 Done.
 You've used 244 entries,
             4087 wiz_defined-function locations,
-            1991 strings with 58062 characters,
-and the built_in function-call counts, 226936 in all, are:
+            1991 strings with 58064 characters,
+and the built_in function-call counts, 226928 in all, are:
 = -- 18202
 > -- 6601
 < -- 2179
 + -- 3731
 - -- 1310
-* -- 11390
-:= -- 31880
-add.period$ -- 492
+* -- 11389
+:= -- 31878
+add.period$ -- 491
 call.type$ -- 244
 change.case$ -- 245
 chr.to.int$ -- 5049
 cite$ -- 244
-duplicate$ -- 15806
-empty$ -- 16631
+duplicate$ -- 15805
+empty$ -- 16629
 format.name$ -- 1405
-if$ -- 53073
+if$ -- 53071
 int.to.chr$ -- 0
 int.to.str$ -- 244
 missing$ -- 2759
@@ -60,10 +60,10 @@ pop$ -- 6068
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 16898
+skip$ -- 16900
 stack$ -- 0
 substring$ -- 12527
-swap$ -- 14459
+swap$ -- 14458
 text.length$ -- 496
 text.prefix$ -- 0
 top$ -- 5

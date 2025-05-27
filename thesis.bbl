@@ -47,8 +47,8 @@ Y.~Zhang, R.~Yang, Y.~Yue, E.~G. Lim, and Z.~Wang, ``An overview of algorithms
 R.~Guan, S.~Yao, X.~Zhu, K.~L. Man, E.~G. Lim, J.~Smith, Y.~Yue, and Y.~Yue,
   ``{Achelous: A fast unified water-surface panoptic perception framework based
   on fusion of monocular camera and 4D mmWave radar},'' in \emph{2023 IEEE 26th
-  International Conference on Intelligent Transportation Systems}.\hskip 1em
-  plus 0.5em minus 0.4em\relax IEEE, Sep. 2023, pp. 182--188.
+  International Conference on Intelligent Transportation Systems}, Sep. 2023,
+  pp. 182--188.
 
 \bibitem{wang2020vimo}
 F.~Wang, F.~Zhang, C.~Wu, B.~Wang, and K.~R. Liu, ``Vimo: Multiperson vital
@@ -1351,10 +1351,10 @@ P.~O. Hoyer, ``Non-negative matrix factorization with sparseness constraints,''
   Apr. 2004.
 
 \bibitem{hwang2024rc}
-S.-H. Hwang, M.~Kim, and S.~E. Whang, ``Rc-mixup: A data augmentation strategy
-  against noisy data for regression tasks,'' in \emph{Proceedings of the 30th
-  ACM SIGKDD Conference on Knowledge Discovery and Data Mining}, Aug. 2024, pp.
-  1155--1165.
+S.-H. Hwang, M.~Kim, and S.~E. Whang, ``{RC-Mixup}: A data augmentation
+  strategy against noisy data for regression tasks,'' in \emph{Proceedings of
+  the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining}, Aug.
+  2024, pp. 1155--1165.
 
 \bibitem{schneider2024anchor}
 N.~Schneider, S.~Goshtasbpour, and F.~Perez-Cruz, ``Anchor data augmentation,''
