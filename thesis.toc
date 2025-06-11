@@ -1,6 +1,6 @@
 \contentsline {chapter}{Abstract}{iii}{chapter*.1}% 
+\contentsline {chapter}{Publications}{v}{chapter*.3}% 
 \contentsline {chapter}{Acknowledgements}{v}{chapter*.2}% 
-\contentsline {chapter}{Publications}{vii}{Item.7}% 
 \contentsline {chapter}{Contents}{ix}{chapter*.7}% 
 \contentsline {chapter}{List of Figures}{xv}{chapter*.8}% 
 \contentsline {chapter}{List of Tables}{xvii}{chapter*.9}% 
