@@ -1,24 +1,25 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces \leavevmode {\color {blue}Strengths and weaknesses of cardiac feature extraction algorithms}\relax }}{18}{table.caption.14}% 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Parameters for data collection interface\relax }}{34}{table.caption.26}% 
-\contentsline {table}{\numberline {3.2}{\ignorespaces Performance of supervised ECG recovery\relax }}{39}{table.caption.29}% 
+\contentsline {table}{\numberline {3.1}{\ignorespaces Parameters for data collection interface\relax }}{37}{table.caption.27}% 
+\contentsline {table}{\numberline {3.2}{\ignorespaces Performance of supervised ECG recovery\relax }}{42}{table.caption.30}% 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Structure and parameters for SCEG\relax }}{52}{table.4.1}% 
-\contentsline {table}{\numberline {4.2}{\ignorespaces Default values for $\eta $\relax }}{56}{table.caption.36}% 
-\contentsline {table}{\numberline {4.3}{\ignorespaces Structure and parameters for long-term ECG reconstruction\relax }}{59}{table.caption.37}% 
-\contentsline {table}{\numberline {4.4}{\ignorespaces Parameters for link budget analysis\relax }}{62}{table.caption.40}% 
-\contentsline {table}{\numberline {4.5}{\ignorespaces Performance comparison for single-cycle ECG recovery and ablation study\relax }}{67}{table.caption.43}% 
-\contentsline {table}{\numberline {4.6}{\ignorespaces Absolute timing error for reconstructed ECG peaks\relax }}{74}{table.caption.53}% 
+\contentsline {table}{\numberline {4.1}{\ignorespaces Structure and parameters for SCEG\relax }}{55}{table.4.1}% 
+\contentsline {table}{\numberline {4.2}{\ignorespaces Default values for $\eta $\relax }}{59}{table.caption.37}% 
+\contentsline {table}{\numberline {4.3}{\ignorespaces Structure and parameters for long-term ECG reconstruction\relax }}{62}{table.caption.38}% 
+\contentsline {table}{\numberline {4.4}{\ignorespaces Parameters for link budget analysis\relax }}{65}{table.caption.41}% 
+\contentsline {table}{\numberline {4.5}{\ignorespaces Performance comparison for single-cycle ECG recovery and ablation study\relax }}{70}{table.caption.44}% 
+\contentsline {table}{\numberline {4.6}{\ignorespaces Absolute timing error for reconstructed ECG peaks\relax }}{77}{table.caption.54}% 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Comparison of different optimization strategies on radar-based ECG recovery\relax }}{95}{table.caption.57}% 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Comparison of different optimization strategies on indoor scene understanding\relax }}{97}{table.caption.58}% 
-\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison of the frameworks under different SNR\relax }}{106}{table.caption.64}% 
-\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison of the frameworks under abrupt noises\relax }}{108}{table.caption.66}% 
+\contentsline {table}{\numberline {5.1}{\ignorespaces Comparison of different optimization strategies on radar-based ECG recovery\relax }}{98}{table.caption.58}% 
+\contentsline {table}{\numberline {5.2}{\ignorespaces Comparison of different optimization strategies on indoor scene understanding\relax }}{100}{table.caption.59}% 
+\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison of the frameworks under different SNR\relax }}{109}{table.caption.65}% 
+\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison of the frameworks under abrupt noises\relax }}{111}{table.caption.67}% 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Parameters for signal model\relax }}{118}{table.caption.69}% 
-\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of different augmentation methods\relax }}{124}{table.caption.72}% 
-\contentsline {table}{\numberline {6.3}{\ignorespaces Ablation study for Horcrux\relax }}{125}{table.caption.73}% 
-\contentsline {table}{\numberline {6.4}{\ignorespaces Performance of SSL with ablation study\relax }}{127}{table.caption.75}% 
-\contentsline {table}{\numberline {6.5}{\ignorespaces Performance of ECG recovery using different percentages of labeled data\relax }}{128}{table.caption.77}% 
+\contentsline {table}{\numberline {6.1}{\ignorespaces Parameters for signal model\relax }}{120}{table.caption.70}% 
+\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of different augmentation methods\relax }}{127}{table.caption.73}% 
+\contentsline {table}{\numberline {6.3}{\ignorespaces Ablation study for Horcrux\relax }}{128}{table.caption.74}% 
+\contentsline {table}{\numberline {6.4}{\ignorespaces Performance of SSL with ablation study\relax }}{130}{table.caption.76}% 
+\contentsline {table}{\numberline {6.5}{\ignorespaces Performance of ECG recovery using different percentages of labeled data\relax }}{131}{table.caption.78}% 
 \addvspace {10\p@ }

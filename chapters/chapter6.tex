@@ -1,5 +1,5 @@
 \glsresetall
-\chapter{Alleviation of Data Scarcity for Radar-Based ECG Recovery} \label{ch:RFcardi}
+\chapter{Alleviation of Data Scarcity} \label{ch:RFcardi}
 This chapter focuses on the data scarcity in the training of \gls{dnn} for radar-based ECG recovery. In the previous research, most studies either develop advanced signal processing methods to improve SNR~\cite{liu2024diversity,zhang2023overview} or leverage various deep learning frameworks to realize accurate ECG recovery~\cite{zhao2024airecg,zhang2024radarODE-MTL}. However, the method for reducing dependence on data quantity is rarely investigated for radar-based ECG recovery, and all the deep-learning-based ECG recovery models are trained in a supervised manner~\cite{chen2022contactless,zhao2024airecg,li2024radarnet}. In this chapter, a transfer learning framework is proposed following \gls{ssl} paradigm to extract cardio-related information from the radar signal without ECG ground truth based on the intrinsic sparsity of cardiac features, and only a few synchronous radar-ECG pairs are required to fine-tune the pre-trained model for the ECG recovery. In addition, a data augmentation method is designed to increase the diversity of input samples while the augmented spectrogram is still faithful to the original ground truth vital sign.
 
 \section{Introduction}

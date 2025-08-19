@@ -1,5 +1,5 @@
 \glsresetall
-\chapter{Robust Single-Cycle ECG Generation}\label{ch:radarODE}
+\chapter{Robust Single-Cycle ECG Recovery}\label{ch:radarODE}
 This chapter is based on the high-SNR radar measurements that contain ample cardiac features and aim to realize the robust ECG recovery to resist inevitable noises (e.g., \gls{rbm} noise). Previous studies leverage the powerful fitting capability of the \gls{dnn} to model complex and non-linear projections from radar to ECG signal, but the inference results can be easily distorted under abrupt noises~\cite{chen2022contactless,zhao2024airecg,zhao2024mmarrhythmia}. In this chapter, the traditional DNN is integrated with \gls{ode} with prior morphological features that constrain the ECG recovery, and a signal model is also designed to explain the critical features in the transformation from radar to ECG signals. The proposed ODE-embedded deep learning model is validated on the dataset with RBM noise, and the recovered ECG pieces still show high fidelity even when the subtle cardiac features are ruined by the noises with large amplitude.
 
 \section{Introduction}

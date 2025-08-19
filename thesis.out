@@ -9,21 +9,21 @@
 \BOOKMARK [1][-]{section.1.1}{Wireless Sensing for Vital Sign Monitoring}{chapter.1}% 9
 \BOOKMARK [1][-]{section.1.2}{Radar-based Vital Sign Monitoring}{chapter.1}% 10
 \BOOKMARK [1][-]{section.1.3}{Challenges in Radar-based ECG Recovery}{chapter.1}% 11
-\BOOKMARK [2][-]{subsection.1.3.1}{Efficient High-SNR Signal Acquisition}{section.1.3}% 12
-\BOOKMARK [2][-]{subsection.1.3.2}{Robust Single-cycle ECG Generation}{section.1.3}% 13
-\BOOKMARK [2][-]{subsection.1.3.3}{Robust Long-term ECG Generation}{section.1.3}% 14
-\BOOKMARK [2][-]{subsection.1.3.4}{Alleviation of Data Scarcity}{section.1.3}% 15
+\BOOKMARK [2][-]{subsection.1.3.1}{Inefficient High-SNR Signal Acquisition}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.2}{Non-robust Single-cycle ECG Recovery}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.3}{Non-robust Long-term ECG Recovery}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.4}{Dependency on Massive Data}{section.1.3}% 15
 \BOOKMARK [1][-]{section.1.4}{Contributions and Thesis Outline}{chapter.1}% 16
 \BOOKMARK [0][-]{chapter.2}{Background and Literature Review}{}% 17
-\BOOKMARK [1][-]{section.2.1}{Background Knowledge}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.1.1}{Radar Types}{section.2.1}% 19
-\BOOKMARK [2][-]{subsection.2.1.2}{Theoretical Background for Vital Sign Monitoring}{section.2.1}% 20
-\BOOKMARK [2][-]{subsection.2.1.3}{Radar-Based ECG Monitoring as a Domain Transformation Problem}{section.2.1}% 21
-\BOOKMARK [1][-]{section.2.2}{Literature Review for Cardiac Feature Extraction}{chapter.2}% 22
-\BOOKMARK [2][-]{subsection.2.2.1}{Spectrum-based Methods}{section.2.2}% 23
-\BOOKMARK [2][-]{subsection.2.2.2}{Periodicity-based Methods}{section.2.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.3}{Blind Source Separation Methods}{section.2.2}% 25
-\BOOKMARK [2][-]{subsection.2.2.4}{Deep Learning Method}{section.2.2}% 26
+\BOOKMARK [1][-]{section.2.1}{Radar Signal Collection and Pre-processing}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.1.1}{Selection of Radar Types}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.2}{Theoretical Background for Radar Signal Collection}{section.2.1}% 20
+\BOOKMARK [1][-]{section.2.2}{Advanced Methods for Cardiac Feature Extraction}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.1}{Spectrum-based Methods}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.2}{Periodicity-based Methods}{section.2.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.3}{Blind Source Separation Methods}{section.2.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.4}{Deep Learning Method}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.5}{Radar-Based ECG Monitoring as a Domain Transformation Problem}{section.2.2}% 26
 \BOOKMARK [0][-]{chapter.3}{Efficient High-SNR Signal Acquisition}{}% 27
 \BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 28
 \BOOKMARK [1][-]{section.3.2}{Methodology}{chapter.3}% 29
@@ -39,7 +39,7 @@
 \BOOKMARK [2][-]{subsection.3.4.2}{Impact of Monitoring Range}{section.3.4}% 39
 \BOOKMARK [2][-]{subsection.3.4.3}{Impact of Signal Quality on ECG Recovery}{section.3.4}% 40
 \BOOKMARK [1][-]{section.3.5}{Conclusions}{chapter.3}% 41
-\BOOKMARK [0][-]{chapter.4}{Robust Single-Cycle ECG Generation}{}% 42
+\BOOKMARK [0][-]{chapter.4}{Robust Single-Cycle ECG Recovery}{}% 42
 \BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 43
 \BOOKMARK [1][-]{section.4.2}{Methodology}{chapter.4}% 44
 \BOOKMARK [2][-]{subsection.4.2.1}{Overview}{section.4.2}% 45
@@ -55,7 +55,7 @@
 \BOOKMARK [2][-]{subsection.4.4.2}{Evaluations of SCEG Module in radarODE}{section.4.4}% 55
 \BOOKMARK [2][-]{subsection.4.4.3}{Overall Evaluations of radarODE}{section.4.4}% 56
 \BOOKMARK [1][-]{section.4.5}{Conclusions}{chapter.4}% 57
-\BOOKMARK [0][-]{chapter.5}{Robust Long-Term ECG Generation}{}% 58
+\BOOKMARK [0][-]{chapter.5}{Robust Long-Term ECG Recovery}{}% 58
 \BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 59
 \BOOKMARK [1][-]{section.5.2}{Background and Problem Statement}{chapter.5}% 60
 \BOOKMARK [2][-]{subsection.5.2.1}{Model for Domain Transformation and Problem Statement}{section.5.2}% 61
@@ -73,7 +73,7 @@
 \BOOKMARK [2][-]{subsection.5.4.3}{Evaluations on the Long-term Recovered ECG}{section.5.4}% 73
 \BOOKMARK [2][-]{subsection.5.4.4}{Noise Robustness Test}{section.5.4}% 74
 \BOOKMARK [1][-]{section.5.5}{Conclusions}{chapter.5}% 75
-\BOOKMARK [0][-]{chapter.6}{Alleviation of Data Scarcity for Radar-Based ECG Recovery}{}% 76
+\BOOKMARK [0][-]{chapter.6}{Alleviation of Data Scarcity}{}% 76
 \BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 77
 \BOOKMARK [1][-]{section.6.2}{Data Augmentation for Radar Spectrogram}{chapter.6}% 78
 \BOOKMARK [2][-]{subsection.6.2.1}{Overview}{section.6.2}% 79
@@ -94,4 +94,4 @@
 \BOOKMARK [0][-]{chapter.7}{Conclusions and Future Work}{}% 94
 \BOOKMARK [1][-]{section.7.1}{Conclusions}{chapter.7}% 95
 \BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 96
-\BOOKMARK [0][-]{chapter*.80}{References}{}% 97
+\BOOKMARK [0][-]{chapter*.81}{References}{}% 97

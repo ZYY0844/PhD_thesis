@@ -1,5 +1,5 @@
 \glsresetall
-\chapter{Robust Long-Term ECG Generation}\label{ch:radarMTL}
+\chapter{Robust Long-Term ECG Recovery}\label{ch:radarMTL}
 This chapter further extends the robust single-cycle ECG recovery to the robust long-term ECG recovery by leveraging \gls{mtl} as a popular paradigm to help the concatenation of the well-recovery ECG pieces. According to the experiments in Chapter~\ref{ch:radarODE}, the misalignment cause by inaccurate \gls{ppi} estimation heavily ruin the final results, and it is necessary to design the long-term ECG recovery based on single-cycle ECG pieces, instead of realizing the recovery process in terms of arbitrary divided radar/ECG pairs. Therefore, a novel MTL structure designed for long-term ECG recovery is designed with three sub-tasks responsible for recovering different ECG features. In addition, a optimization strategy is also designed to balance the training process for the sub-tasks with great disparity in terms of intrinsic difficulties. Sufficient experiments show that the proposed radarODE-MTL with \gls{ega} optimization strategy outperforms other frameworks and optimization strategies under various noise conditions and datasets, and the deconstructed tasks in radarODE-MTL could further improve the interpretability in radar-based ECG recovery.
 
 

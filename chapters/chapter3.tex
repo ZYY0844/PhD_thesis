@@ -11,10 +11,10 @@ Radar-based vital sign monitoring, as a popular branch of radar-based sensing, h
         \centering
         \subfloat[]{\label{fig:radar_good}\includegraphics[width=0.35\columnwidth]{radar_good.eps}}
         \subfloat[]{\label{fig:radar_bad}\includegraphics[width=0.35\columnwidth]{radar_bad.eps}} 
-        \caption{Challenges for high-SNR signal collection: (a) and (b) Radar signals with high and low SNR for adjacent points with a distance of $0.03$m.}
+        \caption{\textcolor{blue}{Challenges for high-SNR signal collection: (a) and (b) Radar signals with high and low SNR for adjacent points with a distance of $0.03$m. The ECG ground truth is plotted to help the identification of the prominent peaks.}}
         \label{fig:challenges}
 \end{figure}
-Based on the discussion Chapter~\ref{sec:the_first_challenge}, it is still a challenge to precisely locate and track the cardiac location during data collection to efficiently extract high-SNR radar signal. Although, it is natural to think the high-SNR radar signal can be searched in a constrained space by optimization, there is no appropriate method to assess the signal SNR in terms of cardiac features contained, and the objective space is actually highly discontinuous with adjacent points may revealing totally different SNR as shown in Figure~\subref*{fig:radar_good} and~\subref*{fig:radar_bad}, restricting the application of common gradient-based optimization algorithms. To address these issues, the contributions of this study can be listed as: 
+Based on the discussion Chapter~\ref{sec:the_first_challenge}, it is still a challenge to precisely locate and track the cardiac location during data collection to efficiently extract high-SNR radar signal. \textcolor{blue}{Although, it is natural to think the high-SNR radar signal can be searched in a constrained space by optimization, there is no appropriate method to assess the signal SNR in terms of cardiac features contained, and the objective space is actually highly discontinuous because the adjacent points may reveal totally different SNR as shown in Figure~\subref*{fig:radar_good} and~\subref*{fig:radar_bad}, with high-SNR radar signal shown prominent peaks aligning with ECG peaks but not vice versa.} To address these issues, the contributions of this study can be listed as: 
 \begin{itemize}
 \item A \gls{cft} algorithm is proposed based on derivative-free optimization (DFO) to find the gls{cf} point by iteratively evaluating the potential points in a discontinuous objective space, with a universal signal template designed to adaptively assess the signal SNR as costs.
 \item The proposed CFT algorithm has been validated on sitting subjects in various scenarios and could provide radar measurements with better SNR compared with existing methods.
@@ -28,7 +28,7 @@ The rest of this chapter is organized as follows. Section~\ref{sec:cftmethod} el
 The pipeline of using CFT algorithm is shown in Figure~\ref{fig:CFTRFcardi} with three steps:
 \begin{itemize}
 \item The received radar signal will be converted into a standard format in terms of chirp, frame and virtual antenna channel to obtain the general location of the subject, as shown in Figure~\ref{fig:CFTRFcardi}(a).
-\item The rough location acts as the initial state for the CFT algorithm, and the points within a constrained space will be evaluated to find the red CF point with best SNR as shown in Figure~\ref{fig:CFTRFcardi}(b).
+\item \textcolor{blue}{The rough location acts as the initial state for the CFT algorithm, and the points within a constrained space will be evaluated to find the red CF point with high SNR while ignoring the space where only low-SNR signals\footnote[2]{\textcolor{blue}{There is no boundary for distinguishing high or low signals, because explicit values will be used as the accurate estimation of SNR instead of the vague binary classification.}} can be extracted from, as shown in Figure~\ref{fig:CFTRFcardi}(b).}
 \item Signals extracted from the ten best points will be converted into spectrograms to train the deep learning model designed in~\cite{zhang2024radarODE-MTL} and generate corresponding ECG recoveries, as shown in Figure~\ref{fig:CFTRFcardi}(c).
 \end{itemize}
 
@@ -207,7 +207,7 @@ TI-AWR 1843 radar with $2$ Tx and $4$ Rx is used for data collection with $8$ vi
 The constraint $\Omega$ for the CF point search is centered at the initial state $E_0$ with a range of $0.4\times 0.2 \times 0.4$m as illustrated in Figure~\ref{fig:CFTRFcardi}(b). In addition, the initial grid and search region size should be adjusted to fit the real-life physical unit as $\Gamma_k= \gamma_k = 0.1$m, and the size will be limited as $\Gamma_k\geq\gamma_k\geq 0.001$m to prevent an exhaustive search within a meaningless small space. At last, SNR$_d$ is set to $0.01$ for the desired MSE between normalized synthetic template and signal envelope, and $k_{max}$ is set to $100$.
 
 \subsubsection{Deep Learning Model Training}
-The deep learning model adopts the same backbone, ECG decoder and hyperparameters as in our previous open-sourced work~\cite{zhang2024radarODE-MTL} coded in PyTorch and trained on NVIDIA RTX 4090 (24GB). The total training epoch is set to $100$ with batch size $8$, and a $5$-fold cross-validation training strategy is adopted to split the dataset to make the most of the limited dataset while excluding the testing data from the training phase.
+\textcolor{blue}{The deep learning model adopts the same backbone, encoder and decoder structure with the same hyperparameters as used in our previous open-sourced work~\cite{zhang2024radarODE-MTL} coded in PyTorch and trained on NVIDIA RTX 4090 (24GB). The total training epoch is set to $100$ with batch size $8$, and a $5$-fold cross-validation training strategy is adopted to split the dataset to make the most of the limited dataset while excluding the testing data from the training phase. Each experiment is repeated for three time to ensure the statistical significance.}
 
 
 \subsection{Methods for Comparison}
