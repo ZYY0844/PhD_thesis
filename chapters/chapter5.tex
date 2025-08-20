@@ -1,6 +1,6 @@
 \glsresetall
 \chapter{Robust Long-Term ECG Recovery}\label{ch:radarMTL}
-This chapter further extends the robust single-cycle ECG recovery to the robust long-term ECG recovery by leveraging \gls{mtl} as a popular paradigm to help the concatenation of the well-recovery ECG pieces. According to the experiments in Chapter~\ref{ch:radarODE}, the misalignment cause by inaccurate \gls{ppi} estimation heavily ruin the final results, and it is necessary to design the long-term ECG recovery based on single-cycle ECG pieces, instead of realizing the recovery process in terms of arbitrary divided radar/ECG pairs. Therefore, a novel MTL structure designed for long-term ECG recovery is designed with three sub-tasks responsible for recovering different ECG features. In addition, a optimization strategy is also designed to balance the training process for the sub-tasks with great disparity in terms of intrinsic difficulties. Sufficient experiments show that the proposed radarODE-MTL with \gls{ega} optimization strategy outperforms other frameworks and optimization strategies under various noise conditions and datasets, and the deconstructed tasks in radarODE-MTL could further improve the interpretability in radar-based ECG recovery.
+This chapter further extends the robust single-cycle ECG recovery to the robust long-term ECG recovery by leveraging \gls{mtl} as a popular paradigm to help the concatenation of the well-recovered ECG pieces. According to the experiments in Chapter~\ref{ch:radarODE}, the misalignment cause by inaccurate \gls{ppi} estimation heavily ruin the final results, and it is necessary to design the long-term ECG recovery based on single-cycle ECG pieces, instead of realizing the recovery process in terms of arbitrary divided radar/ECG pairs. Therefore, a novel MTL structure designed for long-term ECG recovery is designed with three sub-tasks responsible for recovering different ECG features. In addition, an optimization strategy is also designed to balance the training process for the sub-tasks with great disparity in terms of intrinsic difficulties. Sufficient experiments show that the proposed radarODE-MTL with \gls{ega} optimization strategy outperforms other frameworks and optimization strategies under various noise conditions and datasets, and the deconstructed tasks in radarODE-MTL could further improve the interpretability in radar-based ECG recovery.
 
 
 \section{Introduction}
@@ -400,6 +400,7 @@ In the evaluations of timing errors of the ECG peaks it is common only to analyz
 \begin{itemize}
   \item Both ODE-based methods reveal better performance than the benchmark, but the radarODE-MTL only achieves equivalent performance as radarODE with similar $\Delta m\%$ around $31\%$, $35\%$ and $24\%$ as shown in Figure~\subref*{fig:Q_cdf},~\subref*{fig:S_cdf} and~\subref*{fig:T_cdf}. The possible reason is that radarODE-MTL only aligns the ECG pieces with R peaks, but the impacts on the QST peaks are random. In other words, the alignment of the R peak may degrade the accuracy of other peaks, and hence the overall performance of radarODE and radarODE-MTL on the QST peaks are similar.
   \item It is worth noticing that $\Delta m\%$ of the radarODE-MTL ($33\%$) on the R peak is obviously larger than that of the radarODE ($25\%$), with the median timing error as $14$, $10$ and $6$ms for three frameworks as shown in Figure~\subref*{fig:R_cdf}. Therefore, radarODE-MTL is a better way to generate long-term ECG signals by aligning the ECG pieces with predicted R peaks, instead of reintroducing the noisy time-domain radar signal as in radarODE.
+  \item \textcolor{blue}{Different from other frameworks with equal length of input and output, radarODE-MTL adopts a 4-sec segment to reconstruct the ECG piece for one cardiac cycle, and the radar signal from adjacent cardiac cycles also contributes to the recovery of the current ECG piece. Therefore, the peak accuracy can be compensated from the adjacent cardiac cycles with less noise distortion.}
 \end{itemize}
 \begin{figure}[tb]
         \centering
@@ -516,6 +517,33 @@ In comparison, the extensive body movements with $1$ and $2$ sec have similar im
 
 In summary, the noise-robustness tests indicate that it is necessary to consider the noise robustness when designing the deep-learning model, because both MMECG and radarODE reveal a severe degradation in the performance, especially for the low SNR scenarios. In addition, the deconstruction of the ECG recovery task in radarODE-MTL could effectively resist the noises, because the ODE decoder protects the morphological feature, and the peak accuracy can be compensated from the adjacent cardiac cycles with less noise distortion.
 
+
+\subsection{Complexity Analysis and Comparison}
+\color{blue}
+Table~\ref{tab:complex} presents a detailed complexity comparison of three frameworks considering the parameter count (Params.), floating point operations (FLOPs), multiply-accumulate operations (MACs), and training time per epoch. The parameter count reflects the total number of parameters in each model, and FLOPs and MACs quantify the computational costs~\cite{guan2024talk2radar}. As shown in Table~\ref{tab:complex}, the complexities of ODE-based methods are higher than that of MMECG due to the different input data types, with radarODE and radarODE-MTL using spectrogram input and MMECG processing 1D radar signals. In addition, the majority of the parameters ($59\%$) and FLOPs ($95\%$) for radarODE-MTL are for the backbone stage for spectrogram processing, and an important future work is to squeeze the backbone size with reduced input spectrograms.
+
+Compared with the gaps in model size, the training times per epoch for three frameworks are closer, because the MMECG is trained on arbitrary radar/ECG segments with a step length of $0.15$ sec~\cite{chen2022contactless}, while the ODE-based frameworks are based on single cardiac cycles. In this case, the MMECG needs to traverse $48$k samples while radarODE-MTL only has $19$k samples, indicating that many samples for MMECG training are homogeneous and cannot contribute to dataset diversity and may increase the risk of overfitting.
+
+\begin{table}[tb]
+\centering\color{blue}
+\caption{Complexity Comparison Across Deep Learning Frameworks}
+    \begin{tabular}{ll|cccc}
+    \toprule
+    \multicolumn{2}{c|}{Framework} & \makecell[c]{Params.\\ (M)} & \makecell[c]{FLOPs\\ (G)} & \makecell[c]{MACs\\ (G)} & \makecell[c]{Time/Epoch \\ (min)} \\
+    \midrule
+    \multicolumn{2}{c|}{MMECG~\cite{chen2022contactless}} & $0.67$ & $0.59$ & $0.30$ & $3.25$ \\
+    \midrule
+    \multicolumn{2}{c|}{radarODE~\cite{zhang2024radarODE}}& $6.04$ & $2.45$  & $1.23$  & $4.51$ \\
+    \midrule
+    \multirow{3}*{\makecell[c]{radarODE-\\MTL}} & Backbone & $4.81$ & $2.37$ & $1.18$ & -  \\
+     &Encoder & $0.72$  & $0.05$  & $0.03$ & - \\
+    &Decoder &$2.59$ & $0.07$  & $0.03$ & - \\
+    &All & $8.12$ & $2.50$  & $1.23$  & $4.85$ \\
+    \bottomrule
+    \end{tabular}
+\label{tab:complex}%
+\end{table}%
+\color{black}
 
 \section{Conclusions}\label{sec:mtlconclusions}
 This chapter investigates the radar-based ECG monitoring technique and proposes a deep-learning framework radarODE-MTL to provide accurate ECG monitoring under noises. The radarODE-MTL adopts the MTL paradigm to realize the ECG reconstruction through $3$ sub-tasks, and a novel optimization strategy called EGA is also proposed to simultaneously optimize all the tasks without stall or negative transfer issues. The performance of EGA has been evaluated on various MTL tasks, and the experimental results evidence that EGA is competitive with other state-of-the-art optimization strategies on the unified task and achieves outstanding results on radar-based EGA recovery with unbalanced task difficulties. In addition, the well-trained radarODE-MTL could provide long-term ECG reconstructions with high fidelity in terms of MDR, morphological similarity and peak accuracy. Lastly, this is the first study that conducts noise-robustness tests for deep-learning frameworks, and the proposed radarODE-MTL could also achieve reasonable ECG recovery with mild degradation under constant and abrupt noises.

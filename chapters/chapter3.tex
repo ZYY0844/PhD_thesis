@@ -172,19 +172,19 @@ The visualization of the CFT algorithm in Figure~\ref{fig:CFTRFcardi}(b) shows t
 \section{Details of Experiment and Dataset}\label{sec:cftexp}
 \subsection{Dataset Collection and Preparation}\label{sec:cftdata_coll}
 % \subsubsection{Dataset Collection and Preparation}
-The dataset contains a total of $80$-minute synchronous radar-ECG pairs collected for $5$ healthy subjects ($3$ men, $2$ women) in $2$ indoor scenarios as shown in Figure~\ref{fig:data_col}. The subjects are asked to sit causally and are allowed to change postures during data collection, and each data trial lasts for $1$ minute. The distance between radar and human body varies from $0.5-1.2$m, and a longer distance causes the decrease of signal SNR with a smaller portion of the space points containing useful cardiac features. 
+The dataset contains a total of $80$-minute synchronous radar-ECG pairs collected for $5$ healthy subjects ($3$ men, $2$ women) in $2$ indoor scenarios as shown in Figure~\ref{fig:data_col}. \textcolor{blue}{The subjects are asked to sit casually and are allowed to change postures during data collection, and each data trial lasts for $1$ minute. The distance between radar and human body varies from $0.5-1.2$m, and a longer distance causes the decrease of signal SNR with a smaller portion of the space points containing useful cardiac features.} 
 
-TI-AWR 1843 radar with $2$ Tx and $4$ Rx is used for data collection with $8$ virtual antenna channels created~\cite{AWR1843}, and the radar configurations are listed in Table~\ref{tab:data_param} with the name provided in TI mmWave-Studio interface. The signal will be sampled as $200$Hz, and only a band-pass filter from $0.5$ to $50$Hz and a differentiator are used for removing respiration noise because the radar signal extracted from CF points already has high SNR. Lastly, the ECG ground truth is collected using TI ADS1292, and the related ECG processing (e.g., smoothing and peak finding) is realized by NeuroKit2 python package~\cite{makowski2021neurokit2}.
+\textcolor{blue}{TI-AWR 1843 radar with $2$ Tx and $4$ Rx is used for data collection with $8$ virtual antenna channels created~\cite{AWR1843}, and the radar configurations are listed in Table~\ref{tab:data_param} with the name provided in TI mmWave-Studio interface. The signal will be sampled at $200$Hz, and only a band-pass filter from $0.5$ to $50$Hz and a differentiator are used for removing respiration noise because the radar signal extracted from CF points already has high SNR. Lastly, the ECG ground truth is collected using TI ADS1292 with AC coupling and integrated right-leg drive (RLD) amplifier to remove potential baseline drift or power-line noise, as shown in Figure~\ref{fig:data_col}. The related ECG processing (e.g., smoothing and peak finding) is realized by NeuroKit2 python package~\cite{makowski2021neurokit2} after the collection.}
 
 \begin{figure}[tb]
   \centering
-  \includegraphics[width=0.8\columnwidth]{scen_1.pdf}
-  \caption{Indoor scenarios for data collection.}
+  \includegraphics[width=0.8\columnwidth]{scen_2.pdf}
+  \caption{\textcolor{blue}{Indoor scenarios for synchronous radar and ECG collection.}}
   \label{fig:data_col}
 \end{figure}
 
 \begin{table}[tb]
-\centering
+\centering\color{blue}
 \caption{Parameters for data collection interface}
     \begin{tabular}{lc?lc}
     \toprule
@@ -197,6 +197,9 @@ TI-AWR 1843 radar with $2$ Tx and $4$ Rx is used for data collection with $8$ vi
     % Rx Gain & $30$ dB  & Rx Gain Target & $30$ dB  \\ 
     Start/End Chirp Tx & $0/2$  & No. of Chirp Loops & $2$  \\ 
     No. of Frames & $12000$  & Frame Periodicity & $5$ms  \\ 
+    Tx Gain ($G_T$) & $10$ dBi  & Rx Gain ($G_R$) & $30$ dBi  \\
+    Tx power ($P_{\mathrm{T}}$)& $12$ dBm & Noise Figure (NF)     & $15$ dB   \\ 
+    Wavelength ($\lambda$)  & $3.9$ mm               & Bandwidth (B)         & $3.8$ GHz \\
     \bottomrule
     \end{tabular}
 \label{tab:data_param}
@@ -206,9 +209,8 @@ TI-AWR 1843 radar with $2$ Tx and $4$ Rx is used for data collection with $8$ vi
 \subsubsection{Parameters for CFT Algorithm}
 The constraint $\Omega$ for the CF point search is centered at the initial state $E_0$ with a range of $0.4\times 0.2 \times 0.4$m as illustrated in Figure~\ref{fig:CFTRFcardi}(b). In addition, the initial grid and search region size should be adjusted to fit the real-life physical unit as $\Gamma_k= \gamma_k = 0.1$m, and the size will be limited as $\Gamma_k\geq\gamma_k\geq 0.001$m to prevent an exhaustive search within a meaningless small space. At last, SNR$_d$ is set to $0.01$ for the desired MSE between normalized synthetic template and signal envelope, and $k_{max}$ is set to $100$.
 
-\subsubsection{Deep Learning Model Training}
-\textcolor{blue}{The deep learning model adopts the same backbone, encoder and decoder structure with the same hyperparameters as used in our previous open-sourced work~\cite{zhang2024radarODE-MTL} coded in PyTorch and trained on NVIDIA RTX 4090 (24GB). The total training epoch is set to $100$ with batch size $8$, and a $5$-fold cross-validation training strategy is adopted to split the dataset to make the most of the limited dataset while excluding the testing data from the training phase. Each experiment is repeated for three time to ensure the statistical significance.}
-
+\subsubsection{Deep Learning Model Training and Testing}
+\textcolor{blue}{The deep learning model adopts the same backbone, encoder and decoder structure with the same hyperparameters as used in our previous open-sourced work~\cite{zhang2024radarODE-MTL} coded in PyTorch and trained on NVIDIA RTX 4090 (24GB). The total training epoch is set to $100$ with batch size $8$, and each experiment is repeated for five times to ensure the statistical significance. All the results show the statistical significance with P values much smaller than $0.05$, hence is not shown in the tables or figures for clarity. The dataset is split based on a $5$-fold cross-validation training strategy, with the trials from 1 fixed subject for testing and the other 4 subjects alternatively selected for training or validation, ensuring to make use of all the possible trials while not involving the testing data in the training phase.}
 
 \subsection{Methods for Comparison}
 The comparison is performed with the representative methods based on accumulation and clustering to extract high-SNR radar signal:

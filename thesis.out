@@ -72,26 +72,27 @@
 \BOOKMARK [2][-]{subsection.5.4.2}{Performance of EGA}{section.5.4}% 72
 \BOOKMARK [2][-]{subsection.5.4.3}{Evaluations on the Long-term Recovered ECG}{section.5.4}% 73
 \BOOKMARK [2][-]{subsection.5.4.4}{Noise Robustness Test}{section.5.4}% 74
-\BOOKMARK [1][-]{section.5.5}{Conclusions}{chapter.5}% 75
-\BOOKMARK [0][-]{chapter.6}{Alleviation of Data Scarcity}{}% 76
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 77
-\BOOKMARK [1][-]{section.6.2}{Data Augmentation for Radar Spectrogram}{chapter.6}% 78
-\BOOKMARK [2][-]{subsection.6.2.1}{Overview}{section.6.2}% 79
-\BOOKMARK [2][-]{subsection.6.2.2}{Harmonic and Percussive Components Decomposition}{section.6.2}% 80
-\BOOKMARK [2][-]{subsection.6.2.3}{Dynamic Template Matching \(DTM\)}{section.6.2}% 81
-\BOOKMARK [2][-]{subsection.6.2.4}{Augmented Spectrogram Generation}{section.6.2}% 82
-\BOOKMARK [1][-]{section.6.3}{Transfer Learning Framework Design}{chapter.6}% 83
-\BOOKMARK [2][-]{subsection.6.3.1}{Deep Learning Model Design}{section.6.3}% 84
-\BOOKMARK [2][-]{subsection.6.3.2}{Pre-text Task Training and Fine-tuning}{section.6.3}% 85
-\BOOKMARK [1][-]{section.6.4}{Experimental Results for Horcrux}{chapter.6}% 86
-\BOOKMARK [2][-]{subsection.6.4.1}{Evaluation for DTM}{section.6.4}% 87
-\BOOKMARK [2][-]{subsection.6.4.2}{Evaluation for Horcrux}{section.6.4}% 88
-\BOOKMARK [1][-]{section.6.5}{Experimental Results for RFcardi}{chapter.6}% 89
-\BOOKMARK [2][-]{subsection.6.5.1}{Evaluations and Ablation Studies of SSL}{section.6.5}% 90
-\BOOKMARK [2][-]{subsection.6.5.2}{Evaluations of Fine-tuning Results}{section.6.5}% 91
-\BOOKMARK [2][-]{subsection.6.5.3}{Summary of Transfer-learning-based ECG Recovery}{section.6.5}% 92
-\BOOKMARK [1][-]{section.6.6}{Conclusion}{chapter.6}% 93
-\BOOKMARK [0][-]{chapter.7}{Conclusions and Future Work}{}% 94
-\BOOKMARK [1][-]{section.7.1}{Conclusions}{chapter.7}% 95
-\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 96
-\BOOKMARK [0][-]{chapter*.81}{References}{}% 97
+\BOOKMARK [2][-]{subsection.5.4.5}{Complexity Analysis and Comparison}{section.5.4}% 75
+\BOOKMARK [1][-]{section.5.5}{Conclusions}{chapter.5}% 76
+\BOOKMARK [0][-]{chapter.6}{Alleviation of Data Scarcity}{}% 77
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 78
+\BOOKMARK [1][-]{section.6.2}{Data Augmentation for Radar Spectrogram}{chapter.6}% 79
+\BOOKMARK [2][-]{subsection.6.2.1}{Overview}{section.6.2}% 80
+\BOOKMARK [2][-]{subsection.6.2.2}{Harmonic and Percussive Components Decomposition}{section.6.2}% 81
+\BOOKMARK [2][-]{subsection.6.2.3}{Dynamic Template Matching \(DTM\)}{section.6.2}% 82
+\BOOKMARK [2][-]{subsection.6.2.4}{Augmented Spectrogram Generation}{section.6.2}% 83
+\BOOKMARK [1][-]{section.6.3}{Transfer Learning Framework Design}{chapter.6}% 84
+\BOOKMARK [2][-]{subsection.6.3.1}{Deep Learning Model Design}{section.6.3}% 85
+\BOOKMARK [2][-]{subsection.6.3.2}{Pre-text Task Training and Fine-tuning}{section.6.3}% 86
+\BOOKMARK [1][-]{section.6.4}{Experimental Results for Horcrux}{chapter.6}% 87
+\BOOKMARK [2][-]{subsection.6.4.1}{Evaluation for DTM}{section.6.4}% 88
+\BOOKMARK [2][-]{subsection.6.4.2}{Evaluation for Horcrux}{section.6.4}% 89
+\BOOKMARK [1][-]{section.6.5}{Experimental Results for RFcardi}{chapter.6}% 90
+\BOOKMARK [2][-]{subsection.6.5.1}{Evaluations and Ablation Studies of SSL}{section.6.5}% 91
+\BOOKMARK [2][-]{subsection.6.5.2}{Evaluations of Fine-tuning Results}{section.6.5}% 92
+\BOOKMARK [2][-]{subsection.6.5.3}{Summary of Transfer-learning-based ECG Recovery}{section.6.5}% 93
+\BOOKMARK [1][-]{section.6.6}{Conclusion}{chapter.6}% 94
+\BOOKMARK [0][-]{chapter.7}{Conclusions and Future Work}{}% 95
+\BOOKMARK [1][-]{section.7.1}{Conclusions}{chapter.7}% 96
+\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 97
+\BOOKMARK [0][-]{chapter*.82}{References}{}% 98

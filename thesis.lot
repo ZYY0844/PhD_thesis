@@ -16,10 +16,11 @@
 \contentsline {table}{\numberline {5.2}{\ignorespaces Comparison of different optimization strategies on indoor scene understanding\relax }}{100}{table.caption.59}% 
 \contentsline {table}{\numberline {5.3}{\ignorespaces Comparison of the frameworks under different SNR\relax }}{109}{table.caption.65}% 
 \contentsline {table}{\numberline {5.4}{\ignorespaces Comparison of the frameworks under abrupt noises\relax }}{111}{table.caption.67}% 
+\contentsline {table}{\numberline {5.5}{\ignorespaces Complexity Comparison Across Deep Learning Frameworks\relax }}{113}{table.caption.68}% 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Parameters for signal model\relax }}{120}{table.caption.70}% 
-\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of different augmentation methods\relax }}{127}{table.caption.73}% 
-\contentsline {table}{\numberline {6.3}{\ignorespaces Ablation study for Horcrux\relax }}{128}{table.caption.74}% 
-\contentsline {table}{\numberline {6.4}{\ignorespaces Performance of SSL with ablation study\relax }}{130}{table.caption.76}% 
-\contentsline {table}{\numberline {6.5}{\ignorespaces Performance of ECG recovery using different percentages of labeled data\relax }}{131}{table.caption.78}% 
+\contentsline {table}{\numberline {6.1}{\ignorespaces Parameters for signal model\relax }}{121}{table.caption.71}% 
+\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of different augmentation methods\relax }}{128}{table.caption.74}% 
+\contentsline {table}{\numberline {6.3}{\ignorespaces Ablation study for Horcrux\relax }}{129}{table.caption.75}% 
+\contentsline {table}{\numberline {6.4}{\ignorespaces Performance of SSL with ablation study\relax }}{131}{table.caption.77}% 
+\contentsline {table}{\numberline {6.5}{\ignorespaces Performance of ECG recovery using different percentages of labeled data\relax }}{132}{table.caption.79}% 
 \addvspace {10\p@ }

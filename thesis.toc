@@ -41,13 +41,13 @@
 \contentsline {subsection}{\numberline {3.3.1}Dataset Collection and Preparation}{36}{subsection.3.3.1}% 
 \contentsline {subsection}{\numberline {3.3.2}Implementation Details}{38}{subsection.3.3.2}% 
 \contentsline {subsubsection}{\numberline {3.3.2.1}Parameters for CFT Algorithm}{38}{subsubsection.3.3.2.1}% 
-\contentsline {subsubsection}{\numberline {3.3.2.2}Deep Learning Model Training}{38}{subsubsection.3.3.2.2}% 
+\contentsline {subsubsection}{\numberline {3.3.2.2}Deep Learning Model Training and Testing}{38}{subsubsection.3.3.2.2}% 
 \contentsline {subsection}{\numberline {3.3.3}Methods for Comparison}{38}{subsection.3.3.3}% 
 \contentsline {section}{\numberline {3.4}Experimental Results and Evaluations}{39}{section.3.4}% 
 \contentsline {subsection}{\numberline {3.4.1}Effectiveness of CFT Algorithm}{39}{subsection.3.4.1}% 
 \contentsline {subsection}{\numberline {3.4.2}Impact of Monitoring Range}{40}{subsection.3.4.2}% 
 \contentsline {subsection}{\numberline {3.4.3}Impact of Signal Quality on ECG Recovery}{42}{subsection.3.4.3}% 
-\contentsline {section}{\numberline {3.5}Conclusions}{43}{section.3.5}% 
+\contentsline {section}{\numberline {3.5}Conclusions}{44}{section.3.5}% 
 \contentsline {chapter}{\numberline {4}Robust Single-Cycle ECG Recovery}{45}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Introduction}{45}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}Methodology}{48}{section.4.2}% 
@@ -115,31 +115,32 @@
 \contentsline {subsubsection}{\numberline {5.4.3.5}Fine-Grained ECG Peaks Reconstruction}{106}{subsubsection.5.4.3.5}% 
 \contentsline {subsection}{\numberline {5.4.4}Noise Robustness Test}{107}{subsection.5.4.4}% 
 \contentsline {subsubsection}{\numberline {5.4.4.1}Constant Noise}{107}{subsubsection.5.4.4.1}% 
-\contentsline {subsubsection}{\numberline {5.4.4.2}Abrupt Noise}{109}{subsubsection.5.4.4.2}% 
-\contentsline {section}{\numberline {5.5}Conclusions}{112}{section.5.5}% 
-\contentsline {chapter}{\numberline {6}Alleviation of Data Scarcity}{114}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Introduction}{114}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Data Augmentation for Radar Spectrogram}{117}{section.6.2}% 
-\contentsline {subsection}{\numberline {6.2.1}Overview}{117}{subsection.6.2.1}% 
-\contentsline {subsection}{\numberline {6.2.2}Harmonic and Percussive Components Decomposition}{118}{subsection.6.2.2}% 
-\contentsline {subsection}{\numberline {6.2.3}Dynamic Template Matching (DTM)}{120}{subsection.6.2.3}% 
-\contentsline {subsection}{\numberline {6.2.4}Augmented Spectrogram Generation}{121}{subsection.6.2.4}% 
-\contentsline {section}{\numberline {6.3}Transfer Learning Framework Design}{121}{section.6.3}% 
-\contentsline {subsection}{\numberline {6.3.1}Deep Learning Model Design}{121}{subsection.6.3.1}% 
-\contentsline {subsection}{\numberline {6.3.2}Pre-text Task Training and Fine-tuning}{122}{subsection.6.3.2}% 
-\contentsline {section}{\numberline {6.4}Experimental Results for Horcrux}{123}{section.6.4}% 
-\contentsline {subsubsection}{\numberline {6.4.0.1}Evaluation Metrics}{123}{subsubsection.6.4.0.1}% 
-\contentsline {subsection}{\numberline {6.4.1}Evaluation for DTM}{124}{subsection.6.4.1}% 
-\contentsline {subsection}{\numberline {6.4.2}Evaluation for Horcrux}{126}{subsection.6.4.2}% 
-\contentsline {subsubsection}{\numberline {6.4.2.1}Comparison with State-of-the-art Methods}{126}{subsubsection.6.4.2.1}% 
-\contentsline {subsubsection}{\numberline {6.4.2.2}Ablation Study}{126}{subsubsection.6.4.2.2}% 
-\contentsline {subsubsection}{\numberline {6.4.2.3}Performance under Different Dataset Scale}{127}{subsubsection.6.4.2.3}% 
-\contentsline {section}{\numberline {6.5}Experimental Results for RFcardi}{129}{section.6.5}% 
-\contentsline {subsection}{\numberline {6.5.1}Evaluations and Ablation Studies of SSL}{129}{subsection.6.5.1}% 
-\contentsline {subsection}{\numberline {6.5.2}Evaluations of Fine-tuning Results}{130}{subsection.6.5.2}% 
-\contentsline {subsection}{\numberline {6.5.3}Summary of Transfer-learning-based ECG Recovery}{132}{subsection.6.5.3}% 
-\contentsline {section}{\numberline {6.6}Conclusion}{133}{section.6.6}% 
-\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{135}{chapter.7}% 
-\contentsline {section}{\numberline {7.1}Conclusions}{135}{section.7.1}% 
-\contentsline {section}{\numberline {7.2}Future Work}{136}{section.7.2}% 
-\contentsline {chapter}{References}{168}{chapter*.81}% 
+\contentsline {subsubsection}{\numberline {5.4.4.2}Abrupt Noise}{110}{subsubsection.5.4.4.2}% 
+\contentsline {subsection}{\numberline {5.4.5}Complexity Analysis and Comparison}{112}{subsection.5.4.5}% 
+\contentsline {section}{\numberline {5.5}Conclusions}{113}{section.5.5}% 
+\contentsline {chapter}{\numberline {6}Alleviation of Data Scarcity}{115}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Introduction}{115}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Data Augmentation for Radar Spectrogram}{118}{section.6.2}% 
+\contentsline {subsection}{\numberline {6.2.1}Overview}{118}{subsection.6.2.1}% 
+\contentsline {subsection}{\numberline {6.2.2}Harmonic and Percussive Components Decomposition}{119}{subsection.6.2.2}% 
+\contentsline {subsection}{\numberline {6.2.3}Dynamic Template Matching (DTM)}{121}{subsection.6.2.3}% 
+\contentsline {subsection}{\numberline {6.2.4}Augmented Spectrogram Generation}{122}{subsection.6.2.4}% 
+\contentsline {section}{\numberline {6.3}Transfer Learning Framework Design}{122}{section.6.3}% 
+\contentsline {subsection}{\numberline {6.3.1}Deep Learning Model Design}{122}{subsection.6.3.1}% 
+\contentsline {subsection}{\numberline {6.3.2}Pre-text Task Training and Fine-tuning}{123}{subsection.6.3.2}% 
+\contentsline {section}{\numberline {6.4}Experimental Results for Horcrux}{124}{section.6.4}% 
+\contentsline {subsubsection}{\numberline {6.4.0.1}Evaluation Metrics}{124}{subsubsection.6.4.0.1}% 
+\contentsline {subsection}{\numberline {6.4.1}Evaluation for DTM}{125}{subsection.6.4.1}% 
+\contentsline {subsection}{\numberline {6.4.2}Evaluation for Horcrux}{127}{subsection.6.4.2}% 
+\contentsline {subsubsection}{\numberline {6.4.2.1}Comparison with State-of-the-art Methods}{127}{subsubsection.6.4.2.1}% 
+\contentsline {subsubsection}{\numberline {6.4.2.2}Ablation Study}{127}{subsubsection.6.4.2.2}% 
+\contentsline {subsubsection}{\numberline {6.4.2.3}Performance under Different Dataset Scale}{128}{subsubsection.6.4.2.3}% 
+\contentsline {section}{\numberline {6.5}Experimental Results for RFcardi}{130}{section.6.5}% 
+\contentsline {subsection}{\numberline {6.5.1}Evaluations and Ablation Studies of SSL}{130}{subsection.6.5.1}% 
+\contentsline {subsection}{\numberline {6.5.2}Evaluations of Fine-tuning Results}{131}{subsection.6.5.2}% 
+\contentsline {subsection}{\numberline {6.5.3}Summary of Transfer-learning-based ECG Recovery}{133}{subsection.6.5.3}% 
+\contentsline {section}{\numberline {6.6}Conclusion}{134}{section.6.6}% 
+\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{136}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Conclusions}{136}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}Future Work}{137}{section.7.2}% 
+\contentsline {chapter}{References}{169}{chapter*.82}% 

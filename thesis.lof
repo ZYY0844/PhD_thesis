@@ -23,7 +23,7 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{34}{subfigure.5.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{34}{subfigure.5.2}% 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{34}{subfigure.5.3}% 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Indoor scenarios for data collection.\relax }}{37}{figure.caption.26}% 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces \leavevmode {\color {blue}Indoor scenarios for synchronous radar and ECG collection.}\relax }}{37}{figure.caption.26}% 
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Visualization of the extracted radar signal for all methods: (a) - (c) If CF point is around rough body location; (d) - (f) If CF point is far from rough body location.\relax }}{39}{figure.caption.28}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{39}{subfigure.7.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{39}{subfigure.7.2}% 
@@ -87,7 +87,7 @@
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Morphological accuracy comparison for different physical statuses: (a) and (b) RMSE and PCC under different physical statuses.\relax }}{77}{figure.caption.51}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{77}{subfigure.16.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{77}{subfigure.16.2}% 
-\contentsline {figure}{\numberline {4.17}{\ignorespaces CDF of the overall timing error.\relax }}{78}{figure.caption.52}% 
+\contentsline {figure}{\numberline {4.17}{\ignorespaces \leavevmode {\color {blue}CDF of the overall timing error, with overall improvement for each peak as: Q: 4\%, R: 15\%, S: 5\%, T: 9\%}\relax }}{78}{figure.caption.52}% 
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Evaluations of fine-grained cardiac events: (a) and (b) The timing error for different peaks under various physical statuses for radarODE and MMECG.\relax }}{79}{figure.caption.53}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{79}{subfigure.18.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{79}{subfigure.18.2}% 
@@ -130,26 +130,26 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{110}{subfigure.9.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{110}{subfigure.9.2}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Illustration of Horcrux: (a) Traditional augmentation with zero mask; (b) Missed detected heartbeat (HB) and distorted ECG recovery; (c) Horcrux with time consistency preserved; (d) Ideal cardiac monitoring with high fidelity.\relax }}{116}{figure.caption.68}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{116}{subfigure.1.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{116}{subfigure.1.2}% 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{116}{subfigure.1.3}% 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{116}{subfigure.1.4}% 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Pipeline of Horcrux with two branches: (a) Harmonic and percussive (H$\&$P) components decomposition; (b) Dynamic template matching.\relax }}{118}{figure.caption.69}% 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Illustration of RFcardi with pre-text training and fine-tuning stages.\relax }}{122}{figure.caption.71}% 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Identified vibrations using DTM for radar signals with various qualities (illustrated in normalized amplitude).\relax }}{125}{figure.caption.72}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{125}{subfigure.4.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{125}{subfigure.4.2}% 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{125}{subfigure.4.3}% 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{125}{subfigure.4.4}% 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{125}{subfigure.4.5}% 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{125}{subfigure.4.6}% 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Performance of using different scales of the dataset.\relax }}{128}{figure.caption.75}% 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Results of SSR: (a) Failed SSR due to lack of data and sparse penalty; (b) Ideal SSR result with good MSE and sparsity.\relax }}{130}{figure.caption.77}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{130}{subfigure.6.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{130}{subfigure.6.2}% 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Results of transfer learning using limited labeled data: (a) Poor ECG recovery without proper morphological feature and peak location; (b) Good ECG recovery owing to the pre-trained model.\relax }}{132}{figure.caption.79}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{132}{subfigure.7.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{132}{subfigure.7.2}% 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Overall performance of the radar-based ECG recovery.\relax }}{133}{figure.caption.80}% 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Illustration of Horcrux: (a) Traditional augmentation with zero mask; (b) Missed detected heartbeat (HB) and distorted ECG recovery; (c) Horcrux with time consistency preserved; (d) Ideal cardiac monitoring with high fidelity.\relax }}{117}{figure.caption.69}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{117}{subfigure.1.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{117}{subfigure.1.2}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{117}{subfigure.1.3}% 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{117}{subfigure.1.4}% 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Pipeline of Horcrux with two branches: (a) Harmonic and percussive (H$\&$P) components decomposition; (b) Dynamic template matching.\relax }}{119}{figure.caption.70}% 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Illustration of RFcardi with pre-text training and fine-tuning stages.\relax }}{123}{figure.caption.72}% 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Identified vibrations using DTM for radar signals with various qualities (illustrated in normalized amplitude).\relax }}{126}{figure.caption.73}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{126}{subfigure.4.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{126}{subfigure.4.2}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{126}{subfigure.4.3}% 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{126}{subfigure.4.4}% 
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{126}{subfigure.4.5}% 
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{126}{subfigure.4.6}% 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Performance of using different scales of the dataset.\relax }}{129}{figure.caption.76}% 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Results of SSR: (a) Failed SSR due to lack of data and sparse penalty; (b) Ideal SSR result with good MSE and sparsity.\relax }}{131}{figure.caption.78}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{131}{subfigure.6.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{131}{subfigure.6.2}% 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Results of transfer learning using limited labeled data: (a) Poor ECG recovery without proper morphological feature and peak location; (b) Good ECG recovery owing to the pre-trained model.\relax }}{133}{figure.caption.80}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{133}{subfigure.7.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{133}{subfigure.7.2}% 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Overall performance of the radar-based ECG recovery.\relax }}{134}{figure.caption.81}% 
 \addvspace {10\p@ }
