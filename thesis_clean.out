@@ -1,0 +1,98 @@
+\BOOKMARK [0][-]{chapter*.1}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{Acknowledgements}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{Publications}{}% 3
+\BOOKMARK [0][-]{chapter*.7}{Contents}{}% 4
+\BOOKMARK [0][-]{chapter*.8}{List of Figures}{}% 5
+\BOOKMARK [0][-]{chapter*.9}{List of Tables}{}% 6
+\BOOKMARK [0][-]{chapter*.11}{List of Acronyms}{}% 7
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 8
+\BOOKMARK [1][-]{section.1.1}{Wireless Sensing for Vital Sign Monitoring}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.2}{Radar-based Vital Sign Monitoring}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.3}{Challenges in Radar-based ECG Recovery}{chapter.1}% 11
+\BOOKMARK [2][-]{subsection.1.3.1}{Inefficient High-SNR Signal Acquisition}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.2}{Non-robust Single-cycle ECG Recovery}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.3}{Non-robust Long-term ECG Recovery}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.4}{Dependency on Massive Data}{section.1.3}% 15
+\BOOKMARK [1][-]{section.1.4}{Contributions and Thesis Outline}{chapter.1}% 16
+\BOOKMARK [0][-]{chapter.2}{Background and Literature Review}{}% 17
+\BOOKMARK [1][-]{section.2.1}{Radar Signal Collection and Pre-processing}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.1.1}{Selection of Radar Types}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.2}{Theoretical Background for Radar Signal Collection}{section.2.1}% 20
+\BOOKMARK [1][-]{section.2.2}{Advanced Methods for Cardiac Feature Extraction}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.1}{Spectrum-based Methods}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.2}{Periodicity-based Methods}{section.2.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.3}{Blind Source Separation Methods}{section.2.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.4}{Deep Learning Method}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.5}{Radar-Based ECG Monitoring as a Domain Transformation Problem}{section.2.2}% 26
+\BOOKMARK [0][-]{chapter.3}{Efficient High-SNR Signal Acquisition}{}% 27
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.2}{Methodology}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.2.1}{Overview of CFT Algorithm for ECG Recovery}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.2}{Rough Localization}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.3}{Cardio-focusing and -tracking \(CFT\) Algorithm}{section.3.2}% 32
+\BOOKMARK [1][-]{section.3.3}{Details of Experiment and Dataset}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.3.1}{Dataset Collection and Preparation}{section.3.3}% 34
+\BOOKMARK [2][-]{subsection.3.3.2}{Implementation Details}{section.3.3}% 35
+\BOOKMARK [2][-]{subsection.3.3.3}{Methods for Comparison}{section.3.3}% 36
+\BOOKMARK [1][-]{section.3.4}{Experimental Results and Evaluations}{chapter.3}% 37
+\BOOKMARK [2][-]{subsection.3.4.1}{Effectiveness of CFT Algorithm}{section.3.4}% 38
+\BOOKMARK [2][-]{subsection.3.4.2}{Impact of Monitoring Range}{section.3.4}% 39
+\BOOKMARK [2][-]{subsection.3.4.3}{Impact of Signal Quality on ECG Recovery}{section.3.4}% 40
+\BOOKMARK [1][-]{section.3.5}{Conclusions}{chapter.3}% 41
+\BOOKMARK [0][-]{chapter.4}{Robust Single-Cycle ECG Recovery}{}% 42
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.2}{Methodology}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.2.1}{Overview}{section.4.2}% 45
+\BOOKMARK [2][-]{subsection.4.2.2}{Model for Radar Signal and Pre-Processing}{section.4.2}% 46
+\BOOKMARK [2][-]{subsection.4.2.3}{radarODE Framework Design}{section.4.2}% 47
+\BOOKMARK [1][-]{section.4.3}{Dataset and Implementation Details}{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.3.1}{Hardware and Environment Settings for Data Collection}{section.4.3}% 49
+\BOOKMARK [2][-]{subsection.4.3.2}{Link Budget Analysis}{section.4.3}% 50
+\BOOKMARK [2][-]{subsection.4.3.3}{Dataset Description}{section.4.3}% 51
+\BOOKMARK [2][-]{subsection.4.3.4}{Implementation Details and Compared Frameworks}{section.4.3}% 52
+\BOOKMARK [1][-]{section.4.4}{Experimental Results and Evaluations}{chapter.4}% 53
+\BOOKMARK [2][-]{subsection.4.4.1}{Evaluations of PPI Estimation}{section.4.4}% 54
+\BOOKMARK [2][-]{subsection.4.4.2}{Evaluations of SCEG Module in radarODE}{section.4.4}% 55
+\BOOKMARK [2][-]{subsection.4.4.3}{Overall Evaluations of radarODE}{section.4.4}% 56
+\BOOKMARK [1][-]{section.4.5}{Conclusions}{chapter.4}% 57
+\BOOKMARK [0][-]{chapter.5}{Robust Long-Term ECG Recovery}{}% 58
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.2}{Background and Problem Statement}{chapter.5}% 60
+\BOOKMARK [2][-]{subsection.5.2.1}{Model for Domain Transformation and Problem Statement}{section.5.2}% 61
+\BOOKMARK [2][-]{subsection.5.2.2}{Optimization Strategies for MTL}{section.5.2}% 62
+\BOOKMARK [1][-]{section.5.3}{Methodology}{chapter.5}% 63
+\BOOKMARK [2][-]{subsection.5.3.1}{Overview of radarODE-MTL with EGA Strategy}{section.5.3}% 64
+\BOOKMARK [2][-]{subsection.5.3.2}{Backbone and Encoder}{section.5.3}% 65
+\BOOKMARK [2][-]{subsection.5.3.3}{Morphological Decoder}{section.5.3}% 66
+\BOOKMARK [2][-]{subsection.5.3.4}{ECG Anchor Decoder and Cycle Length Decoder}{section.5.3}% 67
+\BOOKMARK [2][-]{subsection.5.3.5}{Input, Output and Loss Function}{section.5.3}% 68
+\BOOKMARK [2][-]{subsection.5.3.6}{EGA Strategy}{section.5.3}% 69
+\BOOKMARK [1][-]{section.5.4}{Experimental Setting and Result Evaluation}{chapter.5}% 70
+\BOOKMARK [2][-]{subsection.5.4.1}{Dataset and Implementation}{section.5.4}% 71
+\BOOKMARK [2][-]{subsection.5.4.2}{Performance of EGA}{section.5.4}% 72
+\BOOKMARK [2][-]{subsection.5.4.3}{Evaluations on the Long-term Recovered ECG}{section.5.4}% 73
+\BOOKMARK [2][-]{subsection.5.4.4}{Noise Robustness Test}{section.5.4}% 74
+\BOOKMARK [2][-]{subsection.5.4.5}{Complexity Analysis and Comparison}{section.5.4}% 75
+\BOOKMARK [1][-]{section.5.5}{Conclusions}{chapter.5}% 76
+\BOOKMARK [0][-]{chapter.6}{Alleviation of Data Scarcity}{}% 77
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 78
+\BOOKMARK [1][-]{section.6.2}{Data Augmentation for Radar Spectrogram}{chapter.6}% 79
+\BOOKMARK [2][-]{subsection.6.2.1}{Overview}{section.6.2}% 80
+\BOOKMARK [2][-]{subsection.6.2.2}{Harmonic and Percussive Components Decomposition}{section.6.2}% 81
+\BOOKMARK [2][-]{subsection.6.2.3}{Dynamic Template Matching \(DTM\)}{section.6.2}% 82
+\BOOKMARK [2][-]{subsection.6.2.4}{Augmented Spectrogram Generation}{section.6.2}% 83
+\BOOKMARK [1][-]{section.6.3}{Transfer Learning Framework Design}{chapter.6}% 84
+\BOOKMARK [2][-]{subsection.6.3.1}{Deep Learning Model Design}{section.6.3}% 85
+\BOOKMARK [2][-]{subsection.6.3.2}{Pre-text Task Training and Fine-tuning}{section.6.3}% 86
+\BOOKMARK [1][-]{section.6.4}{Experimental Results for Horcrux}{chapter.6}% 87
+\BOOKMARK [2][-]{subsection.6.4.1}{Evaluation for DTM}{section.6.4}% 88
+\BOOKMARK [2][-]{subsection.6.4.2}{Evaluation for Horcrux}{section.6.4}% 89
+\BOOKMARK [1][-]{section.6.5}{Experimental Results for RFcardi}{chapter.6}% 90
+\BOOKMARK [2][-]{subsection.6.5.1}{Evaluations and Ablation Studies of SSL}{section.6.5}% 91
+\BOOKMARK [2][-]{subsection.6.5.2}{Evaluations of Fine-tuning Results}{section.6.5}% 92
+\BOOKMARK [2][-]{subsection.6.5.3}{Summary of Transfer-learning-based ECG Recovery}{section.6.5}% 93
+\BOOKMARK [1][-]{section.6.6}{Conclusion}{chapter.6}% 94
+\BOOKMARK [0][-]{chapter.7}{Conclusions and Future Work}{}% 95
+\BOOKMARK [1][-]{section.7.1}{Conclusions}{chapter.7}% 96
+\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 97
+\BOOKMARK [0][-]{chapter*.82}{References}{}% 98

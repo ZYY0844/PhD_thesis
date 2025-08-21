@@ -1,0 +1,26 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces \leavevmode {\color {black}Strengths and weaknesses of cardiac feature extraction algorithms}\relax }}{18}{table.caption.14}% 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Parameters for data collection interface\relax }}{37}{table.caption.27}% 
+\contentsline {table}{\numberline {3.2}{\ignorespaces Performance of supervised ECG recovery\relax }}{42}{table.caption.30}% 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Structure and parameters for SCEG\relax }}{55}{table.4.1}% 
+\contentsline {table}{\numberline {4.2}{\ignorespaces Default values for $\eta $\relax }}{59}{table.caption.37}% 
+\contentsline {table}{\numberline {4.3}{\ignorespaces Structure and parameters for long-term ECG reconstruction\relax }}{62}{table.caption.38}% 
+\contentsline {table}{\numberline {4.4}{\ignorespaces Parameters for link budget analysis\relax }}{65}{table.caption.41}% 
+\contentsline {table}{\numberline {4.5}{\ignorespaces Performance comparison for single-cycle ECG recovery and ablation study\relax }}{70}{table.caption.44}% 
+\contentsline {table}{\numberline {4.6}{\ignorespaces Absolute timing error for reconstructed ECG peaks\relax }}{77}{table.caption.54}% 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Comparison of different optimization strategies on radar-based ECG recovery\relax }}{98}{table.caption.58}% 
+\contentsline {table}{\numberline {5.2}{\ignorespaces Comparison of different optimization strategies on indoor scene understanding\relax }}{100}{table.caption.59}% 
+\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison of the frameworks under different SNR\relax }}{109}{table.caption.65}% 
+\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison of the frameworks under abrupt noises\relax }}{111}{table.caption.67}% 
+\contentsline {table}{\numberline {5.5}{\ignorespaces Complexity Comparison Across Deep Learning Frameworks\relax }}{113}{table.caption.68}% 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Parameters for signal model\relax }}{121}{table.caption.71}% 
+\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of different augmentation methods\relax }}{128}{table.caption.74}% 
+\contentsline {table}{\numberline {6.3}{\ignorespaces Ablation study for Horcrux\relax }}{129}{table.caption.75}% 
+\contentsline {table}{\numberline {6.4}{\ignorespaces Performance of SSL with ablation study\relax }}{131}{table.caption.77}% 
+\contentsline {table}{\numberline {6.5}{\ignorespaces Performance of ECG recovery using different percentages of labeled data\relax }}{132}{table.caption.79}% 
+\addvspace {10\p@ }

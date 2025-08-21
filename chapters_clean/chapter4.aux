@@ -1,0 +1,319 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\citation{chen2022contactless,zhao2024airecg,zhao2024mmarrhythmia}
+\citation{zhang2023overview}
+\citation{cocconcelli2020high}
+\citation{ha2020contactless}
+\citation{khairy2007clinical}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Robust Single-Cycle ECG Recovery}{45}{chapter.4}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:radarODE}{{4}{45}{Robust Single-Cycle ECG Recovery}{chapter.4}{}}
+\@gls@reference{acronym}{rbm}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{45}}
+\@gls@reference{acronym}{dnn}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{45}}
+\@gls@reference{acronym}{ode}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{45}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introduction}{45}{section.4.1}\protected@file@percent }
+\citation{xu2021cardiacwave}
+\citation{li2019intelligent}
+\citation{swift2021stop,orkand1964heart}
+\citation{chen2022contactless,wu2023contactless,li2024radarnet,wang2023ecg,zhao2024airecg}
+\citation{chen2022contactless,wang2023vital}
+\citation{wang2023slprof}
+\@gls@reference{acronym}{sceg}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{47}}
+\citation{chen2022contactless}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Overview of the radarODE framework for domain transformation: (a) Single-cycle ECG length (PPI) estimation; (b) Single-cycle ECG generator; (c) Long-term ECG reconstruction.\relax }}{48}{figure.caption.32}\protected@file@percent }
+\newlabel{fig:radarODE}{{4.1}{48}{Overview of the radarODE framework for domain transformation: (a) Single-cycle ECG length (PPI) estimation; (b) Single-cycle ECG generator; (c) Long-term ECG reconstruction.\relax }{figure.caption.32}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Methodology}{48}{section.4.2}\protected@file@percent }
+\newlabel{sec:odemethod}{{4.2}{48}{Methodology}{section.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Overview}{48}{subsection.4.2.1}\protected@file@percent }
+\citation{chen2022contactless}
+\citation{nosrati2018accurate}
+\@gls@reference{acronym}{ppi}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{49}}
+\@gls@reference{acronym}{sst}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{49}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Model for Radar Signal and Pre-Processing}{49}{subsection.4.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2.1}Fine-Grained Model for Radar Signal}{49}{subsubsection.4.2.2.1}\protected@file@percent }
+\citation{daubechies2011synchrosqueezed}
+\newlabel{equ:vib}{{4.3}{50}{Fine-Grained Model for Radar Signal}{equation.4.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2.2}Signal Pre-Processing with Synchrosqueezed Wavelet Transform (SST)}{50}{subsubsection.4.2.2.2}\protected@file@percent }
+\@gls@reference{acronym}{cwt}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{50}}
+\@gls@reference{acronym}{stft}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{50}}
+\citation{xue2023novel}
+\citation{daubechies2011synchrosqueezed}
+\citation{wang2023vital}
+\@gls@reference{acronym}{pse}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{51}}
+\citation{makowski2021neurokit2}
+\newlabel{fig:compare_radar}{{4.2a}{52}{Subfigure 4 4.2a}{subfigure.4.2.1}{}}
+\newlabel{sub@fig:compare_radar}{{(a)}{4.2(a)}{Subfigure 4 4.2a\relax }{subfigure.4.2.1}{}}
+\newlabel{fig:compare_stft}{{4.2b}{52}{Subfigure 4 4.2b}{subfigure.4.2.2}{}}
+\newlabel{sub@fig:compare_stft}{{(b)}{4.2(b)}{Subfigure 4 4.2b\relax }{subfigure.4.2.2}{}}
+\newlabel{fig:compare_cwt}{{4.2c}{52}{Subfigure 4 4.2c}{subfigure.4.2.3}{}}
+\newlabel{sub@fig:compare_cwt}{{(c)}{4.2(c)}{Subfigure 4 4.2c\relax }{subfigure.4.2.3}{}}
+\newlabel{fig:compare_sst}{{4.2d}{52}{Subfigure 4 4.2d}{subfigure.4.2.4}{}}
+\newlabel{sub@fig:compare_sst}{{(d)}{4.2(d)}{Subfigure 4 4.2d\relax }{subfigure.4.2.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Spectrograms obtained from the same radar signal: (a) Radar signal $\mathaccentV {tilde}07E{x}(t)$; (b) STFT result; (c) CWT result; (d) SST result with $T_1$, $T_2$ labeled, revealing concentrated energy around vibrations and clean background.\relax }}{52}{figure.caption.33}\protected@file@percent }
+\newlabel{fig:spec_compare}{{4.2}{52}{Spectrograms obtained from the same radar signal: (a) Radar signal $\tilde {x}(t)$; (b) STFT result; (c) CWT result; (d) SST result with $T_1$, $T_2$ labeled, revealing concentrated energy around vibrations and clean background.\relax }{figure.caption.33}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{52}{subfigure.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{52}{subfigure.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{52}{subfigure.2.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{52}{subfigure.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}radarODE Framework Design}{52}{subsection.4.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3.1}Single-cycle ECG Length Estimation}{52}{subsubsection.4.2.3.1}\protected@file@percent }
+\citation{terrell1992variable}
+\citation{makowski2021neurokit2}
+\newlabel{fig:correct_detection}{{4.3a}{53}{Subfigure 4 4.3a}{subfigure.4.3.1}{}}
+\newlabel{sub@fig:correct_detection}{{(a)}{4.3(a)}{Subfigure 4 4.3a\relax }{subfigure.4.3.1}{}}
+\newlabel{fig:wrong_detection}{{4.3b}{53}{Subfigure 4 4.3b}{subfigure.4.3.2}{}}
+\newlabel{sub@fig:wrong_detection}{{(b)}{4.3(b)}{Subfigure 4 4.3b\relax }{subfigure.4.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Energy plot of the synchronous radar signals with different detected peaks: (a) Energy plot with high SNR and correct detection; (b) Energy plot with low SNR and wrong detection.\relax }}{53}{figure.caption.34}\protected@file@percent }
+\newlabel{fig:detection_compare}{{4.3}{53}{Energy plot of the synchronous radar signals with different detected peaks: (a) Energy plot with high SNR and correct detection; (b) Energy plot with low SNR and wrong detection.\relax }{figure.caption.34}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{53}{subfigure.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{53}{subfigure.3.2}\protected@file@percent }
+\newlabel{equ:biopeak}{{4.8}{53}{Single-cycle ECG Length Estimation}{equation.4.2.8}{}}
+\@gls@reference{acronym}{kde}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{53}}
+\newlabel{equ:kde}{{4.9}{53}{Single-cycle ECG Length Estimation}{equation.4.2.9}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces PPI Estimation\relax }}{54}{algorithm.2}\protected@file@percent }
+\newlabel{alg:ppi}{{2}{54}{PPI Estimation\relax }{algorithm.2}{}}
+\newlabel{line:biopeaks}{{8}{54}{PPI Estimation\relax }{algorithm.2}{}}
+\newlabel{line:update}{{10}{54}{PPI Estimation\relax }{algorithm.2}{}}
+\newlabel{line:final}{{13}{54}{PPI Estimation\relax }{algorithm.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3.2}Single-cycle ECG Generator}{54}{subsubsection.4.2.3.2}\protected@file@percent }
+\newlabel{sec:sceg}{{4.2.3.2}{54}{Single-cycle ECG Generator}{subsubsection.4.2.3.2}{}}
+\citation{li2023euclidean,chu2024vessel}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Architecture of SCEG with SST segments as input and single-cycle ECG pieces as output.\relax }}{55}{figure.caption.35}\protected@file@percent }
+\newlabel{fig:sceg}{{4.4}{55}{Architecture of SCEG with SST segments as input and single-cycle ECG pieces as output.\relax }{figure.caption.35}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Structure and parameters for SCEG\relax }}{55}{table.4.1}\protected@file@percent }
+\newlabel{tab:param}{{4.1}{55}{Structure and parameters for SCEG\relax }{table.4.1}{}}
+\gdef \LT@i {\LT@entry 
+    {5}{140.52779pt}\LT@entry 
+    {5}{136.23479pt}\LT@entry 
+    {4}{100.47542pt}}
+\citation{chen2024tfpred}
+\citation{dai2017deformable}
+\citation{chen2022contactless,yang2022pipeline}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Structure of backbone composed of residual block and downsample block: DeformConv2d means deformable 2D convolution, BN is batch normalization, and ReLU is the rectified linear unit activation function.\relax }}{58}{figure.caption.36}\protected@file@percent }
+\newlabel{fig:backbone}{{4.5}{58}{Structure of backbone composed of residual block and downsample block: DeformConv2d means deformable 2D convolution, BN is batch normalization, and ReLU is the rectified linear unit activation function.\relax }{figure.caption.36}{}}
+\citation{mcsharry2003dynamical}
+\citation{swift2021stop,orkand1964heart}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Default values for $\eta $\relax }}{59}{table.caption.37}\protected@file@percent }
+\newlabel{tab:ode_value}{{4.2}{59}{Default values for $\eta $\relax }{table.caption.37}{}}
+\citation{guan2023achelous}
+\newlabel{equ:ode}{{4.10}{60}{Single-cycle ECG Generator}{equation.4.2.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces The structure of the $9$-layer TCN with dilation factor $D=2$ and kernel size $K=3$.\relax }}{61}{figure.caption.39}\protected@file@percent }
+\newlabel{fig:tcn_net}{{4.6}{61}{The structure of the $9$-layer TCN with dilation factor $D=2$ and kernel size $K=3$.\relax }{figure.caption.39}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3.3}Long-Term ECG Reconstruction}{61}{subsubsection.4.2.3.3}\protected@file@percent }
+\citation{xue2023novel}
+\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Structure and parameters for long-term ECG reconstruction\relax }}{62}{table.caption.38}\protected@file@percent }
+\newlabel{tab:long_structure}{{4.3}{62}{Structure and parameters for long-term ECG reconstruction\relax }{table.caption.38}{}}
+\@gls@reference{acronym}{tcn}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{62}}
+\citation{chen2022contactless}
+\citation{chen2022contactless}
+\citation{chen2022contactless}
+\citation{chen2022contactless}
+\citation{mercuri2019vital,lin2022broadband}
+\citation{chen2022contactless}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Dataset and Implementation Details}{63}{section.4.3}\protected@file@percent }
+\newlabel{sec:odedataset}{{4.3}{63}{Dataset and Implementation Details}{section.4.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Hardware and Environment Settings for Data Collection}{63}{subsection.4.3.1}\protected@file@percent }
+\@gls@reference{acronym}{tdmmimo}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{63}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Link Budget Analysis}{63}{subsection.4.3.2}\protected@file@percent }
+\citation{mercuri2019vital}
+\citation{lin2022broadband}
+\citation{AWR1843}
+\citation{lin2022broadband,chen2022contactless}
+\citation{chen2022contactless}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Environment settings for data collection from quasi-static subject\nobreakspace  {}\cite  {chen2022contactless}.\relax }}{64}{figure.caption.40}\protected@file@percent }
+\newlabel{fig:env_set}{{4.7}{64}{Environment settings for data collection from quasi-static subject~\cite {chen2022contactless}.\relax }{figure.caption.40}{}}
+\newlabel{equ:proga}{{4.12}{64}{Link Budget Analysis}{equation.4.3.12}{}}
+\newlabel{equ:p_desire}{{4.13}{64}{Link Budget Analysis}{equation.4.3.13}{}}
+\newlabel{equ:r_max}{{4.14}{64}{Link Budget Analysis}{equation.4.3.14}{}}
+\citation{chen2022contactless}
+\citation{chen2022contactless}
+\citation{yao2007early}
+\citation{loshchilov2016sgdr}
+\citation{makowski2021neurokit2}
+\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Parameters for link budget analysis\relax }}{65}{table.caption.41}\protected@file@percent }
+\newlabel{tab:link_param}{{4.4}{65}{Parameters for link budget analysis\relax }{table.caption.41}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Dataset Description}{65}{subsection.4.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Implementation Details and Compared Frameworks}{65}{subsection.4.3.4}\protected@file@percent }
+\citation{chen2022contactless}
+\citation{wu2023contactless}
+\citation{li2024radarnet}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Experimental Results and Evaluations}{66}{section.4.4}\protected@file@percent }
+\newlabel{sec:odeexp}{{4.4}{66}{Experimental Results and Evaluations}{section.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Evaluations of PPI Estimation}{67}{subsection.4.4.1}\protected@file@percent }
+\newlabel{sec:ppi}{{4.4.1}{67}{Evaluations of PPI Estimation}{subsection.4.4.1}{}}
+\@gls@reference{acronym}{cdf}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{67}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Evaluations of SCEG Module in radarODE}{67}{subsection.4.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.1}Comparison of Morphological Accuracy}{67}{subsubsection.4.4.2.1}\protected@file@percent }
+\@gls@reference{acronym}{rmse}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{67}}
+\@gls@reference{acronym}{pcc}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{67}}
+\newlabel{fig:ppi_obj}{{4.8a}{68}{Subfigure 4 4.8a}{subfigure.4.8.1}{}}
+\newlabel{sub@fig:ppi_obj}{{(a)}{4.8(a)}{Subfigure 4 4.8a\relax }{subfigure.4.8.1}{}}
+\newlabel{fig:ppi_phy}{{4.8b}{68}{Subfigure 4 4.8b}{subfigure.4.8.2}{}}
+\newlabel{sub@fig:ppi_phy}{{(b)}{4.8(b)}{Subfigure 4 4.8b\relax }{subfigure.4.8.2}{}}
+\newlabel{fig:ppi_cdf}{{4.8c}{68}{Subfigure 4 4.8c}{subfigure.4.8.3}{}}
+\newlabel{sub@fig:ppi_cdf}{{(c)}{4.8(c)}{Subfigure 4 4.8c\relax }{subfigure.4.8.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces PPI estimation error of KDE-based and mean-based method: (a) View of different subjects; (b) View of different physiological statuses; (c) CDF for the overall PPI estimation error.\relax }}{68}{figure.caption.42}\protected@file@percent }
+\newlabel{fig:ppi_compare}{{4.8}{68}{PPI estimation error of KDE-based and mean-based method: (a) View of different subjects; (b) View of different physiological statuses; (c) CDF for the overall PPI estimation error.\relax }{figure.caption.42}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{68}{subfigure.8.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{68}{subfigure.8.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{68}{subfigure.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.2}Comparison of Corrupt ECG Recovery}{68}{subsubsection.4.4.2.2}\protected@file@percent }
+\@gls@reference{acronym}{mdr}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{68}}
+\citation{chen2022contactless}
+\newlabel{fig:rmse_cdf_compare}{{4.9a}{69}{Subfigure 4 4.9a}{subfigure.4.9.1}{}}
+\newlabel{sub@fig:rmse_cdf_compare}{{(a)}{4.9(a)}{Subfigure 4 4.9a\relax }{subfigure.4.9.1}{}}
+\newlabel{fig:sceg_cor_cdf}{{4.9b}{69}{Subfigure 4 4.9b}{subfigure.4.9.2}{}}
+\newlabel{sub@fig:sceg_cor_cdf}{{(b)}{4.9(b)}{Subfigure 4 4.9b\relax }{subfigure.4.9.2}{}}
+\newlabel{fig:MDR_cdf_overall}{{4.9c}{69}{Subfigure 4 4.9c}{subfigure.4.9.3}{}}
+\newlabel{sub@fig:MDR_cdf_overall}{{(c)}{4.9(c)}{Subfigure 4 4.9c\relax }{subfigure.4.9.3}{}}
+\newlabel{fig:sceg_r_cdf}{{4.9d}{69}{Subfigure 4 4.9d}{subfigure.4.9.4}{}}
+\newlabel{sub@fig:sceg_r_cdf}{{(d)}{4.9(d)}{Subfigure 4 4.9d\relax }{subfigure.4.9.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Performance comparison for single-cycle ECG recovery: (a) - (d) CDF of RMSE, PCC, MDR and R-peak error for all trials.\relax }}{69}{figure.caption.43}\protected@file@percent }
+\newlabel{fig:sceg_performance}{{4.9}{69}{Performance comparison for single-cycle ECG recovery: (a) - (d) CDF of RMSE, PCC, MDR and R-peak error for all trials.\relax }{figure.caption.43}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{69}{subfigure.9.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{69}{subfigure.9.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{69}{subfigure.9.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{69}{subfigure.9.4}\protected@file@percent }
+\citation{chen2022contactless}
+\citation{wu2023contactless}
+\citation{li2024radarnet}
+\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Performance comparison for single-cycle ECG recovery and ablation study\relax }}{70}{table.caption.44}\protected@file@percent }
+\newlabel{tab:ablation}{{4.5}{70}{Performance comparison for single-cycle ECG recovery and ablation study\relax }{table.caption.44}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.3}Comparison of R-peak Timing Error}{70}{subsubsection.4.4.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.4}Ablation Study}{70}{subsubsection.4.4.2.4}\protected@file@percent }
+\newlabel{fig:ode_sceg}{{4.10a}{71}{Subfigure 4 4.10a}{subfigure.4.10.1}{}}
+\newlabel{sub@fig:ode_sceg}{{(a)}{4.10(a)}{Subfigure 4 4.10a\relax }{subfigure.4.10.1}{}}
+\newlabel{fig:loss_compare}{{4.10b}{71}{Subfigure 4 4.10b}{subfigure.4.10.2}{}}
+\newlabel{sub@fig:loss_compare}{{(b)}{4.10(b)}{Subfigure 4 4.10b\relax }{subfigure.4.10.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Ablation study for training process: (a) Rigid reconstruction (ODE Recon.) from ODE decoder with ground truth (GT); (b) Training loss comparison.\relax }}{71}{figure.caption.45}\protected@file@percent }
+\newlabel{fig:sceg_ablation}{{4.10}{71}{Ablation study for training process: (a) Rigid reconstruction (ODE Recon.) from ODE decoder with ground truth (GT); (b) Training loss comparison.\relax }{figure.caption.45}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{71}{subfigure.10.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{71}{subfigure.10.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.5}Visualization of Training Process}{71}{subsubsection.4.4.2.5}\protected@file@percent }
+\newlabel{fig:sceg_good}{{4.11a}{72}{Subfigure 4 4.11a}{subfigure.4.11.1}{}}
+\newlabel{sub@fig:sceg_good}{{(a)}{4.11(a)}{Subfigure 4 4.11a\relax }{subfigure.4.11.1}{}}
+\newlabel{fig:sceg_bad}{{4.11b}{72}{Subfigure 4 4.11b}{subfigure.4.11.2}{}}
+\newlabel{sub@fig:sceg_bad}{{(b)}{4.11(b)}{Subfigure 4 4.11b\relax }{subfigure.4.11.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Visualization of misalignment: (a) and (b) High- and Low-fidelity morphological references (Ref.) caused by PPI estimation error.\relax }}{72}{figure.caption.46}\protected@file@percent }
+\newlabel{fig:sceg_ablation2}{{4.11}{72}{Visualization of misalignment: (a) and (b) High- and Low-fidelity morphological references (Ref.) caused by PPI estimation error.\relax }{figure.caption.46}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{72}{subfigure.11.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{72}{subfigure.11.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.6}Summary of SCEG Evaluation}{72}{subsubsection.4.4.2.6}\protected@file@percent }
+\newlabel{fig:overall_ode}{{4.12a}{73}{Subfigure 4 4.12a}{subfigure.4.12.1}{}}
+\newlabel{sub@fig:overall_ode}{{(a)}{4.12(a)}{Subfigure 4 4.12a\relax }{subfigure.4.12.1}{}}
+\newlabel{fig:overall_mmecg}{{4.12b}{73}{Subfigure 4 4.12b}{subfigure.4.12.2}{}}
+\newlabel{sub@fig:overall_mmecg}{{(b)}{4.12(b)}{Subfigure 4 4.12b\relax }{subfigure.4.12.2}{}}
+\newlabel{fig:overall_noise}{{4.12c}{73}{Subfigure 4 4.12c}{subfigure.4.12.3}{}}
+\newlabel{sub@fig:overall_noise}{{(c)}{4.12(c)}{Subfigure 4 4.12c\relax }{subfigure.4.12.3}{}}
+\newlabel{fig:overall_rcg}{{4.12d}{73}{Subfigure 4 4.12d}{subfigure.4.12.4}{}}
+\newlabel{sub@fig:overall_rcg}{{(d)}{4.12(d)}{Subfigure 4 4.12d\relax }{subfigure.4.12.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces Corrupt ECG reconstruction: (a) and (b) Ideal reconstruction results for radarODE and MMECG; (c) Corrupt ECG reconstruction yield by MMECG and faithful reconstruction from radarODE; (d) Corresponding radar signal during body movements.\relax }}{73}{figure.caption.47}\protected@file@percent }
+\newlabel{fig:overall_compare}{{4.12}{73}{Corrupt ECG reconstruction: (a) and (b) Ideal reconstruction results for radarODE and MMECG; (c) Corrupt ECG reconstruction yield by MMECG and faithful reconstruction from radarODE; (d) Corresponding radar signal during body movements.\relax }{figure.caption.47}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{73}{subfigure.12.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{73}{subfigure.12.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{73}{subfigure.12.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{73}{subfigure.12.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Overall Evaluations of radarODE}{73}{subsection.4.4.3}\protected@file@percent }
+\newlabel{sec:overall_ode}{{4.4.3}{73}{Overall Evaluations of radarODE}{subsection.4.4.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3.1}Corrupt ECG Reconstruction}{73}{subsubsection.4.4.3.1}\protected@file@percent }
+\newlabel{fig:detection_cdf_overall}{{4.13a}{74}{Subfigure 4 4.13a}{subfigure.4.13.1}{}}
+\newlabel{sub@fig:detection_cdf_overall}{{(a)}{4.13(a)}{Subfigure 4 4.13a\relax }{subfigure.4.13.1}{}}
+\newlabel{fig:detection_cdf_phy}{{4.13b}{74}{Subfigure 4 4.13b}{subfigure.4.13.2}{}}
+\newlabel{sub@fig:detection_cdf_phy}{{(b)}{4.13(b)}{Subfigure 4 4.13b\relax }{subfigure.4.13.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces Statistical results for corrupt ECG reconstruction: (a) Overall missed detection rate (MDR); (b) MDR under different physical statuses.\relax }}{74}{figure.caption.48}\protected@file@percent }
+\newlabel{fig:overall_compare_2}{{4.13}{74}{Statistical results for corrupt ECG reconstruction: (a) Overall missed detection rate (MDR); (b) MDR under different physical statuses.\relax }{figure.caption.48}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{74}{subfigure.13.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{74}{subfigure.13.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3.2}Morphological Accuracy}{74}{subsubsection.4.4.3.2}\protected@file@percent }
+\citation{chen2022contactless}
+\newlabel{fig:rmse_cdf}{{4.14a}{75}{Subfigure 4 4.14a}{subfigure.4.14.1}{}}
+\newlabel{sub@fig:rmse_cdf}{{(a)}{4.14(a)}{Subfigure 4 4.14a\relax }{subfigure.4.14.1}{}}
+\newlabel{fig:cor_cdf}{{4.14b}{75}{Subfigure 4 4.14b}{subfigure.4.14.2}{}}
+\newlabel{sub@fig:cor_cdf}{{(b)}{4.14(b)}{Subfigure 4 4.14b\relax }{subfigure.4.14.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces Morphological accuracy comparison for all trials: (a) and (b) Overall CDF of RMSE and PCC for all trials.\relax }}{75}{figure.caption.49}\protected@file@percent }
+\newlabel{fig:rmse_cor}{{4.14}{75}{Morphological accuracy comparison for all trials: (a) and (b) Overall CDF of RMSE and PCC for all trials.\relax }{figure.caption.49}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{75}{subfigure.14.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{75}{subfigure.14.2}\protected@file@percent }
+\citation{chen2022contactless}
+\newlabel{fig:rmse_obj}{{4.15a}{76}{Subfigure 4 4.15a}{subfigure.4.15.1}{}}
+\newlabel{sub@fig:rmse_obj}{{(a)}{4.15(a)}{Subfigure 4 4.15a\relax }{subfigure.4.15.1}{}}
+\newlabel{fig:cor_obj}{{4.15b}{76}{Subfigure 4 4.15b}{subfigure.4.15.2}{}}
+\newlabel{sub@fig:cor_obj}{{(b)}{4.15(b)}{Subfigure 4 4.15b\relax }{subfigure.4.15.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.15}{\ignorespaces Morphological accuracy comparison across all subjects: (a) and (b) RMSE and PCC across all subjects.\relax }}{76}{figure.caption.50}\protected@file@percent }
+\newlabel{fig:rmse_cor2}{{4.15}{76}{Morphological accuracy comparison across all subjects: (a) and (b) RMSE and PCC across all subjects.\relax }{figure.caption.50}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{76}{subfigure.15.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{76}{subfigure.15.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3.3}Fine-Grained Cardiac Events Reconstruction}{76}{subsubsection.4.4.3.3}\protected@file@percent }
+\newlabel{fig:rmse_phy}{{4.16a}{77}{Subfigure 4 4.16a}{subfigure.4.16.1}{}}
+\newlabel{sub@fig:rmse_phy}{{(a)}{4.16(a)}{Subfigure 4 4.16a\relax }{subfigure.4.16.1}{}}
+\newlabel{fig:cor_phy}{{4.16b}{77}{Subfigure 4 4.16b}{subfigure.4.16.2}{}}
+\newlabel{sub@fig:cor_phy}{{(b)}{4.16(b)}{Subfigure 4 4.16b\relax }{subfigure.4.16.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.16}{\ignorespaces Morphological accuracy comparison for different physical statuses: (a) and (b) RMSE and PCC under different physical statuses.\relax }}{77}{figure.caption.51}\protected@file@percent }
+\newlabel{fig:rmse_cor3}{{4.16}{77}{Morphological accuracy comparison for different physical statuses: (a) and (b) RMSE and PCC under different physical statuses.\relax }{figure.caption.51}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{77}{subfigure.16.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{77}{subfigure.16.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces Absolute timing error for reconstructed ECG peaks\relax }}{77}{table.caption.54}\protected@file@percent }
+\newlabel{tab:peak_acc}{{4.6}{77}{Absolute timing error for reconstructed ECG peaks\relax }{table.caption.54}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3.4}Summary of Long-term ECG Recovery Evaluation}{77}{subsubsection.4.4.3.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.17}{\ignorespaces \leavevmode {\color  {black}CDF of the overall timing error, with overall improvement for each peak as: Q: 4\%, R: 15\%, S: 5\%, T: 9\%}\relax }}{78}{figure.caption.52}\protected@file@percent }
+\newlabel{fig:peak_cdf}{{4.17}{78}{\textcolor {black}{CDF of the overall timing error, with overall improvement for each peak as: Q: 4\%, R: 15\%, S: 5\%, T: 9\%}\relax }{figure.caption.52}{}}
+\newlabel{fig:peak_compare}{{4.17}{78}{\textcolor {black}{CDF of the overall timing error, with overall improvement for each peak as: Q: 4\%, R: 15\%, S: 5\%, T: 9\%}\relax }{figure.caption.52}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Conclusions}{78}{section.4.5}\protected@file@percent }
+\newlabel{sec:odeconclusions}{{4.5}{78}{Conclusions}{section.4.5}{}}
+\newlabel{fig:peak_phy_ode}{{4.18a}{79}{Subfigure 4 4.18a}{subfigure.4.18.1}{}}
+\newlabel{sub@fig:peak_phy_ode}{{(a)}{4.18(a)}{Subfigure 4 4.18a\relax }{subfigure.4.18.1}{}}
+\newlabel{fig:peak_phy_mmecg}{{4.18b}{79}{Subfigure 4 4.18b}{subfigure.4.18.2}{}}
+\newlabel{sub@fig:peak_phy_mmecg}{{(b)}{4.18(b)}{Subfigure 4 4.18b\relax }{subfigure.4.18.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.18}{\ignorespaces Evaluations of fine-grained cardiac events: (a) and (b) The timing error for different peaks under various physical statuses for radarODE and MMECG.\relax }}{79}{figure.caption.53}\protected@file@percent }
+\newlabel{fig:peak_compare2}{{4.18}{79}{Evaluations of fine-grained cardiac events: (a) and (b) The timing error for different peaks under various physical statuses for radarODE and MMECG.\relax }{figure.caption.53}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{79}{subfigure.18.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{79}{subfigure.18.2}\protected@file@percent }
+\@setckpt{./chapters_clean/chapter4}{
+\setcounter{page}{80}
+\setcounter{equation}{14}
+\setcounter{enumi}{4}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{4}
+\setcounter{section}{5}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{18}
+\setcounter{table}{6}
+\setcounter{KVtest}{1}
+\setcounter{subfigure}{0}
+\setcounter{subfigure@save}{2}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{subtable@save}{0}
+\setcounter{lotdepth}{1}
+\setcounter{nlinenum}{0}
+\setcounter{ALG@line}{14}
+\setcounter{ALG@rem}{0}
+\setcounter{ALG@nested}{0}
+\setcounter{ALG@Lnr}{2}
+\setcounter{ALG@blocknr}{10}
+\setcounter{ALG@storecount}{0}
+\setcounter{ALG@tmpcounter}{0}
+\setcounter{parentequation}{0}
+\setcounter{float@type}{8}
+\setcounter{algorithm}{2}
+\setcounter{su@anzahl}{0}
+\setcounter{LT@tables}{1}
+\setcounter{LT@chunks}{7}
+\setcounter{caption@flags}{2}
+\setcounter{ContinuedFloat}{0}
+\setcounter{linenumber}{0}
+\setcounter{LN@truepage}{103}
+\setcounter{Item}{11}
+\setcounter{Hfootnote}{2}
+\setcounter{bookmark@seq@number}{57}
+\setcounter{section@level}{1}
+}

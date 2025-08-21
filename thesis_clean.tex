@@ -1,0 +1,143 @@
+%% A minimalistic template for a PhD thesis. Complies with University of Liverpool's Code of Practice at the time of creation.
+%% I would highly recommend to tinker with the template and make your thesis look the way you want it to look.
+\documentclass[12pt,twoside]{report}
+% \documentclass[lettersize,journal]{IEEEtran}
+
+%% Use \includeonly to compile only some of the chapters. This will keep cross-references and page numbering intact as if all files have been compiled. For example (notice the relative paths!):
+%\includeonly{./chapters/chapter1,./chapters/chapter3} 
+
+%% Essential packages. Removing them might break the template.
+% \usepackage[headheight=14pt,inner=3cm,outer=3cm]{geometry} % The minimal margins as specified by Code of Practice.
+\usepackage[headheight=14.5pt,inner=3.8cm,outer=2.5cm]{geometry} % good for print
+% \usepackage[headheight=14.5pt,inner=3.1cm,outer=3.1cm]{geometry}
+
+\usepackage{setspace}
+\usepackage{datetime}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage[caption=false, labelformat=parens, subrefformat=parens]{subfig}
+\usepackage{makecell}
+\usepackage{enumerate}
+\usepackage{algpseudocode,amsmath}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{diagbox}
+\usepackage{verbatim}
+\usepackage{algorithm,algpseudocode}
+\usepackage[acronym,nonumberlist,nopostdot]{glossaries}
+\makenoidxglossaries
+\usepackage{acronyms}
+\usepackage{cite}
+\usepackage{caption,pifont}
+\usepackage{array, multirow}
+\usepackage{tabularx} 
+\usepackage[export]{adjustbox}
+\usepackage[switch]{lineno}
+\usepackage{longtable}
+\usepackage{graphicx}
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+%% Insert your packages here:
+\usepackage{amssymb,amsmath,amsthm}
+%\usepackage{microtype} % Makes the text look "nicer". Try with and without and choose for yourself.
+\usepackage[hidelinks]{hyperref} % It is often advices to load hyperref last (there are exceptions).
+%%
+
+%% Insert your commands here:
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{5}
+\newcolumntype{?}{!{\vrule width 1pt}}
+\captionsetup[table]{skip=5pt}
+\newcommand{\multiline}[2]{%
+  \begin{tabularx}{#1\textwidth}[t]{@{}X@{}}
+    #2
+  \end{tabularx}}
+\raggedbottom
+%%
+
+\onehalfspacing % As adviced by Code of Practice. 
+
+\graphicspath{{./figures/}{../figures/}} % Location of the figures and graphics files so that you can insert them without specifying a path to the figures folder.
+\makeatletter
+%% Insert your title and name.
+\title{{Robust Cardiac Feature Monitoring Based on Millimeter-Wave Radar}} \let\Title\@title
+\author{Yuanyuan Zhang} \let\Author\@author
+\makeatother
+
+\begin{document}
+%% The title page uses the title and author name specified above. No need to edit title.tex. Note that the current month is at the bottom of the title page. Edit it manually, if you want to have some other month there.
+\pagestyle{empty}
+\hypersetup{pageanchor=false}
+\include{title}
+\cleardoublepage
+\hypersetup{pageanchor=true}
+\begin{singlespace}
+\pagenumbering{roman}
+\onehalfspacing
+\doublespacing
+
+
+\include{./chapters_clean/abstract}
+\addcontentsline{toc}{chapter}{Abstract} % Add the abstract to the table of contents.
+\cleardoublepage
+
+\include{./chapters_clean/acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements} % Add the acknowledgements to the table of contents.
+\cleardoublepage
+
+\include{./chapters_clean/publications}
+\cleardoublepage
+
+\tableofcontents
+\addcontentsline{toc}{chapter}{Contents} % Add the the table of contents to the table of contents.
+\clearpage
+
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures} % Add the list of figures to the table of contents.
+\clearpage
+
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables} % Add the list of tables to the table of contents.
+\clearpage
+
+\glsnogroupskiptrue
+\setglossarystyle{super}
+\renewcommand{\glsnamefont}[1]{\textbf{#1}}
+% \glsaddall
+\printnoidxglossaries
+\addcontentsline{toc}{chapter}{List of Acronyms} % Add the list of tables to the table of contents.
+\clearpage
+%% You might need a similar construction to include the list of algorithms.
+\end{singlespace}
+\cleardoublepage
+
+%% In the thesis, pages are numbered with arabic numerals in the top outer corners (left top corner on even numbered pages, and right top corner on odd numbered pages) and alternatively Author and Chapter: Chapter name in the other top corner.
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\fancyhead[LE,RO]{\bfseries\thepage}    % Page number (boldface) in left on even
+% pages and right on odd pages
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}}
+\fancyhead[RE]{\bfseries\nouppercase{\leftmark}}      % Chapter in the right on even pages
+\fancyhead[LO]{\bfseries\nouppercase{\rightmark}}     % Section in the left on odd pages
+
+\fancyfoot{} % clear all footer fields
+
+\include{./chapters_clean/chapter1}
+\include{./chapters_clean/chapter2}
+\include{./chapters_clean/chapter3}
+\include{./chapters_clean/chapter4}
+\include{./chapters_clean/chapter5}
+\include{./chapters_clean/chapter6}
+\include{./chapters_clean/chapter7}
+
+\bibliographystyle{IEEEtran}
+\bibliography{reference}
+\addcontentsline{toc}{chapter}{References} % Add the references to the table of contents.
+
+
+
+\end{document}
