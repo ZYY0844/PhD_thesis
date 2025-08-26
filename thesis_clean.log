@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.22)  21 AUG 2025 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.22)  26 AUG 2025 19:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3298,7 +3298,7 @@ Package rerunfilecheck Info: File `thesis_clean.out' has not changed.
 Here is how much of TeX's memory you used:
  28809 strings out of 492616
  515750 string characters out of 6129481
- 679298 words of memory out of 5000000
+ 679300 words of memory out of 5000000
  31161 multiletter control sequences out of 15000+600000
  16267 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3328,7 +3328,7 @@ e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
 /texlive/2019/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on thesis_clean.pdf (193 pages, 8820716 bytes).
+Output written on thesis_clean.pdf (193 pages, 8820726 bytes).
 PDF statistics:
  8014 PDF objects out of 8907 (max. 8388607)
  4027 compressed objects within 41 object streams
